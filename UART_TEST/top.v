@@ -24,7 +24,7 @@ module top #()
 
 
     uart_tx #(
-   .CLOCKS_PER_PULSE (2),
+   .CLOCKS_PER_PULSE (10000),
    .BITS_PER_WORD    (8),
    .PACKET_SIZE      (13),
    .W_OUT            (8)
