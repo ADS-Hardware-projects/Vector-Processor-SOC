@@ -8,7 +8,7 @@ module vec_mul_tb;
 
   
   
-  logic clk=0 ;
+  logic clk=0 , enable =1 ;
   logic signed   [C-1:0][W_K -1:0] k;
   logic signed   [C-1:0][W_X -1:0] x; 
   logic signed          [W_Y -1:0] y, y_expected;
