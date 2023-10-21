@@ -1,7 +1,7 @@
 module vec_mul_tb;
   timeunit 1ns/1ps;
 
-  localparam C=16, W_X=8, W_K=8,
+  localparam C=9, W_X=8, W_K=8,
              W_Y = W_X + W_K + $clog2(C),
              LATENCY = $clog2(C) + 1,
              NUM_DATA = 10, CLK_PERIOD = 10;
@@ -12,6 +12,10 @@ module vec_mul_tb;
   logic signed   [C-1:0][W_K -1:0] k;
   logic signed   [C-1:0][W_X -1:0] x; 
   logic signed          [W_Y -1:0] y, y_expected;
+  logic v_valid ;
+//  logic [4:0]loop_counter;
+//  logic [4:0]D;
+//  logic [4:0]A;
 
   vec_mul #(.C(C), .W_X(W_X), .W_K(W_K)) dut (.*);
   initial forever #(CLK_PERIOD/2) clk <= ~clk;
