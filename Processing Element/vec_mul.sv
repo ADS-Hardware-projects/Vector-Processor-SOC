@@ -28,8 +28,8 @@ always_ff @(posedge clk)begin
     if (enable == 0) loop_counter <= 0;
     else begin 
     loop_counter <= loop_counter + 1'b1;
-    if (loop_counter % ($clog2(C) +2)==0)  valid <=1;
-    else begin valid <= 0;
+    if (loop_counter % ($clog2(C) +2)==0)  v_valid <=1;
+    else begin v_valid <= 0;
     end 
     end
 end  
@@ -48,13 +48,12 @@ end
        begin
          if (enable) begin 
          adder_tree [d+1][a] <= adder_tree [d][2*a] + adder_tree [d][2*a+1];
-//         if (d == DEPTH - 1 && a == C_PAD/2**(d+1)-1 ) valid <= 1;
-//         else valid <= 0;
+
              
           end              
         end                      
     
-    assign v_valid = valid  ;
+   
     assign y = adder_tree [DEPTH][0];
     
     
