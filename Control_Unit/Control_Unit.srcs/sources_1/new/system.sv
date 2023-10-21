@@ -46,6 +46,32 @@ logic [MainMemoryDataWidth-1:0] reg3DataOut; // databus for the register
 logic [MainMemoryDataWidth-1:0] reg4DataIn; // databus for the register
 logic [MainMemoryDataWidth-1:0] reg4DataOut; // databus for the register
 
+// defininf wires for dimension register file
+logic [15:0] dimDataIn;
+logic [15:0] dim_l_dataOut;
+logic [15:0] dim_m_dataOut;
+logic [15:0] dim_n_dataOut;
+logic [2:0] dim_CS;
+logic [2:0] dim_WE;
+logic [2:0] dim_OE;
+
+// wires for the counter
+logic counter_sel;
+
+logic [3:0]rowCountDataIn;
+logic [3:0]rowCountDataOut;
+logic row_counter_CS;
+logic row_counter_WE;
+logic row_counter_OE;
+logic row_counter_external;
+
+logic [3:0]colCountDataIn;
+logic [3:0]colCountDataOut;
+logic col_counter_CS;
+logic col_counter_WE;
+logic col_counter_OE;
+logic col_counter_external;
+
 // defining logic and wires for shifter
 wire [MainMemoryDataWidth - 1: 0]ShiftDataOutCombined;
 wire [31: 0] ShiftDataIn [0 : 3]; // wires to connect PEs and 
@@ -67,8 +93,14 @@ register #(MainMemoryDataWidth) register2 (.DataIn(reg2DataIn), .DataOut(reg2Dat
 register #(MainMemoryDataWidth) register3 (.DataIn(reg3DataIn), .DataOut(reg3DataOut), .CS(regCS[2]), .WE(regWE[2]), .OE(regOE[2]));
 register #(MainMemoryDataWidth) register4 (.DataIn(reg4DataIn), .DataOut(reg4DataOut), .CS(regCS[3]), .WE(regWE[3]), .OE(regOE[3]));
 
-// create instance of the shifter
-shifter #(512, 4, 32) PEshifter (.OE(shifterOE), .shift(shift), .dataIn(ShiftDataIn), .dataOut(ShiftDataOutCombined));
+// memory for hold matrix dimensions
+register #(16) l_reg (.DataIn(dimDataIn), .DataOut(dim_l_dataOut), .CS(dim_CS[0]), .WE(dim_WE[0]), .OE(dim_OE[0]));
+register #(16) m_reg (.DataIn(dimDataIn), .DataOut(dim_m_dataOut), .CS(dim_CS[1]), .WE(dim_WE[1]), .OE(dim_OE[1]));
+register #(16) n_reg (.DataIn(dimDataIn), .DataOut(dim_n_dataOut), .CS(dim_CS[2]), .WE(dim_WE[2]), .OE(dim_OE[2]));
+
+// counters
+register #(4) row_counter(.DataIn(rowCountDataIn), .DataOut(rowCountDataOut), .CS(row_counter_CS), .WE(row_counter_WE), .OE(row_counter_OE));
+register #(4) col_counter(.DataIn(colCountDataIn), .DataOut(colCountDataOut), .CS(col_counter_CS), .WE(col_counter_WE), .OE(col_counter_OE));
 
 // create instances of PES
 PE #(16, 32, 32) PE1 (.clk(masterCLK), .enable(PEenable[0]), .k(reg1DataOut), .x(PEBBus), .y(ShiftDataIn[0]));
@@ -76,6 +108,8 @@ PE #(16, 32, 32) PE2 (.clk(masterCLK), .enable(PEenable[1]), .k(reg2DataOut), .x
 PE #(16, 32, 32) PE3 (.clk(masterCLK), .enable(PEenable[2]), .k(reg3DataOut), .x(PEBBus), .y(ShiftDataIn[2]));
 PE #(16, 32, 32) PE4 (.clk(masterCLK), .enable(PEenable[3]), .k(reg4DataOut), .x(PEBBus), .y(ShiftDataIn[3]));
 
+// create instance of the shifter
+shifter #(512, 4, 32) PEshifter (.OE(shifterOE), .shift(shift), .dataIn(ShiftDataIn), .dataOut(ShiftDataOutCombined));
 
 // connecting wires
 assign PEBBus = mainDataOut;
@@ -87,13 +121,14 @@ assign reg3DataIn = mainDataOut;
 assign reg4DataIn = mainDataOut;
 
 // need a multiplexer to select between shift data out or mainwriter to write to main memory
-always @(memoryWriteSelect) begin
-  case (memoryWriteSelect)
-    1'b0: mainDataIn = ShiftDataOutCombined;
-    1'b1: mainDataIn = mainMemoryWriter;
-  endcase
-end
+assign mainDataIn = (memoryWriteSelect) ? mainMemoryWriter : ShiftDataOutCombined;
 
+// need a multiplexer to externally set row, or row = row + 1
+assign rowCountDataIn = (row_counter_external) ? 4'b0000 : rowCountDataOut + 1;
+assign colCountDataIn = (col_counter_external) ? 4'b0000 : colCountDataOut + 1;
+
+// need a multiplexer to connect data read address to column/row counters
+assign mainAddrOut = (counter_sel) ? {{1'b0}, rowCountDataOut} : {{1'b1}, colCountDataOut};
 
 
 initial begin
