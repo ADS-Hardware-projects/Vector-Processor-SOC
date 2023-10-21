@@ -108,14 +108,14 @@ set_property PACKAGE_PIN W11 [get_ports s_valid]
 # ----------------------------------------------------------------------------
 # JC Pmod - Bank 13
 # ----------------------------------------------------------------------------
-set_property PACKAGE_PIN AB6 [get_ports {par_data[0]}]
-set_property PACKAGE_PIN AB7 [get_ports {par_data[1]}]
-set_property PACKAGE_PIN AA4 [get_ports {par_data[2]}]
-set_property PACKAGE_PIN Y4 [get_ports {par_data[3]}]
-set_property PACKAGE_PIN T6 [get_ports {par_data[4]}]
-set_property PACKAGE_PIN R6 [get_ports {par_data[5]}]
-set_property PACKAGE_PIN U4 [get_ports {par_data[6]}]
-set_property PACKAGE_PIN T4 [get_ports {par_data[7]}]
+# set_property PACKAGE_PIN AB6 [get_ports {par_data[0]}]
+# set_property PACKAGE_PIN AB7 [get_ports {par_data[1]}]
+# set_property PACKAGE_PIN AA4 [get_ports {par_data[2]}]
+# set_property PACKAGE_PIN Y4 [get_ports {par_data[3]}]
+# set_property PACKAGE_PIN T6 [get_ports {par_data[4]}]
+# set_property PACKAGE_PIN R6 [get_ports {par_data[5]}]
+# set_property PACKAGE_PIN U4 [get_ports {par_data[6]}]
+# set_property PACKAGE_PIN T4 [get_ports {par_data[7]}]
 
 # ----------------------------------------------------------------------------
 # JD Pmod - Bank 13
@@ -202,7 +202,7 @@ set_property PACKAGE_PIN U14 [get_ports {s_data_kx[7]}]
 # User Push Buttons - Bank 34
 # ----------------------------------------------------------------------------
 set_property PACKAGE_PIN P16 [get_ports rstn]
-#set_property PACKAGE_PIN R16 [get_ports {BTND}];  # "BTND"
+set_property PACKAGE_PIN R16 [get_ports {m_valid}];  # "BTND"
 #set_property PACKAGE_PIN N15 [get_ports {BTNL}];  # "BTNL"
 #set_property PACKAGE_PIN R18 [get_ports {BTNR}];  # "BTNR"
 #set_property PACKAGE_PIN T18 [get_ports {BTNU}];  # "BTNU"
@@ -233,14 +233,14 @@ set_property PACKAGE_PIN P16 [get_ports rstn]
 ## ----------------------------------------------------------------------------
 ## User DIP Switches - Bank 35
 ## ----------------------------------------------------------------------------
-# set_property PACKAGE_PIN F22 [get_ports {rx}];  # "SW0"
-# set_property PACKAGE_PIN G22 [get_ports {tx}];  # "SW1"
-set_property PACKAGE_PIN H22 [get_ports m_valid]
-# set_property PACKAGE_PIN F21 [get_ports {frequency[3]}];  # "SW3"
-# set_property PACKAGE_PIN H19 [get_ports {frequency[4]}];  # "SW4"
-# set_property PACKAGE_PIN H18 [get_ports {frequency[5]}];  # "SW5"
-# set_property PACKAGE_PIN H17 [get_ports {frequency[6]}];  # "SW6"
-# set_property PACKAGE_PIN M15 [get_ports {frequency[7]}];  # "SW7"
+set_property PACKAGE_PIN F22 [get_ports {par_data[0]}];  # "SW0"
+set_property PACKAGE_PIN G22 [get_ports {par_data[1]}];  # "SW1"
+set_property PACKAGE_PIN H22 [get_ports {par_data[2]}]
+set_property PACKAGE_PIN F21 [get_ports {par_data[3]}];  # "SW3"
+set_property PACKAGE_PIN H19 [get_ports {par_data[4]}];  # "SW4"
+set_property PACKAGE_PIN H18 [get_ports {par_data[5]}];  # "SW5"
+set_property PACKAGE_PIN H17 [get_ports {par_data[6]}];  # "SW6"
+set_property PACKAGE_PIN M15 [get_ports {par_data[7]}];  # "SW7"
 
 ## ----------------------------------------------------------------------------
 ## XADC AD Channels - Bank 35
@@ -363,7 +363,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]]
 # Set the bank voltage for IO Bank 34 to 1.8V by default.
 # set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 34]];
 # set_property IOSTANDARD LVCMOS25 [get_ports -of_objects [get_iobanks 34]];
-set_property IOSTANDARD LVCMOS18 [get_ports rstn]
+set_property IOSTANDARD LVCMOS18 [get_ports -of_objects [get_iobanks 34]]
+
 
 # Set the bank voltage for IO Bank 35 to 1.8V by default.
 # set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 35]];

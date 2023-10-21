@@ -1,0 +1,13 @@
+def mul(a,b,c,r1,c1,r2,c2){
+
+    uartsend(r1,c1);
+    uartsend(a);
+    uartsend(r2,c2);
+    uartsend(b);
+    uartsend(1);
+    c = uartrecieve();
+    return c
+    
+
+
+}
