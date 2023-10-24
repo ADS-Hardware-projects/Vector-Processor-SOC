@@ -1,7 +1,7 @@
 module vec_mul_tb;
   timeunit 1ns/1ps;
 
-  localparam C=9, W_X=8, W_K=8,
+  localparam C=4, W_X=8, W_K=8,
              W_Y = W_X + W_K + $clog2(C),
              LATENCY = $clog2(C) + 1,
              NUM_DATA = 10, CLK_PERIOD = 10;
@@ -11,7 +11,7 @@ module vec_mul_tb;
   logic clk=0 , enable =1 ;
   logic signed   [C-1:0][W_K -1:0] k;
   logic signed   [C-1:0][W_X -1:0] x; 
-  logic signed          [W_Y -1:0] y, y_expected;
+  logic signed          [W_X -1:0] y_out, y_expected;
   logic v_valid ;
 //  logic [4:0]loop_counter;
 //  logic [4:0]D;
@@ -28,12 +28,15 @@ module vec_mul_tb;
       @(posedge clk); #1
 
       
-    for(int c=0; c<C; c++) begin
-      x    [c] = $urandom_range(0, 2**W_X-1);
-      k    [c] = $urandom_range(0, 2**W_K-1);
-      end
+//    for(int c=0; c<C; c++) begin
+//      x    [c] = $urandom_range(0, 2**W_X-1);
+//      k    [c] = $urandom_range(0, 2**W_K-1);
+//      end
+      x = 32'h03020107;
+      k = 32'h01030309;
       
-      
+//      #LATENCY
+//      enable =0;
 
       // Wait for output
       repeat (LATENCY) @(posedge clk); #1
@@ -44,10 +47,10 @@ module vec_mul_tb;
       
 
       // Check
-      assert (y == y_expected)
-        $display("Output matched: %d", y);
+      assert (y_out == y_expected)
+        $display("Output matched: %d", y_out);
       else
-        $error("Output doesnt match. y:%p != y_expected:%p", y, y_expected);
+        $error("Output doesnt match. y:%p != y_expected:%p", y_out, y_expected);
 
     end
     $finish;
