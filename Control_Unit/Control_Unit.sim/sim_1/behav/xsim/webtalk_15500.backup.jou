@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 23 22:53:42 2023
+# Process ID: 15500
+# Current directory: E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.sim/sim_1/behav/xsim/xsim.dir/system_new_sim_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.sim/sim_1/behav/xsim/xsim.dir/system_new_sim_tb_behav/webtalk/xsim_webtalk.tcl -notrace
