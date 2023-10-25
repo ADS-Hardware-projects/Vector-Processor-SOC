@@ -5,7 +5,7 @@ module DataMemory(
     input [4:0] OutAddress, // address bus for output
     output [511:0] DataOut, // data bus for output
 
-    input CS, WE, OE, CLK, // contol logic
+    input CS, WE, OE, CLK, MEMRST, // contol logic
 
     // dedicated outputs
     output [511:0] Out0,
@@ -57,8 +57,50 @@ module DataMemory(
     assign Out15 = (CS && OE) ? Mem[15] : 'z;
 
     // writing data write port
-    always @(posedge CLK) begin
-    if (CS && WE)
-        Mem[InAddress] = DataIn;
+    always_ff @(posedge CLK or negedge MEMRST) begin
+        if(!MEMRST) begin
+            Mem[0] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[1] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[2] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[3] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[4] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[5] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[6] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[7] <= '0; // Asynchronous reset when RST is deasserted
+
+            Mem[8] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[9] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[10] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[11] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[12] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[13] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[14] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[15] <= '0; // Asynchronous reset when RST is deasserted
+
+            Mem[16] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[17] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[18] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[19] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[20] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[21] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[22] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[23] <= '0; // Asynchronous reset when RST is deasserted
+
+            Mem[24] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[25] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[26] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[27] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[28] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[29] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[30] <= '0; // Asynchronous reset when RST is deasserted
+            Mem[31] <= '0; // Asynchronous reset when RST is deasserted
+
+        end else begin
+            if (CS && WE) begin
+                Mem[InAddress] = DataIn;
+            end
+        end   
     end
+
+
 endmodule

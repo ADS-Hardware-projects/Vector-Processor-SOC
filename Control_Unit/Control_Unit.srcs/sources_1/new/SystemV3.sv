@@ -1,3 +1,19 @@
+//// FOR MY INFORMATION
+
+
+//// After start -> 1,
+//// 7 clocks to get first result
+//// after that 7 clock for next
+//// INFO:  no of clocks for calculation => #MatrixColumns X 7
+////                                       e.g.: 8 column matrix ==> 56 clocks 
+
+
+
+
+
+
+
+
 module SystemV3(
 
     input CLK, WE, RESET, start,
@@ -14,6 +30,8 @@ module SystemV3(
 
     logic [4:0] OutAddress; // address bus for output the column
     logic [511:0] DataOut; // data bus for output
+
+    logic MEMRST;
 
     logic CS, OE; // contol logic
 
@@ -68,22 +86,22 @@ module SystemV3(
     DataMemory dataMem(.*);
 
     // Create Instances of PEs
-    PE #(16, 32, 32) PE0  (.clk(CLK), .v_valid(v_valid[0 ]), .enable(enablePE), .k(Out0 ), .x(DataOut), .y_out(FinalDataOut[31 :0]));
-    PE #(16, 32, 32) PE1  (.clk(CLK), .v_valid(v_valid[1 ]), .enable(enablePE), .k(Out1 ), .x(DataOut), .y_out(FinalDataOut[63 :32]));
-    PE #(16, 32, 32) PE2  (.clk(CLK), .v_valid(v_valid[2 ]), .enable(enablePE), .k(Out2 ), .x(DataOut), .y_out(FinalDataOut[95 :64]));
-    PE #(16, 32, 32) PE3  (.clk(CLK), .v_valid(v_valid[3 ]), .enable(enablePE), .k(Out3 ), .x(DataOut), .y_out(FinalDataOut[127:96]));
-    PE #(16, 32, 32) PE4  (.clk(CLK), .v_valid(v_valid[4 ]), .enable(enablePE), .k(Out4 ), .x(DataOut), .y_out(FinalDataOut[159:128]));
-    PE #(16, 32, 32) PE5  (.clk(CLK), .v_valid(v_valid[5 ]), .enable(enablePE), .k(Out5 ), .x(DataOut), .y_out(FinalDataOut[191:160]));
-    PE #(16, 32, 32) PE6  (.clk(CLK), .v_valid(v_valid[6 ]), .enable(enablePE), .k(Out6 ), .x(DataOut), .y_out(FinalDataOut[223:192]));
-    PE #(16, 32, 32) PE7  (.clk(CLK), .v_valid(v_valid[7 ]), .enable(enablePE), .k(Out7 ), .x(DataOut), .y_out(FinalDataOut[255:224]));
-    PE #(16, 32, 32) PE8  (.clk(CLK), .v_valid(v_valid[8 ]), .enable(enablePE), .k(Out8 ), .x(DataOut), .y_out(FinalDataOut[287:256]));
-    PE #(16, 32, 32) PE9  (.clk(CLK), .v_valid(v_valid[9 ]), .enable(enablePE), .k(Out9 ), .x(DataOut), .y_out(FinalDataOut[319:288]));
-    PE #(16, 32, 32) PE10 (.clk(CLK), .v_valid(v_valid[10]), .enable(enablePE), .k(Out10), .x(DataOut), .y_out(FinalDataOut[351:320]));
-    PE #(16, 32, 32) PE11 (.clk(CLK), .v_valid(v_valid[11]), .enable(enablePE), .k(Out11), .x(DataOut), .y_out(FinalDataOut[383:352]));
-    PE #(16, 32, 32) PE12 (.clk(CLK), .v_valid(v_valid[12]), .enable(enablePE), .k(Out12), .x(DataOut), .y_out(FinalDataOut[415:384]));
-    PE #(16, 32, 32) PE13 (.clk(CLK), .v_valid(v_valid[13]), .enable(enablePE), .k(Out13), .x(DataOut), .y_out(FinalDataOut[447:416]));
-    PE #(16, 32, 32) PE14 (.clk(CLK), .v_valid(v_valid[14]), .enable(enablePE), .k(Out14), .x(DataOut), .y_out(FinalDataOut[479:448]));
-    PE #(16, 32, 32) PE15 (.clk(CLK), .v_valid(v_valid[15]), .enable(enablePE), .k(Out15), .x(DataOut), .y_out(FinalDataOut[511:480]));
+    PE #(16, 32, 32) PE0  (.clk(CLK), .v_valid(v_valid[0 ]), .enable(enablePE), .k(Out0 ), .x(DataOut), .y_out(FinalDataOut[511:480]));
+    PE #(16, 32, 32) PE1  (.clk(CLK), .v_valid(v_valid[1 ]), .enable(enablePE), .k(Out1 ), .x(DataOut), .y_out(FinalDataOut[479:448]));
+    PE #(16, 32, 32) PE2  (.clk(CLK), .v_valid(v_valid[2 ]), .enable(enablePE), .k(Out2 ), .x(DataOut), .y_out(FinalDataOut[447:416]));
+    PE #(16, 32, 32) PE3  (.clk(CLK), .v_valid(v_valid[3 ]), .enable(enablePE), .k(Out3 ), .x(DataOut), .y_out(FinalDataOut[415:384]));
+    PE #(16, 32, 32) PE4  (.clk(CLK), .v_valid(v_valid[4 ]), .enable(enablePE), .k(Out4 ), .x(DataOut), .y_out(FinalDataOut[383:352]));
+    PE #(16, 32, 32) PE5  (.clk(CLK), .v_valid(v_valid[5 ]), .enable(enablePE), .k(Out5 ), .x(DataOut), .y_out(FinalDataOut[351:320]));
+    PE #(16, 32, 32) PE6  (.clk(CLK), .v_valid(v_valid[6 ]), .enable(enablePE), .k(Out6 ), .x(DataOut), .y_out(FinalDataOut[319:288]));
+    PE #(16, 32, 32) PE7  (.clk(CLK), .v_valid(v_valid[7 ]), .enable(enablePE), .k(Out7 ), .x(DataOut), .y_out(FinalDataOut[287:256]));
+    PE #(16, 32, 32) PE8  (.clk(CLK), .v_valid(v_valid[8 ]), .enable(enablePE), .k(Out8 ), .x(DataOut), .y_out(FinalDataOut[255:224]));
+    PE #(16, 32, 32) PE9  (.clk(CLK), .v_valid(v_valid[9 ]), .enable(enablePE), .k(Out9 ), .x(DataOut), .y_out(FinalDataOut[223:192]));
+    PE #(16, 32, 32) PE10 (.clk(CLK), .v_valid(v_valid[10]), .enable(enablePE), .k(Out10), .x(DataOut), .y_out(FinalDataOut[191:160]));
+    PE #(16, 32, 32) PE11 (.clk(CLK), .v_valid(v_valid[11]), .enable(enablePE), .k(Out11), .x(DataOut), .y_out(FinalDataOut[159:128]));
+    PE #(16, 32, 32) PE12 (.clk(CLK), .v_valid(v_valid[12]), .enable(enablePE), .k(Out12), .x(DataOut), .y_out(FinalDataOut[127:96]));
+    PE #(16, 32, 32) PE13 (.clk(CLK), .v_valid(v_valid[13]), .enable(enablePE), .k(Out13), .x(DataOut), .y_out(FinalDataOut[95 :64]));
+    PE #(16, 32, 32) PE14 (.clk(CLK), .v_valid(v_valid[14]), .enable(enablePE), .k(Out14), .x(DataOut), .y_out(FinalDataOut[63 :32]));
+    PE #(16, 32, 32) PE15 (.clk(CLK), .v_valid(v_valid[15]), .enable(enablePE), .k(Out15), .x(DataOut), .y_out(FinalDataOut[31 :0]));
 
     // Create instance of a register to store the number of columns
     register #(4) colCounter (.RST(col_counter_RST), .CLK(CLK), .DataIn(colCountDataIn), .DataOut(colCountDataOut), .CS(col_counter_CS), .WE(col_counter_WE), .OE(col_counter_OE));
@@ -94,9 +112,11 @@ module SystemV3(
             enablePE <= 0; // disable Processing elements
             col_counter_RST <= 0; // resetting column counter 
             col_counter_WE <= 0; // dissabling write enable
+            MEMRST <= 0;
 
         end else begin
             col_counter_RST <= 1; // stop resetting the column counter
+            MEMRST <= 1;
 
             if (start) begin
                 if(!AnsValid) begin
@@ -110,7 +130,7 @@ module SystemV3(
                     col_counter_WE <= 1;
                     enablePE <= 0;
                 end
-            end
+            end 
         end
     end
 

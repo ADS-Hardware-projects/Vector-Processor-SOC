@@ -30,7 +30,7 @@ always_ff @(posedge clk)begin
     if (enable == 0) loop_counter <= 0;
     else begin 
     loop_counter <= loop_counter + 1'b1;
-    if (loop_counter !=0 && loop_counter == ($clog2(C) +2))  v_valid <=1;
+    if (loop_counter !=0 && loop_counter == ($clog2(C) + 0))  v_valid <=1;
     else begin v_valid <= 0;
     end 
     end

@@ -3,53 +3,94 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="CountingSystem_tb_behav.wdb" id="1">
+      <db_ref path="SystemV3_tb_behav.wdb" id="1">
          <top_modules>
-            <top_module name="CountingSystem_tb" />
+            <top_module name="SystemV3_tb" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="823666666fs"></ZoomStartTime>
-      <ZoomEndTime time="1035266667fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomStartTime time="131080000fs"></ZoomStartTime>
+      <ZoomEndTime time="662580001fs"></ZoomEndTime>
+      <Cursor1Time time="402580000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="268"></NameColumnWidth>
-      <ValueColumnWidth column_width="210"></ValueColumnWidth>
+      <ValueColumnWidth column_width="205"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="8" />
-   <wvobject fp_name="/CountingSystem_tb/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/SystemV3_tb/mainSYS/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
-   <wvobject fp_name="/CountingSystem_tb/RESET" type="logic">
+   <wvobject fp_name="/SystemV3_tb/mainSYS/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/RESET" type="logic">
       <obj_property name="ElementShortName">RESET</obj_property>
       <obj_property name="ObjectShortName">RESET</obj_property>
    </wvobject>
-   <wvobject fp_name="/CountingSystem_tb/rowCountDataOut" type="array">
-      <obj_property name="ElementShortName">rowCountDataOut[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rowCountDataOut[3:0]</obj_property>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
    </wvobject>
-   <wvobject fp_name="/CountingSystem_tb/colCountDataOut" type="array">
-      <obj_property name="ElementShortName">colCountDataOut[3:0]</obj_property>
-      <obj_property name="ObjectShortName">colCountDataOut[3:0]</obj_property>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/InAddress" type="array">
+      <obj_property name="ElementShortName">InAddress[4:0]</obj_property>
+      <obj_property name="ObjectShortName">InAddress[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/CountingSystem_tb/checkSUB" type="array">
-      <obj_property name="ElementShortName">checkSUB[7:0]</obj_property>
-      <obj_property name="ObjectShortName">checkSUB[7:0]</obj_property>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/DataIn" type="array">
+      <obj_property name="ElementShortName">DataIn[511:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn[511:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/CountingSystem_tb/valid" type="logic">
-      <obj_property name="ElementShortName">valid</obj_property>
-      <obj_property name="ObjectShortName">valid</obj_property>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/ResultAddress" type="array">
+      <obj_property name="ElementShortName">ResultAddress[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ResultAddress[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/CountingSystem_tb/enable" type="logic">
-      <obj_property name="ElementShortName">enable</obj_property>
-      <obj_property name="ObjectShortName">enable</obj_property>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/FinalDataOut" type="array">
+      <obj_property name="ElementShortName">FinalDataOut[511:0]</obj_property>
+      <obj_property name="ObjectShortName">FinalDataOut[511:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/CountingSystem_tb/MainCounters/rowCounter/DataOut" type="array">
-      <obj_property name="ElementShortName">DataOut[3:0]</obj_property>
-      <obj_property name="ObjectShortName">DataOut[3:0]</obj_property>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/AnsValid" type="logic">
+      <obj_property name="ElementShortName">AnsValid</obj_property>
+      <obj_property name="ObjectShortName">AnsValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/OutAddress" type="array">
+      <obj_property name="ElementShortName">OutAddress[4:0]</obj_property>
+      <obj_property name="ObjectShortName">OutAddress[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/DataOut" type="array">
+      <obj_property name="ElementShortName">DataOut[511:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/enablePE" type="logic">
+      <obj_property name="ElementShortName">enablePE</obj_property>
+      <obj_property name="ObjectShortName">enablePE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/PE0/y_out" type="array">
+      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/PE1/y_out" type="array">
+      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/PE2/y_out" type="array">
+      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/PE3/y_out" type="array">
+      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/mainSYS/FinalDataOut" type="array">
+      <obj_property name="ElementShortName">FinalDataOut[511:0]</obj_property>
+      <obj_property name="ObjectShortName">FinalDataOut[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
 </wave_config>
