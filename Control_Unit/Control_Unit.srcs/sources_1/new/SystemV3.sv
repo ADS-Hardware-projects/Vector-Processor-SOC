@@ -68,6 +68,8 @@ module SystemV3(
     logic col_counter_WE;
     logic col_counter_OE;
 
+    logic halt = 0;
+
     /////////// CONBINATIONAL LOGIC /////////////
     assign CS = 1;
     assign OE = 1;
@@ -113,12 +115,13 @@ module SystemV3(
             col_counter_RST <= 0; // resetting column counter 
             col_counter_WE <= 0; // dissabling write enable
             MEMRST <= 0;
+            halt <= 0;
 
         end else begin
             col_counter_RST <= 1; // stop resetting the column counter
             MEMRST <= 1;
 
-            if (start) begin
+            if (start & !halt) begin
                 if(!AnsValid) begin
                     enablePE <= 1;
                     col_counter_WE <= 0;
@@ -129,6 +132,12 @@ module SystemV3(
                     colCountDataIn <= colCountDataOut + 1;
                     col_counter_WE <= 1;
                     enablePE <= 0;
+                end
+
+                if (colCountDataOut == 4'hf) begin
+                    halt <= 1;
+                end else begin
+                    halt <= 0;
                 end
             end 
         end
