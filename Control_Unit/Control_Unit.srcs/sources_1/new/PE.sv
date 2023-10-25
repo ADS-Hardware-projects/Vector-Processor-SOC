@@ -7,14 +7,16 @@ module PE #(
     input  logic clk,enable,
     input  logic signed [C-1:0][W_K-1:0] k,
     input  logic signed [C-1:0][W_X-1:0] x, 
-    output logic signed        [W_Y-1:0] y,
-    output logic valid 
+    output logic signed        [W_X-1:0] y_out,
+    output logic v_valid 
 
   );
 
   // Padding to a power of 2 
   localparam C_PAD = 2**$clog2(C);
   logic signed [W_Y-1:0] adder_tree [DEPTH+1][C_PAD]; //  adder_tree
+
+  logic signed   [W_Y-1:0] y;
 
   wire signed    [C_PAD-1:0][W_X-1:0] x_padded = {'0, x};
   wire signed    [C_PAD-1:0][W_K-1:0] k_padded = {'0, k};    
@@ -28,8 +30,8 @@ always_ff @(posedge clk)begin
     if (enable == 0) loop_counter <= 0;
     else begin 
     loop_counter <= loop_counter + 1'b1;
-    if (loop_counter % ($clog2(C) +2)==0)  valid <=1;
-    else begin valid <= 0;
+    if (loop_counter !=0 && loop_counter == ($clog2(C) +2))  v_valid <=1;
+    else begin v_valid <= 0;
     end 
     end
 end  
@@ -55,6 +57,6 @@ end
     
    
     assign y = adder_tree [DEPTH][0];
-    
+    assign y_out = y[W_X-1:0];
     
 endmodule

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 25 12:27:54 2023
+# Process ID: 11108
+# Current directory: E:/Projects/Vivado/Vector-Processor-SOC/DataMemory/DataMemory.runs/impl_1
+# Command line: vivado.exe -log DataMemory.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DataMemory.tcl -notrace
+# Log file: E:/Projects/Vivado/Vector-Processor-SOC/DataMemory/DataMemory.runs/impl_1/DataMemory.vdi
+# Journal file: E:/Projects/Vivado/Vector-Processor-SOC/DataMemory/DataMemory.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DataMemory.tcl -notrace
