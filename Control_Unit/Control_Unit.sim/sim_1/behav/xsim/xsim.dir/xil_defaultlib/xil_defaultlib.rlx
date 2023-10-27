@@ -3,16 +3,8 @@
 May 24 2019
 15:06:07
 E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sim_1/new/CountingSystem_tb.sv,1698148881,systemVerilog,,,,CountingSystem_tb,,,,,,,,
 E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sim_1/new/SystemV3_tb.sv,1698258365,systemVerilog,,,,SystemV3_tb,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sim_1/new/register_tb.sv,1698073595,systemVerilog,,,,register_tb,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sim_1/new/system_new_sim_tb.sv,1698085787,systemVerilog,,,,system_new_sim_tb,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sim_1/new/system_tb.sv,1698051896,systemVerilog,,,,system_tb,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/CountingSystem.sv,1698148765,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/register.sv,,CountingSystem,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/DataMemory.sv,1698237011,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/PE.sv,,DataMemory,,,,,,,,
+E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/DataMemory.sv,1698341053,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/PE.sv,,DataMemory,,,,,,,,
 E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/PE.sv,1698236199,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/SystemV3.sv,,PE,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/SystemV2.sv,1698085112,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/register.sv,,SystemV2,,,,,,,,
 E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/SystemV3.sv,1698258772,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/register.sv,,SystemV3,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/memory.sv,1698047139,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/register.sv,,memory,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/register.sv,1698124337,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sim_1/new/SystemV3_tb.sv,,register,,,,,,,,
-E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/system.sv,1698058617,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sim_1/new/system_tb.sv,,system,,,,,,,,
+E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sources_1/new/register.sv,1698339906,systemVerilog,,E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.srcs/sim_1/new/SystemV3_tb.sv,,register,,,,,,,,
