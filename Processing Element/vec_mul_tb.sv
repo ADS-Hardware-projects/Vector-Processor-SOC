@@ -32,7 +32,7 @@ module vec_mul_tb;
 //      x    [c] = $urandom_range(0, 2**W_X-1);
 //      k    [c] = $urandom_range(0, 2**W_K-1);
 //      end
-      x = 32'h03020107;
+      x = 32'h03020108;
       k = 32'h01030309;
       
 //      #LATENCY
