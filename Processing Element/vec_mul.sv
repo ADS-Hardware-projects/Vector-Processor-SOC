@@ -53,7 +53,8 @@ end
  total =0;
  for (int n=0; n<C_PAD; n=n+1) begin
     
-    total = total + multiplied_elements [n][W_Y-1:0];
+    if (enable) total = total + multiplied_elements [n][W_Y-1:0];
+    
     
     end
 end
