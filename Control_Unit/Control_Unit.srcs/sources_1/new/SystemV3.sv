@@ -20,13 +20,28 @@ module SystemV3(
 
     /// These are for inputting data to the RAM
     input [4:0] InAddress, // address bus for input
-    input [511:0] DataIn, // data bus for output
+    // input [511:0] DataIn, // data bus for output
 
-    output [3:0] ResultAddress, // address of the (this will tell what the output is For saliya) (4 bit 0 - 16)
-    output [511:0] FinalDataOut, // the column (calculated combined output)
+    // output [3:0] ResultAddress, // address of the (this will tell what the output is For saliya) (4 bit 0 - 16)
+    // output [511:0] FinalDataOut, // the column (calculated combined output)
 
     output AnsValid
 );
+
+    ////////////////////////////////////////////////////////////////////
+
+    logic [511:0] DataIn; // data bus for output
+
+    logic [3:0] ResultAddress; // address of the (this will tell what the output is For saliya) (4 bit 0 - 16)
+    logic [511:0] FinalDataOut; // the column (calculated combined output)
+
+    /////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
     logic [4:0] OutAddress; // address bus for output the column
     logic [511:0] DataOut; // data bus for output

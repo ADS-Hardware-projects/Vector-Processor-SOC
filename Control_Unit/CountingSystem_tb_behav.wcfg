@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="54020000fs"></ZoomStartTime>
-      <ZoomEndTime time="269620001fs"></ZoomEndTime>
-      <Cursor1Time time="190020000fs"></Cursor1Time>
+      <ZoomStartTime time="970000000fs"></ZoomStartTime>
+      <ZoomEndTime time="1187600001fs"></ZoomEndTime>
+      <Cursor1Time time="1006800000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="268"></NameColumnWidth>
-      <ValueColumnWidth column_width="190"></ValueColumnWidth>
+      <ValueColumnWidth column_width="180"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="27" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/SystemV3_tb/mainSYS/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -31,10 +31,14 @@
    <wvobject fp_name="/SystemV3_tb/mainSYS/RESET" type="logic">
       <obj_property name="ElementShortName">RESET</obj_property>
       <obj_property name="ObjectShortName">RESET</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/start" type="logic">
       <obj_property name="ElementShortName">start</obj_property>
       <obj_property name="ObjectShortName">start</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/InAddress" type="array">
       <obj_property name="ElementShortName">InAddress[4:0]</obj_property>
@@ -48,100 +52,78 @@
       <obj_property name="ElementShortName">enablePE</obj_property>
       <obj_property name="ObjectShortName">enablePE</obj_property>
    </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/OutAddress" type="array">
-      <obj_property name="ElementShortName">OutAddress[4:0]</obj_property>
-      <obj_property name="ObjectShortName">OutAddress[4:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/ResultAddress" type="array">
-      <obj_property name="ElementShortName">ResultAddress[3:0]</obj_property>
-      <obj_property name="ObjectShortName">ResultAddress[3:0]</obj_property>
+      <obj_property name="ElementShortName">ResultAddress[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ResultAddress[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/AnsValid" type="logic">
       <obj_property name="ElementShortName">AnsValid</obj_property>
       <obj_property name="ObjectShortName">AnsValid</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SystemV3_tb/FinalDataOut" type="array">
+      <obj_property name="ElementShortName">FinalDataOut[255:0]</obj_property>
+      <obj_property name="ObjectShortName">FinalDataOut[255:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/PE0/y_out" type="array">
       <obj_property name="ElementShortName">y_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/PE1/y_out" type="array">
       <obj_property name="ElementShortName">y_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/PE2/y_out" type="array">
       <obj_property name="ElementShortName">y_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/PE3/y_out" type="array">
       <obj_property name="ElementShortName">y_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/PE4/y_out" type="array">
       <obj_property name="ElementShortName">y_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/PE5/y_out" type="array">
       <obj_property name="ElementShortName">y_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/PE6/y_out" type="array">
       <obj_property name="ElementShortName">y_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/SystemV3_tb/mainSYS/PE7/y_out" type="array">
       <obj_property name="ElementShortName">y_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/PE8/y_out" type="array">
-      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/PE9/y_out" type="array">
-      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/PE10/y_out" type="array">
-      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/PE11/y_out" type="array">
-      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/PE12/y_out" type="array">
-      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/PE13/y_out" type="array">
-      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/PE14/y_out" type="array">
-      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/mainSYS/PE15/y_out" type="array">
-      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SystemV3_tb/FinalDataOut" type="array">
-      <obj_property name="ElementShortName">FinalDataOut[511:0]</obj_property>
-      <obj_property name="ObjectShortName">FinalDataOut[511:0]</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
 </wave_config>
