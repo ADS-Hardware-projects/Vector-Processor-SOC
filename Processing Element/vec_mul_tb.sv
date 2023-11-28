@@ -45,7 +45,7 @@ module vec_mul_tb;
         foreach (x[c])
           y_expected = $signed(y_expected) + $signed(x[c]) * $signed(k[c]);
       
-
+      @(posedge clk) #1 enable = 0;
       // Check
       assert (y_out == y_expected)
         $display("Output matched: %d", y_out);
