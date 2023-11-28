@@ -2,8 +2,8 @@ module system #(
     parameter matSize = 16,
     parameter NoOfElem = 16,
     parameter wordSize = 32,
-    parameter words = 16
-
+    parameter words = 16,
+    parameter memDepth = 9
 )
 (
     input clk,
@@ -12,26 +12,22 @@ module system #(
     input memWRTDone,
 
     input MemWE, // contol logic
-    input [8:0] MemInAddress, // address bus for input
+    input [memDepth - 1:0] MemInAddress, // address bus for input
     input [31:0] MemDataIn, // data bus for output
 
-
-    output [words * wordSize - 1: 0] RFDataOut [0 : NoOfElem - 1], // output from the register file
-    output [matSize * 32 - 1: 0] FUdataOut // output from the fetch unit
-
-
+    output [words * wordSize - 1: 0] RFDataOut [0 : NoOfElem - 1] // output from the register file
 );
 
 
     // LOGIC WIRES FOR THE FETCH UNIT
     logic [31:0] BRAMdata; // this is the data input from the BLOCK RAM
     logic [$clog2(matSize*2 - 1) - 1: 0] BRAMaddrFU; // address of the read port (FROM logic part)
-    // logic [matSize * 32 - 1: 0] FUdataOut; // output from the fetch unit
+    logic [matSize * 32 - 1: 0] FUdataOut; // output from the fetch unit
     logic [$clog2(matSize*matSize*2 - 1) - 1: 0] BRAMaddr; // address to the BLOCK ram
     logic FUvalid; // this will be high when the data is valid for read
     logic FURESET;
 
-    FetchUnit fetch_unit(
+    FetchUnit #(matSize, memDepth) fetch_unit (
         .dataIn(BRAMdata),
         .readAddr(BRAMaddrFU),
         .clk(clk),
@@ -49,7 +45,7 @@ module system #(
     // logic [words * wordSize - 1: 0] RFDataOut [0 : NoOfElem - 1]; // output from the register file
 
 
-    regFile reg_file(
+    regFile #(wordSize, words, NoOfElem) reg_file(
         .dataIn(RFDataIn),
         .addr(RFAddr),
         .RESET(RESET),
@@ -60,11 +56,11 @@ module system #(
 
 
     // LOGIC FOR DATA MEMMORY
-    logic [8:0] MemOutAddress; // address bus for input
+    logic [memDepth - 1:0] MemOutAddress; // address bus for input
     logic [31:0] MemDataOut; // data bus for output
     
 
-    DataMemory memory(
+    DataMemory #(memDepth) memory(
         .InAddress(MemInAddress),
         .DataIn(MemDataIn),
         .OutAddress(MemOutAddress),
@@ -93,7 +89,7 @@ module system #(
 
 
 
-    reg [$clog2(NoOfElem - 1) : 0]regFileAddrCounter;
+    reg [$clog2(NoOfElem - 1) : 0]regFileAddrCounter; // this will control the writing address of the register file
 
     ////////////////////////// COMBINATIONAL LOGIC PART ////////////////////////////////
 

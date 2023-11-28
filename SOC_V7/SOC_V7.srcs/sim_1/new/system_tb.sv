@@ -9,12 +9,13 @@ module system_tb(
     localparam NoOfElem = 16;
     localparam wordSize = 32;
     localparam words = 16;
+    localparam memDepth = 10;
 
     logic clk = 0;
     logic RESET;
 
     logic MemWE; // contol logic
-    logic [8:0] MemInAddress; // address bus for input
+    logic [memDepth - 1:0] MemInAddress; // address bus for input
     logic [31:0] MemDataIn; // data bus for output
 
     logic [words * wordSize - 1: 0] RFDataOut [0 : NoOfElem - 1]; // output from the register file
@@ -24,7 +25,7 @@ module system_tb(
 
     initial forever #(CLK_PERIOD/2) clk <= ~clk;
 
-    system sys(.*);
+    system #(matSize, NoOfElem, wordSize, words, memDepth) sys(.*);
 
     initial begin
 
