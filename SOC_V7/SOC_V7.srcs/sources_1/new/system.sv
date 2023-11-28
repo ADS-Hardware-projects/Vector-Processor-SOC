@@ -15,7 +15,9 @@ module system #(
     input [memDepth - 1:0] MemInAddress, // address bus for input
     input [31:0] MemDataIn, // data bus for output
 
-    output [words * wordSize - 1: 0] RFDataOut [0 : NoOfElem - 1] // output from the register file
+    output [words * wordSize - 1: 0] RFDataOut [0 : NoOfElem - 1], // output from the register file
+
+    output [$clog2(NoOfElem) + 1 : 0] regCheck
 );
 
 
@@ -89,18 +91,18 @@ module system #(
 
 
 
-    reg [$clog2(NoOfElem - 1) : 0]regFileAddrCounter; // this will control the writing address of the register file
+    reg [$clog2(NoOfElem) + 1: 0]regFileAddrCounter; // this will control the writing address of the register file
 
     ////////////////////////// COMBINATIONAL LOGIC PART ////////////////////////////////
+    assign regCheck = regFileAddrCounter;
 
     assign RFDataIn = FUdataOut;
     assign BRAMdata = MemDataOut;
     assign MemOutAddress = BRAMaddr;
-    assign RFAddr   = regFileAddrCounter;
+    assign RFAddr   = regFileAddrCounter [$clog2(NoOfElem - 1) - 1 : 0];
+    assign BRAMaddrFU = regFileAddrCounter [$clog2(matSize*2 - 1) - 1: 0];
 
-    assign BRAMaddrFU = regFileAddrCounter;
-
-    assign RFWE = ~regFileAddrCounter[$clog2(NoOfElem - 1)] && FUvalid; 
+    assign RFWE = ~regFileAddrCounter[$clog2(NoOfElem)] && FUvalid; 
 
     
 
@@ -116,7 +118,6 @@ module system #(
         
         // other combinational logic
         else begin
-
             if (memWRTDone) begin
                 if (FUvalid) begin 
                     regFileAddrCounter <= regFileAddrCounter + 1; // increment the address by one

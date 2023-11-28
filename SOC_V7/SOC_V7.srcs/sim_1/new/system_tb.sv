@@ -9,7 +9,7 @@ module system_tb(
     localparam NoOfElem = 16;
     localparam wordSize = 32;
     localparam words = 16;
-    localparam memDepth = 10;
+    localparam memDepth = 12;
 
     logic clk = 0;
     logic RESET;
@@ -22,6 +22,7 @@ module system_tb(
     logic [matSize * 32 - 1: 0] FUdataOut; // output from the fetch unit
 
     logic memWRTDone;
+    logic [$clog2(NoOfElem) + 1 : 0] regCheck;
 
     initial forever #(CLK_PERIOD/2) clk <= ~clk;
 
