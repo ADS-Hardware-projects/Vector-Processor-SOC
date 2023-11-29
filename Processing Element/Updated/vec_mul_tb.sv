@@ -1,8 +1,9 @@
 module vec_mul_tb;
   timeunit 1ns/1ps;
 
-  localparam C=4, W_X=8, W_K=8,
+  localparam C=16, W_X=32, W_K=32,
              W_Y = W_X + W_K + $clog2(C),
+             W_M = W_X + W_K,
              LATENCY = $clog2(C) + 1,
              NUM_DATA = 10, CLK_PERIOD = 10;
 
@@ -32,9 +33,15 @@ module vec_mul_tb;
 //      x    [c] = $urandom_range(0, 2**W_X-1);
 //      k    [c] = $urandom_range(0, 2**W_K-1);
 //      end
-      x = 32'h03020107;
-      k = 32'h01030306;
+//      x = 32'h03020108;
+//      k = 32'h01030304;
       
+      
+       x = 512'h000000000000000000000000000f0123456789abcdef0123456789abcdef0123;
+       k = 512'h000000000000000000000000000bcdef0123456789abcdef0123456789abcdef;
+           
+           
+           
       #LATENCY
 //      enable =0;
 
