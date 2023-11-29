@@ -17,8 +17,9 @@ module vec_mul #(
   // Padding to a power of 2 
   localparam C_PAD = 2**$clog2(C);
 //logic signed [W_Y-1:0] adder_tree [DEPTH+1][C_PAD]; //  adder_tree
- // logic signed [C_PAD-1:0][W_Y-1:0]multiplied_elements ;
+ logic signed [C_PAD-1:0][W_Y-1:0]multiplied_elements ;
   logic signed [W_Y-1:0] total;
+//  logic signed [W_Y-1:0] temp_total;
   
   logic signed   [W_Y-1:0] y;
 
@@ -42,19 +43,22 @@ always_ff @(posedge clk)begin
     end
 end  
 
+//always_ff @(posedge clk)begin
+//    temp_total <= total;
+//end
 
 
-//  for (c=0; c<C_PAD; c=c+1)
-//      always_ff @(posedge clk)  // register after each mul
-//         //if (enable)adder_tree[0][c] <= $signed(k_padded[c]) * $signed(x_padded[c]);
-//         if (enable) multiplied_elements [c][W_Y-1:0] <= $signed(k_padded[c]) * $signed(x_padded[c]);
+  for (c=0; c<C_PAD; c=c+1)
+      always_ff @(posedge clk)  // register after each mul
+         //if (enable)adder_tree[0][c] <= $signed(k_padded[c]) * $signed(x_padded[c]);
+         if (enable) multiplied_elements [c][W_Y-1:0] <= $signed(k_padded[c]) * $signed(x_padded[c]);
   
  always_comb begin
  total =0;
  for (int n=0; n<C_PAD; n=n+1) begin
     
-    //if (enable) total = total + multiplied_elements [n][W_Y-1:0];
-    if (enable) total = total + $signed(k_padded[n]) * $signed(x_padded[n]);
+     if (enable) total = total + multiplied_elements [n][W_Y-1:0];
+    //if (enable) total = total + $signed(k_padded[n]) * $signed(x_padded[n]);
     
     end
 end
