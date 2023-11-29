@@ -9,7 +9,6 @@ module PE #(
     input  logic signed [C-1:0][W_X-1:0] x, 
     output logic signed        [W_X-1:0] y_out,
     output logic v_valid 
-
   );
 
   // Padding to a power of 2 

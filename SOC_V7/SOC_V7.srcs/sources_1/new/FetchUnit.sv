@@ -3,10 +3,10 @@ module FetchUnit #(
     parameter memDepth = 12,
 
 
-    localparam padding_size = memDepth - $clog2(matSize*2-1) - $clog2(matSize-1)
+    localparam padding_size = memDepth - $clog2(matSize*2) - $clog2(matSize)
 )(
     input [31:0] dataIn, // this is the data input from the BLOCK RAM
-    input [$clog2(matSize*2 - 1) - 1: 0] readAddr, // address of the read port (FROM logic part)
+    input [$clog2(matSize*2) - 1: 0] readAddr, // address of the read port (FROM logic part)
     input clk, RESET,
 
     output reg [matSize * 32 - 1: 0] dataOut, // output from the fetch unit
@@ -14,13 +14,13 @@ module FetchUnit #(
     output valid // this will be high when the data is valid for read
 );
 
-    reg [$clog2(matSize - 1): 0] addrCounter; // this will count the sub address
+    reg [$clog2(matSize): 0] addrCounter; // this will count the sub address
     reg delay;
 
 
     ////////////////////// HARD WIRING PART //////////////////////////
-    assign valid = addrCounter[$clog2(matSize - 1)]; // valid = MSB of the address counter
-    assign addrIn = {{padding_size{1'b0}} , readAddr, addrCounter[$clog2(matSize - 1) - 1 : 0]}; // this is the address provided for the block ram
+    assign valid = addrCounter[$clog2(matSize)]; // valid = MSB of the address counter
+    assign addrIn = {{padding_size{1'b0}} , readAddr, addrCounter[$clog2(matSize) - 1 : 0]}; // this is the address provided for the block ram
 
 
     
