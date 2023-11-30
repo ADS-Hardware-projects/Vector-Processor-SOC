@@ -13,13 +13,16 @@ module VCU#(
 
     input [wordSize - 1:0] BRAMdataIn, // this is the data input from the BLOCK RAM
     output [wordSize-1: 0] BRAMDataOut, // output data width is the block ram data width
-    output [memDepth-1:0]BRAMaddr,
+    output [memDepth-1+2:0]BRAMaddrByte,
 
     output [3:0]BRAMWREN,
     output BRAMENMEM,
     output done
 
 );
+    logic [memDepth-1:0]BRAMaddr;
+    assign BRAMaddrByte = {BRAMaddr , 2'b00};
+    
     logic BRAMWREN1bit;
     logic [memDepth - 1: 0] BRAMaddrIn; // address to the BLOCK ram
     logic [memDepth-1 : 0] BRAMAddrOut; // this is the address the BLOCK RAM sees

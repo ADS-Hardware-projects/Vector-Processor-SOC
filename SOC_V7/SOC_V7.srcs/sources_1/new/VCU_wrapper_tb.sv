@@ -22,7 +22,6 @@ module VCU_wrapper_tb(
     logic [wordSize-1:0] MemDataIn; // data bus for output
 
     logic [wordSize-1: 0] BRAMDataOut; // output data width is the block ram data width
-    logic [memDepth-1 : 0] BRAMAddrOut; // this is the address the BLOCK RAM sees
     logic BRAMWREN;
     
 

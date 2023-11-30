@@ -19,14 +19,14 @@ module system #(
     output [3:0]BRAMWREN
 );
 
-    logic [memDepth-1:0] dummyAddr;
+    logic [memDepth-1+2:0] dummyAddr;
     // Creating the memmory
     logic [wordSize - 1 :0] MemDataOut; // data bus for output
 
 
     logic [memDepth-1:0] AddrSelected;
 
-    assign AddrSelected = MemWE ? MemInAddress : dummyAddr; 
+    assign AddrSelected = MemWE ? MemInAddress : dummyAddr[memDepth-1+2:2]; 
 
     DataMemory #(memDepth) memmory(
         .clk(clk),
@@ -51,7 +51,7 @@ module system #(
         .BRAMDataOut(BRAMDataOut),
 
         .BRAMWREN(BRAMWREN),
-        .BRAMaddr(dummyAddr),
+        .BRAMaddrByte(dummyAddr),
 
         .BRAMENMEM(BRAMENMEM),
         .done(done)
