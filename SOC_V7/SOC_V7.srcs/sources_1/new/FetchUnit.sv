@@ -3,24 +3,25 @@ module FetchUnit #(
     parameter memDepth = 12,
 
 
-    localparam padding_size = memDepth - $clog2(matSize*2-1) - $clog2(matSize-1)
+    localparam padding_size = memDepth - $clog2(matSize*2) - $clog2(matSize)
 )(
     input [31:0] dataIn, // this is the data input from the BLOCK RAM
-    input [$clog2(matSize*2 - 1) - 1: 0] readAddr, // address of the read port (FROM logic part)
+    input [$clog2(matSize*2) - 1: 0] readAddr, // address of the read port (FROM logic part)
     input clk, RESET,
 
     output reg [matSize * 32 - 1: 0] dataOut, // output from the fetch unit
     output [memDepth - 1: 0] addrIn, // address to the BLOCK ram
-    output valid // this will be high when the data is valid for read
+    output valid, // this will be high when the data is valid for read
+    output reg MEMenable
 );
 
-    reg [$clog2(matSize - 1): 0] addrCounter; // this will count the sub address
+    reg [$clog2(matSize): 0] addrCounter; // this will count the sub address
     reg delay;
 
 
     ////////////////////// HARD WIRING PART //////////////////////////
-    assign valid = addrCounter[$clog2(matSize - 1)]; // valid = MSB of the address counter
-    assign addrIn = {{padding_size{1'b0}} , readAddr, addrCounter[$clog2(matSize - 1) - 1 : 0]}; // this is the address provided for the block ram
+    assign valid = addrCounter[$clog2(matSize)]; // valid = MSB of the address counter
+    assign addrIn = {{padding_size{1'b0}} , readAddr, addrCounter[$clog2(matSize) - 1 : 0]}; // this is the address provided for the block ram
 
 
     
@@ -30,6 +31,7 @@ module FetchUnit #(
             addrCounter <= '0;
             dataOut <= '0;
             delay <=0 ;
+            MEMenable <= 1; // enable the memmory so it can read
         end // end of if(!RESET) block
 
         /////////////////////// LOGIC OF FETCH UNIT ////////////////////////////////
@@ -40,7 +42,9 @@ module FetchUnit #(
                     addrCounter <= addrCounter + 1; // incrementing the counter
                 end
                 delay <= ~delay;
-            end // end of if not valid
+            end else begin
+                MEMenable <= 0; // disable the memory
+            end // end of if not valid 
         end // end of the logic of fetch unit
     end // end of the reset condition
 

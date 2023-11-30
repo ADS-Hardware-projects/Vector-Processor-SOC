@@ -5,7 +5,7 @@ module regFile #(
 )
 (
     input [words * wordSize - 1 : 0] dataIn,
-    input [$clog2(NoOfElem - 1) - 1 : 0] addr,
+    input [$clog2(NoOfElem) - 1 : 0] addr,
     input RESET, WE, clk,
     output reg [words * wordSize - 1: 0] dataOut [0 : NoOfElem - 1] // this is the register file
 );

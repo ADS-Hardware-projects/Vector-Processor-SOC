@@ -14,15 +14,20 @@ module system_tb(
     logic clk = 0;
     logic RESET;
 
+    logic memWRTDone;
+
     logic MemWE; // contol logic
     logic [memDepth - 1:0] MemInAddress; // address bus for input
     logic [31:0] MemDataIn; // data bus for output
 
-    logic [words * wordSize - 1: 0] RFDataOut [0 : NoOfElem - 1]; // output from the register file
-    logic [matSize * 32 - 1: 0] FUdataOut; // output from the fetch unit
+    // logic [words * wordSize - 1: 0] RFDataOut [0 : NoOfElem - 1]; // output from the register file
 
-    logic memWRTDone;
+    logic [wordSize-1: 0] BRAMDataOut; // output data width is the block ram data width
+    logic [memDepth-1 : 0] BRAMAddrOut; // this is the address the BLOCK RAM sees
+    logic BRAMWREN;
+
     logic [$clog2(NoOfElem) + 1 : 0] regCheck;
+    
 
     initial forever #(CLK_PERIOD/2) clk <= ~clk;
 
