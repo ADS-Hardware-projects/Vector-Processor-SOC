@@ -42,7 +42,8 @@ module VCU#(
         .dataOut(FUdataOut),
         .addrIn(BRAMaddrIn),
         .valid(FUvalid),
-        .MEMenable(MEMenableFU)
+        .MEMenable(MEMenableFU),
+        .WriterBusy(~WRdone)
     );
 
 
@@ -146,6 +147,7 @@ module VCU#(
             ProcessBegin <= 1;
             FURESET <= 0;
             startedWriting <= 0;
+            PEEnable <= 0;
         end 
         
         // other combinational logic

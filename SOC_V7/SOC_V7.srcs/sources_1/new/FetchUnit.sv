@@ -7,7 +7,7 @@ module FetchUnit #(
 )(
     input [31:0] dataIn, // this is the data input from the BLOCK RAM
     input [$clog2(matSize*2) - 1: 0] readAddr, // address of the read port (FROM logic part)
-    input clk, RESET,
+    input clk, RESET, WriterBusy,
 
     output reg [matSize * 32 - 1: 0] dataOut, // output from the fetch unit
     output [memDepth - 1: 0] addrIn, // address to the BLOCK ram
@@ -27,7 +27,7 @@ module FetchUnit #(
     
     always_ff @(posedge clk or negedge RESET) begin
         ////////////////////// RESET Condition of the module //////////////////////////
-        if(!RESET) begin
+        if(!RESET || WriterBusy) begin
             addrCounter <= '0;
             dataOut <= '0;
             delay <=0 ;
