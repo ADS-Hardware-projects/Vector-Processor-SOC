@@ -11,6 +11,7 @@ module mat_pre_proc #(parameter NUM_OF_WORDS=4)(
     integer word_count;
     integer value_count;
     integer row_count;
+    integer col_count;
 
     logic [15:0] NUM_OF_ROWS, NUM_OF_COLS;
     logic [31:0] dimensions;
@@ -27,8 +28,9 @@ module mat_pre_proc #(parameter NUM_OF_WORDS=4)(
         if (!rstn) 
         begin
 
-            value_count <= 0;
+          
             row_count <= 0;
+            value_count <= 0;
             state <= IDLE;
             row <= 0;
             data_valid_out <= 0;
@@ -46,7 +48,7 @@ module mat_pre_proc #(parameter NUM_OF_WORDS=4)(
                 if (data_valid)
                 begin
                     
-                    if (row_count==0 && col_count==0)
+                    if (row_count==0 && value_count==0)
                     begin
                         dimensions <= s_data;
 
