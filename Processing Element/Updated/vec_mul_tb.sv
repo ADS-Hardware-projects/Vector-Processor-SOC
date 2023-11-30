@@ -9,7 +9,7 @@ module vec_mul_tb;
 
   
   
-  logic clk=0 , enable =1 ;
+  logic clk=0 , enable =0 ;
   logic signed   [C-1:0][W_K -1:0] k;
   logic signed   [C-1:0][W_X -1:0] x; 
   logic signed          [W_X -1:0] y_out, y_expected;
@@ -43,7 +43,7 @@ module vec_mul_tb;
            
            
       #LATENCY
-//      enable =0;
+    enable =1;
 
       // Wait for output
       repeat (LATENCY) @(posedge clk); #1
@@ -52,9 +52,9 @@ module vec_mul_tb;
         foreach (x[c])
           y_expected = $signed(y_expected) + $signed(x[c]) * $signed(k[c]);
       
-      @(posedge clk) #1 enable = 0;
+      //@(posedge clk) #1 enable = 0;
       #LATENCY
-      @(posedge clk) #1 enable = 1;
+      //@(posedge clk) #1 enable = 1;
       // Check
       assert (y_out == y_expected)
         $display("Output matched: %d", y_out);

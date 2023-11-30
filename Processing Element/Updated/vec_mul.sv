@@ -21,6 +21,7 @@ module vec_mul #(
 
  logic signed [W_Y-1:0] total;  // accumilating data without truncation
  logic [$clog2(C)-1:0] PC =0;  // counter to count clock cycles 
+ logic signed [W_X-1:0] y;
  
 
 //Padded input vectors
@@ -40,6 +41,7 @@ always @(posedge clk)begin
     
      if (PC == $clog2(C)+1) begin
      v_valid <=1;
+     y_out <= y;
      
      end
      else  v_valid <= 0;  
@@ -65,7 +67,7 @@ always_ff @(posedge clk)begin
 
 end
 
-    assign y_out = total[W_X-1:0];  // Truncated output
+    assign y = total[W_X-1:0];  // Truncated output
    
     
 endmodule
