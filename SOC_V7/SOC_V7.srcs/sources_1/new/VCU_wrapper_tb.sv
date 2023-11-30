@@ -39,7 +39,7 @@ module VCU_wrapper_tb(
         @(posedge clk) #1 MemWE = 1;
 
         //////////////////////////  Fill A Matrix Data ///////////////////////////////////
-        @(posedge clk) #1 MemInAddress  = 9'h0; MemDataIn = 32'h58; memWRTDone = 1;
+        @(posedge clk) #1 MemInAddress  = 9'h0; MemDataIn = 32'h58; 
         @(posedge clk) #1 MemInAddress  = 9'h1; MemDataIn = 32'h5c;
         @(posedge clk) #1 MemInAddress  = 9'h2; MemDataIn = 32'h29;
         @(posedge clk) #1 MemInAddress  = 9'h3; MemDataIn = 32'h4c;
@@ -552,7 +552,7 @@ module VCU_wrapper_tb(
         @(posedge clk) #1 MemInAddress  = 9'h1fc; MemDataIn = 32'h43;
         @(posedge clk) #1 MemInAddress  = 9'h1fd; MemDataIn = 32'h10;
         @(posedge clk) #1 MemInAddress  = 9'h1fe; MemDataIn = 32'h51;
-        @(posedge clk) #1 MemInAddress  = 9'h1ff; MemDataIn = 32'h2b;
+        @(posedge clk) #1 MemInAddress  = 9'h1ff; MemDataIn = 32'h2b; memWRTDone = 1;
 
 
 

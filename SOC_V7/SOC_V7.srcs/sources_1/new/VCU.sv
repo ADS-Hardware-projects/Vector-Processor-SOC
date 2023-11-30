@@ -12,23 +12,27 @@ module VCU#(
     input memWRTDone,
 
     input [wordSize - 1:0] BRAMdataIn, // this is the data input from the BLOCK RAM
-    output [memDepth - 1: 0] BRAMaddrIn, // address to the BLOCK ram
-
     output [wordSize-1: 0] BRAMDataOut, // output data width is the block ram data width
-    output [memDepth-1 : 0] BRAMAddrOut, // this is the address the BLOCK RAM sees
-    output BRAMWREN
+    output [memDepth-1:0]BRAMaddr,
+
+    output [3:0]BRAMWREN,
+    output BRAMENMEM,
+    output done
 
 );
+    logic BRAMWREN1bit;
+    logic [memDepth - 1: 0] BRAMaddrIn; // address to the BLOCK ram
+    logic [memDepth-1 : 0] BRAMAddrOut; // this is the address the BLOCK RAM sees
 
     logic [$clog2(NoOfElem) + 1 : 0] regCheck;
 
     // LOGIC WIRES FOR THE FETCH UNIT
-    // logic [31:0] BRAMdataIn; // this is the data input from the BLOCK RAM
+
     logic [$clog2(matSize*2) - 1: 0] BRAMaddrFU; // address of the read port (FROM logic part)
     logic [matSize * 32 - 1: 0] FUdataOut; // output from the fetch unit
-    // logic [$clog2(matSize*matSize*2) - 1: 0] BRAMaddrIn; // address to the BLOCK ram
     logic FUvalid; // this will be high when the data is valid for read
     logic FURESET;
+    logic MEMenableFU;
 
     FetchUnit #(matSize, memDepth) fetch_unit (
         .dataIn(BRAMdataIn),
@@ -37,7 +41,8 @@ module VCU#(
         .RESET(FURESET),
         .dataOut(FUdataOut),
         .addrIn(BRAMaddrIn),
-        .valid(FUvalid)
+        .valid(FUvalid),
+        .MEMenable(MEMenableFU)
     );
 
 
@@ -94,6 +99,9 @@ module VCU#(
 
     // Conneting the memmory writer
     logic MEMWRRESET;
+    logic WRdone;
+    logic addrDone;
+    reg startedWriting;
 
     memWriter #(NoOfElem, wordSize, memDepth) memoryWriteBuff (
         .clk(clk),
@@ -102,11 +110,20 @@ module VCU#(
         .writeAddr(regCheck[$clog2(NoOfElem) - 1: 0]),
         .dataOut(BRAMDataOut),
         .writeAddrBRAM(BRAMAddrOut),
-        .writeEN(BRAMWREN)
+        .writeEN(BRAMWREN1bit),
+        .WRdone(WRdone)
     );
 
     
     ////////////////////////// COMBINATIONAL LOGIC PART ////////////////////////////////
+    assign BRAMaddr = BRAMWREN1bit ? BRAMAddrOut : BRAMaddrIn;
+
+    assign BRAMENMEM = BRAMWREN1bit || MEMenableFU;
+
+    assign BRAMWREN = BRAMWREN1bit ? 4'b1111 : 4'b0000;
+    assign addrDone = (&regCheck[3 : 0]) ? 1 : 0;
+    assign done = addrDone && WRdone && startedWriting;
+
     assign regCheck = regAddrCounter - 2;
 
     assign RFDataIn = FUdataOut;
@@ -128,6 +145,7 @@ module VCU#(
             regColumn <= 0;
             ProcessBegin <= 1;
             FURESET <= 0;
+            startedWriting <= 0;
         end 
         
         // other combinational logic
@@ -153,6 +171,7 @@ module VCU#(
 
                             if (PEValid) begin 
                                 MEMWRRESET <= 0;
+                                startedWriting <= 1;
                             end else begin
                                 MEMWRRESET <= 1;
                             end

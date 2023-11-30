@@ -16,27 +16,31 @@ module system #(
     input [wordSize-1:0] MemDataIn, // data bus for output
 
     output [wordSize-1: 0] BRAMDataOut, // output data width is the block ram data width
-    output [memDepth-1 : 0] BRAMAddrOut, // this is the address the BLOCK RAM sees
-    output BRAMWREN
+    output [3:0]BRAMWREN
 );
 
-
+    logic [memDepth-1:0] dummyAddr;
     // Creating the memmory
-    logic [memDepth - 1:0] MemOutAddress; // address bus for input
     logic [wordSize - 1 :0] MemDataOut; // data bus for output
+
+
+    logic [memDepth-1:0] AddrSelected;
+
+    assign AddrSelected = MemWE ? MemInAddress : dummyAddr; 
 
     DataMemory #(memDepth) memmory(
         .clk(clk),
         .RESET(RESET),
         .WE(MemWE),
-        .InAddress(MemInAddress),
+        .InAddress(AddrSelected),
         .DataIn(MemDataIn),
-        .OutAddress(MemOutAddress),
+        .OutAddress(AddrSelected),
         .DataOut(MemDataOut)
 
     );
 
-
+    logic BRAMENMEM;
+    logic done;
     // Making the instance of the SYSTEM
      VCU #(matSize, NoOfElem, wordSize, words, memDepth) processUnit(
         .clk(clk),
@@ -44,11 +48,13 @@ module system #(
         .memWRTDone(memWRTDone),
         
         .BRAMdataIn(MemDataOut),
-        .BRAMaddrIn(MemOutAddress),
-
         .BRAMDataOut(BRAMDataOut),
-        .BRAMAddrOut(BRAMAddrOut),
-        .BRAMWREN(BRAMWREN)
+
+        .BRAMWREN(BRAMWREN),
+        .BRAMaddr(dummyAddr),
+
+        .BRAMENMEM(BRAMENMEM),
+        .done(done)
      );
 
 

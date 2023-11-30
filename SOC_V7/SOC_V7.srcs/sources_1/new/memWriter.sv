@@ -13,7 +13,8 @@ module memWriter#(
 
     output reg [wordSize-1: 0] dataOut, // output data width is the block ram data width
     output reg [memDepth-1 : 0] writeAddrBRAM, // this is the address the BLOCK RAM sees
-    output reg writeEN
+    output reg writeEN,
+    output reg WRdone
 );
 
     reg [wordSize - 1: 0]dataBuffer[0 : NoOfElem - 1];
@@ -27,6 +28,7 @@ module memWriter#(
             subAddrCounter <= 0;
             dataBuffer <= dataIn;
             writeAddrBRAM <= NoOfElem * NoOfElem * 2 + writeAddr*NoOfElem - 1;
+            WRdone <= 0;
         end else begin
             if (~subAddrCounter[$clog2(NoOfElem)]) begin  // this is the halt condition
                 writeEN <= 1;
@@ -35,6 +37,7 @@ module memWriter#(
                 dataOut <= dataBuffer [subAddrCounter]; // always assign the output word
             end else begin
                 writeEN <= 0;
+                WRdone <= 1;
             end
         end
     end
