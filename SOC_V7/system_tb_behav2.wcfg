@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="system_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="system_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1263740000fs"></ZoomStartTime>
+      <ZoomEndTime time="1286300001fs"></ZoomEndTime>
+      <Cursor1Time time="1265390000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="268"></NameColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/system_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/MemWE" type="logic">
+      <obj_property name="ElementShortName">MemWE</obj_property>
+      <obj_property name="ObjectShortName">MemWE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/memWRTDone" type="logic">
+      <obj_property name="ElementShortName">memWRTDone</obj_property>
+      <obj_property name="ObjectShortName">memWRTDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/MemInAddress" type="array">
+      <obj_property name="ElementShortName">MemInAddress[11:0]</obj_property>
+      <obj_property name="ObjectShortName">MemInAddress[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/MemDataIn" type="array">
+      <obj_property name="ElementShortName">MemDataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemDataIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/BRAMDataOut" type="array">
+      <obj_property name="ElementShortName">BRAMDataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMDataOut[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/BRAMAddrOut" type="array">
+      <obj_property name="ElementShortName">BRAMAddrOut[11:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMAddrOut[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/BRAMWREN" type="logic">
+      <obj_property name="ElementShortName">BRAMWREN</obj_property>
+      <obj_property name="ObjectShortName">BRAMWREN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/regCheck" type="array">
+      <obj_property name="ElementShortName">regCheck[5:0]</obj_property>
+      <obj_property name="ObjectShortName">regCheck[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/memoryWriteBuff/dataIn" type="array">
+      <obj_property name="ElementShortName">dataIn[0:15][31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[0:15][31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/memoryWriteBuff/writeAddr" type="array">
+      <obj_property name="ElementShortName">writeAddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">writeAddr[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/memoryWriteBuff/dataOut" type="array">
+      <obj_property name="ElementShortName">dataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/memoryWriteBuff/writeAddrBRAM" type="array">
+      <obj_property name="ElementShortName">writeAddrBRAM[11:0]</obj_property>
+      <obj_property name="ObjectShortName">writeAddrBRAM[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/memoryWriteBuff/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/\gen_proc_elems[0].ProcElem_inst /v_valid" type="logic">
+      <obj_property name="ElementShortName">v_valid</obj_property>
+      <obj_property name="ObjectShortName">v_valid</obj_property>
+   </wvobject>
+</wave_config>

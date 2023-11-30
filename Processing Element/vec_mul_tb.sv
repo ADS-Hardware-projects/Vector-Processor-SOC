@@ -33,9 +33,9 @@ module vec_mul_tb;
 //      k    [c] = $urandom_range(0, 2**W_K-1);
 //      end
       x = 32'h03020107;
-      k = 32'h01030309;
+      k = 32'h01030306;
       
-//      #LATENCY
+      #LATENCY
 //      enable =0;
 
       // Wait for output
@@ -45,7 +45,9 @@ module vec_mul_tb;
         foreach (x[c])
           y_expected = $signed(y_expected) + $signed(x[c]) * $signed(k[c]);
       
-
+      @(posedge clk) #1 enable = 0;
+      #LATENCY
+      @(posedge clk) #1 enable = 1;
       // Check
       assert (y_out == y_expected)
         $display("Output matched: %d", y_out);

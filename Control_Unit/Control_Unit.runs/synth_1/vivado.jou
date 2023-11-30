@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Oct 25 13:57:49 2023
-# Process ID: 20984
+# Start of session at: Sun Oct 29 08:20:51 2023
+# Process ID: 36240
 # Current directory: E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.runs/synth_1
-# Command line: vivado.exe -log SystemV3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SystemV3.tcl
-# Log file: E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.runs/synth_1/SystemV3.vds
+# Command line: vivado.exe -log SystemV6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SystemV6.tcl
+# Log file: E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.runs/synth_1/SystemV6.vds
 # Journal file: E:/Projects/Vivado/Vector-Processor-SOC/Control_Unit/Control_Unit.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source SystemV3.tcl -notrace
+source SystemV6.tcl -notrace
