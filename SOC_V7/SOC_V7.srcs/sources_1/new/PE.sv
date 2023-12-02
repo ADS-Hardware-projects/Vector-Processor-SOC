@@ -26,16 +26,17 @@ module PE #(
   
 
 
-always @(posedge clk)begin
+always @(posedge clk or negedge enable)begin
     
     if (enable == 0) begin 
-    PC <= 0;
+      PC <= 0;
+      v_valid <= 0;
     end
     
     else begin 
     PC <= PC + 1;
     
-     if (PC == 16 ) begin
+     if (PC == C ) begin
      v_valid <=1;
      y_out <= y;
      
@@ -53,9 +54,9 @@ logic signed  [W_M-1:0] multiplied_data;
 assign multiplied_data = $signed(x_padded[PC])*$signed(k_padded[PC]);
 
 
-always_ff @(posedge clk)begin
+always_ff @(posedge clk or negedge enable)begin
   if (enable == 0) begin 
-  total <=0 ;
+    total <=0 ;
   end
   else if (v_valid)  total <=total ;
  
