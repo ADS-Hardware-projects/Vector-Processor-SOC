@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="VCU_wrapper_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="VCU_wrapper_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2317184000fs"></ZoomStartTime>
+      <ZoomEndTime time="2339944001fs"></ZoomEndTime>
+      <Cursor1Time time="2327184000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="268"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/VCU_wrapper_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="group119" type="group">
+      <obj_property name="label">MainSys</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/VCU_wrapper_tb/RESETmem" type="logic">
+         <obj_property name="ElementShortName">RESETmem</obj_property>
+         <obj_property name="ObjectShortName">RESETmem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/RESETvcu" type="logic">
+         <obj_property name="ElementShortName">RESETvcu</obj_property>
+         <obj_property name="ObjectShortName">RESETvcu</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/memWRTDone" type="logic">
+         <obj_property name="ElementShortName">memWRTDone</obj_property>
+         <obj_property name="ObjectShortName">memWRTDone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/WEmem" type="logic">
+         <obj_property name="ElementShortName">WEmem</obj_property>
+         <obj_property name="ObjectShortName">WEmem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/MemInAddr" type="array">
+         <obj_property name="ElementShortName">MemInAddr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">MemInAddr[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/MemInData" type="array">
+         <obj_property name="ElementShortName">MemInData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MemInData[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group128" type="group">
+      <obj_property name="label">Memmory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/InAddress" type="array">
+         <obj_property name="ElementShortName">InAddress[11:0]</obj_property>
+         <obj_property name="ObjectShortName">InAddress[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/DataIn" type="array">
+         <obj_property name="ElementShortName">DataIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DataIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/OutAddress" type="array">
+         <obj_property name="ElementShortName">OutAddress[11:0]</obj_property>
+         <obj_property name="ObjectShortName">OutAddress[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/DataOut" type="array">
+         <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/WE" type="logic">
+         <obj_property name="ElementShortName">WE</obj_property>
+         <obj_property name="ObjectShortName">WE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/RESET" type="logic">
+         <obj_property name="ElementShortName">RESET</obj_property>
+         <obj_property name="ObjectShortName">RESET</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group137" type="group">
+      <obj_property name="label">VCU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/RESET" type="logic">
+         <obj_property name="ElementShortName">RESET</obj_property>
+         <obj_property name="ObjectShortName">RESET</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/memWRTDone" type="logic">
+         <obj_property name="ElementShortName">memWRTDone</obj_property>
+         <obj_property name="ObjectShortName">memWRTDone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMdataIn" type="array">
+         <obj_property name="ElementShortName">BRAMdataIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BRAMdataIn[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMDataOut" type="array">
+         <obj_property name="ElementShortName">BRAMDataOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BRAMDataOut[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMaddrByte" type="array">
+         <obj_property name="ElementShortName">BRAMaddrByte[13:0]</obj_property>
+         <obj_property name="ObjectShortName">BRAMaddrByte[13:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMWREN" type="array">
+         <obj_property name="ElementShortName">BRAMWREN[3:0]</obj_property>
+         <obj_property name="ObjectShortName">BRAMWREN[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMENMEM" type="logic">
+         <obj_property name="ElementShortName">BRAMENMEM</obj_property>
+         <obj_property name="ObjectShortName">BRAMENMEM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/column" type="array">
+         <obj_property name="ElementShortName">column[511:0]</obj_property>
+         <obj_property name="ObjectShortName">column[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group147" type="group">
+      <obj_property name="label">Fetch</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/dataIn" type="array">
+         <obj_property name="ElementShortName">dataIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dataIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/readAddr" type="array">
+         <obj_property name="ElementShortName">readAddr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">readAddr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/RESET" type="logic">
+         <obj_property name="ElementShortName">RESET</obj_property>
+         <obj_property name="ObjectShortName">RESET</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/WriterBusy" type="logic">
+         <obj_property name="ElementShortName">WriterBusy</obj_property>
+         <obj_property name="ObjectShortName">WriterBusy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/dataOut" type="array">
+         <obj_property name="ElementShortName">dataOut[511:0]</obj_property>
+         <obj_property name="ObjectShortName">dataOut[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/addrIn" type="array">
+         <obj_property name="ElementShortName">addrIn[11:0]</obj_property>
+         <obj_property name="ObjectShortName">addrIn[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/MEMenable" type="logic">
+         <obj_property name="ElementShortName">MEMenable</obj_property>
+         <obj_property name="ObjectShortName">MEMenable</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

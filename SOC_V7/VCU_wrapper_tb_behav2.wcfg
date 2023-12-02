@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="VCU_wrapper_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="VCU_wrapper_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1029000000fs"></ZoomStartTime>
+      <ZoomEndTime time="1142300001fs"></ZoomEndTime>
+      <Cursor1Time time="1077300000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="268"></NameColumnWidth>
+      <ValueColumnWidth column_width="135"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/VCU_wrapper_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="group238" type="group">
+      <obj_property name="label">sys</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/VCU_wrapper_tb/MemRESET" type="logic">
+         <obj_property name="ElementShortName">MemRESET</obj_property>
+         <obj_property name="ObjectShortName">MemRESET</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/VCURESET" type="logic">
+         <obj_property name="ElementShortName">VCURESET</obj_property>
+         <obj_property name="ObjectShortName">VCURESET</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/MemWE" type="logic">
+         <obj_property name="ElementShortName">MemWE</obj_property>
+         <obj_property name="ObjectShortName">MemWE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/memWRTDone" type="logic">
+         <obj_property name="ElementShortName">memWRTDone</obj_property>
+         <obj_property name="ObjectShortName">memWRTDone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/MemInAddress" type="array">
+         <obj_property name="ElementShortName">MemInAddress[11:0]</obj_property>
+         <obj_property name="ObjectShortName">MemInAddress[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/MemDataIn" type="array">
+         <obj_property name="ElementShortName">MemDataIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MemDataIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/BRAMDataOut" type="array">
+         <obj_property name="ElementShortName">BRAMDataOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BRAMDataOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/BRAMWREN" type="logic">
+         <obj_property name="ElementShortName">BRAMWREN</obj_property>
+         <obj_property name="ObjectShortName">BRAMWREN</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/memWRTDone" type="logic">
+      <obj_property name="ElementShortName">memWRTDone</obj_property>
+      <obj_property name="ObjectShortName">memWRTDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMdataIn" type="array">
+      <obj_property name="ElementShortName">BRAMdataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMdataIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMDataOut" type="array">
+      <obj_property name="ElementShortName">BRAMDataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMDataOut[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMaddrByte" type="array">
+      <obj_property name="ElementShortName">BRAMaddrByte[13:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMaddrByte[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMWREN" type="array">
+      <obj_property name="ElementShortName">BRAMWREN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMWREN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMENMEM" type="logic">
+      <obj_property name="ElementShortName">BRAMENMEM</obj_property>
+      <obj_property name="ObjectShortName">BRAMENMEM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+</wave_config>
