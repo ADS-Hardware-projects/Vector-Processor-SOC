@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Nov 28 12:28:55 2023
+//Date        : Sat Dec  2 20:49:12 2023
 //Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 //Command     : generate_target SOC_BRAM_wrapper.bd
 //Design      : SOC_BRAM_wrapper
@@ -31,8 +31,10 @@ module SOC_BRAM_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    START_CAL,
-    clk);
+    clk,
+    done,
+    en,
+    rst);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -54,8 +56,10 @@ module SOC_BRAM_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output [0:0]START_CAL;
   input clk;
+  output done;
+  output [0:0]en;
+  output [0:0]rst;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -78,8 +82,10 @@ module SOC_BRAM_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [0:0]START_CAL;
   wire clk;
+  wire done;
+  wire [0:0]en;
+  wire [0:0]rst;
 
   SOC_BRAM SOC_BRAM_i
        (.DDR_addr(DDR_addr),
@@ -103,6 +109,8 @@ module SOC_BRAM_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .START_CAL(START_CAL),
-        .clk(clk));
+        .clk(clk),
+        .done(done),
+        .en(en),
+        .rst(rst));
 endmodule

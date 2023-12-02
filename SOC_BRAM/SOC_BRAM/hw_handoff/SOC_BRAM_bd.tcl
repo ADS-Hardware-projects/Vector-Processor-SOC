@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# bram_con
+# VCU_bd
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -167,9 +167,22 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
-  set START_CAL [ create_bd_port -dir O -from 0 -to 0 START_CAL ]
   set clk [ create_bd_port -dir I -type clk clk ]
+  set done [ create_bd_port -dir O done ]
+  set en [ create_bd_port -dir O -from 0 -to 0 en ]
+  set rst [ create_bd_port -dir O -from 0 -to 0 rst ]
 
+  # Create instance: VCU_bd_0, and set properties
+  set block_name VCU_bd
+  set block_cell_name VCU_bd_0
+  if { [catch {set VCU_bd_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $VCU_bd_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: axi_bram_ctrl_0, and set properties
   set axi_bram_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0 ]
   set_property -dict [ list \
@@ -183,10 +196,25 @@ proc create_root_design { parentCell } {
    CONFIG.C_GPIO_WIDTH {1} \
  ] $axi_gpio_0
 
+  # Create instance: axi_gpio_1, and set properties
+  set axi_gpio_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1 ]
+  set_property -dict [ list \
+   CONFIG.C_ALL_INPUTS {1} \
+   CONFIG.C_GPIO_WIDTH {1} \
+   CONFIG.C_INTERRUPT_PRESENT {0} \
+ ] $axi_gpio_1
+
+  # Create instance: axi_gpio_2, and set properties
+  set axi_gpio_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2 ]
+  set_property -dict [ list \
+   CONFIG.C_ALL_OUTPUTS {1} \
+   CONFIG.C_GPIO_WIDTH {1} \
+ ] $axi_gpio_2
+
   # Create instance: axi_smc, and set properties
   set axi_smc [ create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 axi_smc ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {4} \
    CONFIG.NUM_SI {1} \
  ] $axi_smc
 
@@ -196,17 +224,18 @@ proc create_root_design { parentCell } {
    CONFIG.Memory_Type {True_Dual_Port_RAM} \
  ] $blk_mem_gen_0
 
-  # Create instance: bram_con_0, and set properties
-  set block_name bram_con
-  set block_cell_name bram_con_0
-  if { [catch {set bram_con_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $bram_con_0 eq "" } {
-     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
+  # Create instance: ila_0, and set properties
+  set ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0 ]
+  set_property -dict [ list \
+   CONFIG.C_ENABLE_ILA_AXI_MON {false} \
+   CONFIG.C_MONITOR_TYPE {Native} \
+   CONFIG.C_NUM_OF_PROBES {8} \
+   CONFIG.C_PROBE4_WIDTH {4} \
+   CONFIG.C_PROBE5_WIDTH {32} \
+   CONFIG.C_PROBE6_WIDTH {32} \
+   CONFIG.C_PROBE7_WIDTH {32} \
+ ] $ila_0
+
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
   set_property -dict [ list \
@@ -602,26 +631,31 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net axi_bram_ctrl_0_BRAM_PORTA [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
   connect_bd_intf_net -intf_net axi_smc_M00_AXI [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] [get_bd_intf_pins axi_smc/M00_AXI]
   connect_bd_intf_net -intf_net axi_smc_M01_AXI [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins axi_smc/M01_AXI]
+  connect_bd_intf_net -intf_net axi_smc_M02_AXI [get_bd_intf_pins axi_gpio_1/S_AXI] [get_bd_intf_pins axi_smc/M02_AXI]
+  connect_bd_intf_net -intf_net axi_smc_M03_AXI [get_bd_intf_pins axi_gpio_2/S_AXI] [get_bd_intf_pins axi_smc/M03_AXI]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins axi_smc/S00_AXI] [get_bd_intf_pins processing_system7_0/M_AXI_GP0]
 
   # Create port connections
-  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_ports START_CAL] [get_bd_pins axi_gpio_0/gpio_io_o]
-  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins bram_con_0/din]
-  connect_bd_net -net bram_con_0_addr [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins bram_con_0/addr]
-  connect_bd_net -net bram_con_0_clk_b [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins bram_con_0/clk_b]
-  connect_bd_net -net bram_con_0_dout [get_bd_pins blk_mem_gen_0/dinb] [get_bd_pins bram_con_0/dout]
-  connect_bd_net -net bram_con_0_en [get_bd_pins blk_mem_gen_0/enb] [get_bd_pins bram_con_0/en]
-  connect_bd_net -net bram_con_0_we [get_bd_pins blk_mem_gen_0/web] [get_bd_pins bram_con_0/we]
-  connect_bd_net -net clk_0_1 [get_bd_ports clk] [get_bd_pins bram_con_0/clk]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_smc/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
+  connect_bd_net -net VCU_bd_0_BRAMDataOut [get_bd_pins VCU_bd_0/BRAMDataOut] [get_bd_pins blk_mem_gen_0/dinb] [get_bd_pins ila_0/probe5]
+  connect_bd_net -net VCU_bd_0_BRAMENMEM [get_bd_pins VCU_bd_0/BRAMENMEM] [get_bd_pins blk_mem_gen_0/enb] [get_bd_pins ila_0/probe3]
+  connect_bd_net -net VCU_bd_0_BRAMWREN [get_bd_pins VCU_bd_0/BRAMWREN] [get_bd_pins blk_mem_gen_0/web] [get_bd_pins ila_0/probe4]
+  connect_bd_net -net VCU_bd_0_BRAMaddrByte [get_bd_pins VCU_bd_0/BRAMaddrByte] [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins ila_0/probe6]
+  connect_bd_net -net VCU_bd_0_done [get_bd_ports done] [get_bd_pins VCU_bd_0/done] [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins ila_0/probe2]
+  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_ports en] [get_bd_pins VCU_bd_0/memWRTDone] [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins ila_0/probe1]
+  connect_bd_net -net axi_gpio_2_gpio_io_o [get_bd_ports rst] [get_bd_pins VCU_bd_0/RESET] [get_bd_pins axi_gpio_2/gpio_io_o] [get_bd_pins ila_0/probe0]
+  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins VCU_bd_0/BRAMdataIn] [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins ila_0/probe7]
+  connect_bd_net -net clkb_0_1 [get_bd_ports clk] [get_bd_pins VCU_bd_0/clk] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins ila_0/clk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_gpio_2/s_axi_aclk] [get_bd_pins axi_smc/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_smc/aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_gpio_2/s_axi_aresetn] [get_bd_pins axi_smc/aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
 
   # Create address segments
   create_bd_addr_seg -range 0x00002000 -offset 0x40000000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
   create_bd_addr_seg -range 0x00010000 -offset 0x41200000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] SEG_axi_gpio_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x41210000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_1/S_AXI/Reg] SEG_axi_gpio_1_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x41220000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_2/S_AXI/Reg] SEG_axi_gpio_2_Reg
 
 
   # Restore current instance

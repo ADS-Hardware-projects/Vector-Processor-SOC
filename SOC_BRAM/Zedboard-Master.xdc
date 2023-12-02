@@ -84,7 +84,7 @@ set_property PACKAGE_PIN Y9 [get_ports {clk}];  # "GCLK"
 # ----------------------------------------------------------------------------
 # JA Pmod - Bank 13 
 # ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN Y11  [get_ports {START_CAL}];  # "JA1"
+#set_property PACKAGE_PIN Y11  [get_ports {START_CAL}];  # "JA1"
 #set_property PACKAGE_PIN AA8  [get_ports {tx}];  # "JA10"
 # set_property PACKAGE_PIN AA11 [get_ports {tx}];  # "JA2"
 # set_property PACKAGE_PIN Y10  [get_ports {value[3]}];  # "JA3"
@@ -172,9 +172,9 @@ set_property PACKAGE_PIN Y11  [get_ports {START_CAL}];  # "JA1"
 # ----------------------------------------------------------------------------
 # User LEDs - Bank 33
 # ---------------------------------------------------------------------------- 
-#set_property PACKAGE_PIN T22 [get_ports {s_data_kx[0]}];  # "LD0"
-#set_property PACKAGE_PIN T21 [get_ports {s_data_kx[1]}];  # "LD1"
-#set_property PACKAGE_PIN U22 [get_ports {s_data_kx[2]}];  # "LD2"
+set_property PACKAGE_PIN T22 [get_ports {rst}];  # "LD0"
+set_property PACKAGE_PIN T21 [get_ports {en}];  # "LD1"
+set_property PACKAGE_PIN U22 [get_ports {done}];  # "LD2"
 #set_property PACKAGE_PIN U21 [get_ports {s_data_kx[3]}];  # "LD3"
 #set_property PACKAGE_PIN V22 [get_ports {s_data_kx[4]}];  # "LD4"
 #set_property PACKAGE_PIN W22 [get_ports {s_data_kx[5]}];  # "LD5"
