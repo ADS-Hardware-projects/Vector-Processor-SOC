@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2317184000fs"></ZoomStartTime>
-      <ZoomEndTime time="2339944001fs"></ZoomEndTime>
-      <Cursor1Time time="2327184000fs"></Cursor1Time>
+      <ZoomStartTime time="1389950000fs"></ZoomStartTime>
+      <ZoomEndTime time="3675950001fs"></ZoomEndTime>
+      <Cursor1Time time="2315950000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="268"></NameColumnWidth>
-      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
+   <WVObjectSize size="6" />
    <wvobject fp_name="/VCU_wrapper_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -66,10 +66,12 @@
       <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/OutAddress" type="array">
          <obj_property name="ElementShortName">OutAddress[11:0]</obj_property>
          <obj_property name="ObjectShortName">OutAddress[11:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/DataOut" type="array">
          <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
          <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/memmory/WE" type="logic">
          <obj_property name="ElementShortName">WE</obj_property>
@@ -92,6 +94,11 @@
          <obj_property name="ElementShortName">memWRTDone</obj_property>
          <obj_property name="ObjectShortName">memWRTDone</obj_property>
       </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMaddrByte" type="array">
+         <obj_property name="ElementShortName">BRAMaddrByte[13:0]</obj_property>
+         <obj_property name="ObjectShortName">BRAMaddrByte[13:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMdataIn" type="array">
          <obj_property name="ElementShortName">BRAMdataIn[31:0]</obj_property>
          <obj_property name="ObjectShortName">BRAMdataIn[31:0]</obj_property>
@@ -100,11 +107,6 @@
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMDataOut" type="array">
          <obj_property name="ElementShortName">BRAMDataOut[31:0]</obj_property>
          <obj_property name="ObjectShortName">BRAMDataOut[31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMaddrByte" type="array">
-         <obj_property name="ElementShortName">BRAMaddrByte[13:0]</obj_property>
-         <obj_property name="ObjectShortName">BRAMaddrByte[13:0]</obj_property>
          <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/BRAMWREN" type="array">
@@ -118,6 +120,8 @@
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/column" type="array">
          <obj_property name="ElementShortName">column[511:0]</obj_property>
          <obj_property name="ObjectShortName">column[511:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/done" type="logic">
          <obj_property name="ElementShortName">done</obj_property>
@@ -127,13 +131,20 @@
    <wvobject fp_name="group147" type="group">
       <obj_property name="label">Fetch</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/addrIn" type="array">
+         <obj_property name="ElementShortName">addrIn[11:0]</obj_property>
+         <obj_property name="ObjectShortName">addrIn[11:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/dataIn" type="array">
          <obj_property name="ElementShortName">dataIn[31:0]</obj_property>
          <obj_property name="ObjectShortName">dataIn[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/readAddr" type="array">
          <obj_property name="ElementShortName">readAddr[4:0]</obj_property>
          <obj_property name="ObjectShortName">readAddr[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/RESET" type="logic">
          <obj_property name="ElementShortName">RESET</obj_property>
@@ -146,10 +157,7 @@
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/dataOut" type="array">
          <obj_property name="ElementShortName">dataOut[511:0]</obj_property>
          <obj_property name="ObjectShortName">dataOut[511:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/addrIn" type="array">
-         <obj_property name="ElementShortName">addrIn[11:0]</obj_property>
-         <obj_property name="ObjectShortName">addrIn[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/fu/valid" type="logic">
          <obj_property name="ElementShortName">valid</obj_property>
@@ -159,5 +167,13 @@
          <obj_property name="ElementShortName">MEMenable</obj_property>
          <obj_property name="ObjectShortName">MEMenable</obj_property>
       </wvobject>
+      <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/\PEs[0].ProcElem_inst /v_valid" type="logic">
+         <obj_property name="ElementShortName">v_valid</obj_property>
+         <obj_property name="ObjectShortName">v_valid</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/VCU_wrapper_tb/sys/processUnit/\PEs[0].ProcElem_inst /v_valid" type="logic">
+      <obj_property name="ElementShortName">v_valid</obj_property>
+      <obj_property name="ObjectShortName">v_valid</obj_property>
    </wvobject>
 </wave_config>

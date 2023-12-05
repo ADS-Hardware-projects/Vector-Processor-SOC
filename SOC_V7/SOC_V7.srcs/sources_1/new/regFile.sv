@@ -4,10 +4,10 @@ module regFile #(
     parameter NoOfElem = 16
 )
 (
-    input [words * wordSize - 1 : 0] dataIn,
+    input [words-1 : 0][wordSize-1 : 0] dataIn,
     input [$clog2(NoOfElem) - 1 : 0] addr,
     input RESET, WE, clk,
-    output logic [words * wordSize - 1: 0] dataOut [0 : NoOfElem - 1] // this is the register file
+    output logic [words-1 : 0][wordSize-1 : 0] dataOut [0 : NoOfElem - 1] // this is the register file
 );
 
 always_ff @(posedge clk or negedge RESET) begin 
