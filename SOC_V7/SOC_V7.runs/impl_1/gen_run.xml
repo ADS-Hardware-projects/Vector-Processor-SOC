@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1701411357">
-  <File Type="PA-TCL" Name="VCU.tcl"/>
   <File Type="BITSTR-BMM" Name="VCU_bd.bmm"/>
-  <File Type="REPORTS-TCL" Name="VCU_reports.tcl"/>
+  <File Type="PA-TCL" Name="VCU.tcl"/>
   <File Type="OPT-DCP" Name="VCU_opt.dcp"/>
+  <File Type="REPORTS-TCL" Name="VCU_reports.tcl"/>
   <File Type="OPT-HWDEF" Name="VCU.hwdef"/>
-  <File Type="PWROPT-DCP" Name="VCU_pwropt.dcp"/>
   <File Type="BG-BGN" Name="VCU.bgn"/>
+  <File Type="PWROPT-DCP" Name="VCU_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="VCU_placed.dcp"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="VCU_incremental_reuse_pre_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="VCU_postplace_pwropt.dcp"/>

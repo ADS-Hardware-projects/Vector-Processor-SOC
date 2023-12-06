@@ -23,13 +23,15 @@ module system #(
     logic [wordSize-1:0]MemDataOut;
 
     logic [wordSize-1:0]VCUdataOut;
+    logic [wordSize-1:0]MemInDataSelected;
+    logic WRTEN;
 
     DataMemory #(memDepth) memmory(
         .clk(clk),
         .RESET(RESETmem),
-        .WE(WEmem),
+        .WE(WRTEN),
         .InAddress(MemAddr),
-        .DataIn(MemInData),
+        .DataIn(MemInDataSelected),
         .OutAddress(MemAddr),
         .DataOut(MemDataOut)
 
@@ -57,5 +59,7 @@ module system #(
      );
 
     assign MemAddr = WEmem ? MemInAddr : BRAMaddrByte[memDepthC-1:2];
+    assign MemInDataSelected = WEmem ? MemInData : VCUdataOut;
+    assign WRTEN = &BRAMWREN || WEmem;
 
 endmodule

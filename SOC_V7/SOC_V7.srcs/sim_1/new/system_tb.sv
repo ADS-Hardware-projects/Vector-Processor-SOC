@@ -39,8 +39,14 @@ module VCU_wrapper_tb(
         repeat (10) @(posedge clk) #1 RESETvcu = 0;
 
     /////////////////////////// FIll the instructions //////////////////////////////
-    @(posedge clk) #1 MemInAddr  = 12'h000; MemInData = 32'h04000400;  // LOADRF <1024>
-    @(posedge clk) #1 MemInAddr  = 12'h001; MemInData = 32'h01000000;  // END
+
+    @(posedge clk) #1 MemInAddr  = 12'h000; MemInData = 32'h04000100;  // LOADRF <256>        A -----> RF
+    @(posedge clk) #1 MemInAddr  = 12'h001; MemInData = 32'h0f100100;  // ADD <256> <256>     A + RF (A) -----> 256
+    @(posedge clk) #1 MemInAddr  = 12'h002; MemInData = 32'h04000400;  // LOADRF <1024>       B -----> RF
+    @(posedge clk) #1 MemInAddr  = 12'h003; MemInData = 32'h0f100100;  // ADD <256> <256>     2A + RF(B) -----> 256
+    @(posedge clk) #1 MemInAddr  = 12'h004; MemInData = 32'h0c100258;  // MUL <256> <600>     (2A+B) * RF(B) ----> 600
+
+    @(posedge clk) #1 MemInAddr  = 12'h005; MemInData = 32'h01000000;  // END
 
 //////////////////////////  Fill A Matrix Data ///////////////////////////////////
 @(posedge clk) #1 MemInAddr  = 12'h100; MemInData = 32'h8;
@@ -576,53 +582,4 @@ endmodule
 
 
 
-
-// `timescale 1ns / 1ps
-
-// module VCU_wrapper_tb(
-
-//     );
-
-//     localparam CLK_PERIOD=10;
-//     localparam matSize = 16;
-//     localparam NoOfElem = 16;
-//     localparam wordSize = 32;
-//     localparam words = 16;
-//     localparam memDepthC = 32;
-//     localparam memDepth = memDepthC - 2;
-
-//     logic clk = 0;
-
-//     logic RESET;
-
-//     logic memWRTDone;
-
-//     logic [wordSize - 1:0] BRAMdataIn; // this is the data input from the BLOCK RAM
-//     logic [wordSize-1: 0] BRAMDataOut; // output data width is the block ram data width
-//     logic [memDepth-1+2:0]BRAMaddrByte;
-
-//     logic [3:0]BRAMWREN;
-//     logic BRAMENMEM;
-//     logic done;
-    
-
-//     initial forever #(CLK_PERIOD/2) clk <= ~clk;
-
-//     VCU #(matSize, NoOfElem, wordSize, words, memDepthC) vcu (.*);
-
-//     initial begin
-
-//         // resetting the system
-//         repeat(100) @(posedge clk) #1  memWRTDone = 0; RESET = 0;
-//         @(posedge clk) #1 RESET = 1;
-//         @(posedge clk) #1 memWRTDone = 1;
-
-//         repeat (5000) @(posedge clk) #1 BRAMdataIn = 32'h00000032;
-        
-    
-//     end
-
-
-
-// endmodule
 
