@@ -113,7 +113,7 @@ module VCU#(
     //////////////////////////////// PE ADDER CONNECTION ////////////////////////////////////////////
 
     logic PEaddRESET;
-    logic PEaddCtrl;
+    logic [1:0] PEaddCtrl;
     logic [matSize - 1 : 0][wordSize -1 : 0] PEaddIn1; // one of the inputs
     logic [matSize - 1 : 0][wordSize -1 : 0] PEaddIn2; // one of the inputs
 
@@ -247,7 +247,7 @@ module VCU#(
                                     // initializing the instruction
                                     RFRESET <= 0;
                                     addrCounter <= 0; // resetting the address counter
-                                    OFFSET <= INR[wordSize - insSpace - 1 : 0]; // 24 LSBs of the Instruction setting the offset
+                                    OFFSET <= INR[23 : 0]; // 24 LSBs of the Instruction setting the offset
                                     FURESET <= 0; // reset the fetch unit so it can fetch data
                                     insInitFF <= 1;
                                 end else begin
@@ -292,8 +292,8 @@ module VCU#(
                                     PEEnable <= 0;
                                     addrCounter <= 0;
                                     WRaddrCounter <= {NoOfElem{1'b1}};
-                                    OFFSET <= INR[23 : 12];
-                                    WROFFSET <= INR[11 : 0]; // setting the offeset
+                                    OFFSET <= INR[21 : 11];
+                                    WROFFSET <= INR[10 : 0]; // setting the offeset
                                     FURESET <= 0;
                                     insInitFF <= 1;
                                     transpose <= 1; // we want the transposed output from the register files
@@ -328,12 +328,12 @@ module VCU#(
 
                             8'h0f: begin // Matrix Adder instruction
                                 if(~insInitFF) begin
-                                    PEaddCtrl <= 0;
+                                    PEaddCtrl <= INR[23:22];
                                     PEaddRESET <= 0; // resetting the adder
                                     addrCounter <= 0;
                                     WRaddrCounter <= {NoOfElem{1'b1}};
-                                    OFFSET <= INR[23 : 12];
-                                    WROFFSET <= INR[11 : 0]; // setting the offeset
+                                    OFFSET <= INR[21 : 11];
+                                    WROFFSET <= INR[10 : 0]; // setting the offeset
                                     FURESET <= 0;
                                     insInitFF <= 1;
                                     transpose <= 0; // we want  output from the register files
@@ -344,8 +344,6 @@ module VCU#(
                                     if(PEaddValid) begin 
                                         // write the result to the memmory
                                         // give input to processing elements and get the output ///////////
-                                        // PEaddIn1 <= row;
-                                        // PEaddIn2 <= RFdataOut[addrCounter];
                                         WRdata <= PEaddOut;
 
 
@@ -368,6 +366,7 @@ module VCU#(
                                     FURESET <= 0;
                                     insInitFF <= 0;
                                     transpose <= 0;
+                                    PEaddCtrl <= 0;
                                     FUins <= 1;
                                 end
                             end

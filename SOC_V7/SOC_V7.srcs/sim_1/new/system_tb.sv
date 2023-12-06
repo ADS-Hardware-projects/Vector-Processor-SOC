@@ -40,14 +40,19 @@ module system_tb(
 
     /////////////////////////// FIll the instructions //////////////////////////////
 
-    @(posedge clk) #1 MemInAddr  = 12'h000; MemInData = 32'h04000100;  // LOADRF <256>        A -----> RF
-    @(posedge clk) #1 MemInAddr  = 12'h001; MemInData = 32'h0f100100;  // ADD <256> <256>     A + RF (A) -----> 256
-    @(posedge clk) #1 MemInAddr  = 12'h002; MemInData = 32'h04000400;  // LOADRF <1024>       B -----> RF
-    @(posedge clk) #1 MemInAddr  = 12'h003; MemInData = 32'h0f100100;  // ADD <256> <256>     2A + RF(B) -----> 256
-    @(posedge clk) #1 MemInAddr  = 12'h004; MemInData = 32'h0c100100;  // MUL <256> <256>     (2A+B) * RF(B) ----> 256
-    // @(posedge clk) #1 MemInAddr  = 12'h005; MemInData = 32'h0e400100;  // SUB1 <1024> <256>   (2A+B)B - B ---> 256
+    //////// PROGRAM 1:    (2A+B)B
+    // @(posedge clk) #1 MemInAddr  = 12'h000; MemInData = 32'h04000100;  // LOADRF <256>        A -----> RF
+    // @(posedge clk) #1 MemInAddr  = 12'h001; MemInData = 32'h0f100100;  // ADD <256> <256>     A + RF (A) -----> 256
+    // @(posedge clk) #1 MemInAddr  = 12'h002; MemInData = 32'h04000400;  // LOADRF <1024>       B -----> RF
+    // @(posedge clk) #1 MemInAddr  = 12'h003; MemInData = 32'h0f100100;  // ADD <256> <256>     2A + RF(B) -----> 256
+    // @(posedge clk) #1 MemInAddr  = 12'h004; MemInData = 32'h0c100100;  // MUL <256> <256>     (2A+B) * RF(B) ----> 256
+    // @(posedge clk) #1 MemInAddr  = 12'h006; MemInData = 32'h01000000;  // END
 
-    @(posedge clk) #1 MemInAddr  = 12'h006; MemInData = 32'h01000000;  // END
+    //////// PROGRAM 2: (A - B)
+    @(posedge clk) #1 MemInAddr  = 12'h000; MemInData = 32'h04000400;  // LOADRF <1024>       B -----> RF
+    @(posedge clk) #1 MemInAddr  = 12'h001; MemInData = 32'h0f080200;  // ADD <256> <512>     A + RF (B) -----> 512
+    @(posedge clk) #1 MemInAddr  = 12'h002; MemInData = 32'h01000000;  // END
+
 
 //////////////////////////  Fill A Matrix Data ///////////////////////////////////
 @(posedge clk) #1 MemInAddr  = 12'h100; MemInData = 32'h63;
