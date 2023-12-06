@@ -326,52 +326,6 @@ module VCU#(
                                 end
                             end
 
-                            8'h0e: begin // Matrix SUB1 (A-B) instruction
-                                if(~insInitFF) begin
-                                    PEaddCtrl <= 0;
-                                    PEaddRESET <= 0; // resetting the adder
-                                    addrCounter <= 0;
-                                    WRaddrCounter <= {NoOfElem{1'b1}};
-                                    OFFSET <= INR[23 : 12];
-                                    WROFFSET <= INR[11 : 0]; // setting the offeset
-                                    FURESET <= 0;
-                                    insInitFF <= 1;
-                                    transpose <= 0; // we want  output from the register files
-                                end else begin
-                                    row <= FUdataOut; // get data from the fetch unit
-                                    PEaddIn2 <= ~RFdataOut[addrCounter] + 1'b1; // provide the 2s compliment
-                                    
-                                    if(PEaddValid) begin 
-                                        // write the result to the memmory
-                                        // give input to processing elements and get the output ///////////
-                                        // PEaddIn1 <= row;
-                                        // PEaddIn2 <= RFdataOut[addrCounter];
-                                        WRdata <= PEaddOut;
-
-
-                                        WRaddrCounter <= WRaddrCounter + 1;
-                                        MEMWRRESET <= 0; // reset the writer
-                                        WriterEnable <= 1; // enable the writer (this wont be 0 until system reset)
-
-                                        addrCounter <= addrCounter + 1; // increment the address counter
-                                        FURESET <= 0;
-                                        PEaddRESET <= 0; // let processing elements do the work
-                                    end else begin
-                                        PEaddRESET <= 1;
-                                    end
-                                end
-
-                                if (&addrCounter && PEaddValid) begin 
-                                    PEaddRESET <= 0;
-                                    addrCounter <= 0;
-                                    OFFSET <= 0;
-                                    FURESET <= 0;
-                                    insInitFF <= 0;
-                                    transpose <= 0;
-                                    FUins <= 1;
-                                end
-                            end
-
                             8'h0f: begin // Matrix Adder instruction
                                 if(~insInitFF) begin
                                     PEaddCtrl <= 0;
@@ -420,6 +374,11 @@ module VCU#(
 
                             8'h10: begin // JUMP Instruction
                                 PC <= {22'b0, INR[9:0]}; // update the program counter to given value
+                                FUins <= 1; // indicate the instuction has finished
+                                FURESET <= 0; // reset the fetch unit. so next instruction may loaded
+                            end
+
+                            default: begin // NOP Instruction
                                 FUins <= 1; // indicate the instuction has finished
                                 FURESET <= 0; // reset the fetch unit. so next instruction may loaded
                             end

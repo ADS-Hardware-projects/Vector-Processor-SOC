@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,6 +31,9 @@ set_property ip_output_repo e:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   E:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V7.srcs/sources_1/new/FetchUnit.sv
+  E:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V7.srcs/sources_1/new/PE.sv
+  E:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V7.srcs/sources_1/new/PEadd.sv
+  E:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V7.srcs/sources_1/new/memWriter.sv
   E:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V7.srcs/sources_1/new/regFile.sv
   E:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V7.srcs/sources_1/new/VCU.sv
 }

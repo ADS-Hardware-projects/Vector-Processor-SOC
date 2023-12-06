@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Dec  1 11:46:00 2023
-# Process ID: 16664
+# Start of session at: Wed Dec  6 16:42:48 2023
+# Process ID: 19160
 # Current directory: E:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V7.runs/synth_1
 # Command line: vivado.exe -log VCU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VCU.tcl
 # Log file: E:/Projects/Vivado/Vector-Processor-SOC/SOC_V7/SOC_V7.runs/synth_1/VCU.vds
