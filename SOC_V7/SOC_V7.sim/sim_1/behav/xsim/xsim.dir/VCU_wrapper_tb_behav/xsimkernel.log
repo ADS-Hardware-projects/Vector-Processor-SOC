@@ -1,0 +1,7 @@
+Running: xsim.dir/VCU_wrapper_tb_behav/xsimk.exe -simmode gui -wdb VCU_wrapper_tb_behav.wdb -simrunnum 0 -socket 51356
+Design successfully loaded
+Design Loading Memory Usage: 7412 KB (Peak: 7412 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 10860 KB (Peak: 10860 KB)
+Simulation CPU Usage: 62 ms

@@ -31,17 +31,16 @@ always @(posedge clk or negedge enable)begin
     if (enable == 0) begin 
       PC <= 0;
       v_valid <= 0;
-    end
-    
-    else begin 
-    PC <= PC + 1;
-    
-     if (PC == C ) begin
-     v_valid <=1;
-     y_out <= y;
-     
-     end
-     else  v_valid <= 0;  
+      y_out <= 0;
+    end else begin 
+      PC <= PC + 1;
+      
+      if (PC == C ) begin
+        v_valid <=1;
+        y_out <= y;
+      
+      end
+      // else  v_valid <= 0;  
      
     end
     

@@ -1,15 +1,16 @@
 module FetchUnit #(
     parameter matSize = 16,
     parameter memDepth = 12,
+    parameter wordSize = 32
 
 
-    localparam padding_size = memDepth - $clog2(matSize*2) - $clog2(matSize)
+    // localparam padding_size = memDepth - $clog2(matSize*2) - $clog2(matSize)
 )(
-    input [31:0] dataIn, // this is the data input from the BLOCK RAM
-    input [$clog2(matSize*2) - 1: 0] readAddr, // address of the read port (FROM logic part)
-    input clk, RESET, WriterBusy,
+    input [wordSize - 1:0] dataIn, // this is the data input from the BLOCK RAM
+    input [memDepth - 1: 0] readAddr, // address of the read port (FROM logic part)
+    input clk, RESET, WriterBusy, ins,
 
-    output logic [matSize * 32 - 1: 0] dataOut, // output from the fetch unit
+    output logic [matSize-1 : 0][wordSize-1 : 0] dataOut, // output from the fetch unit
     output logic [memDepth - 1: 0] addrIn, // address to the BLOCK ram
     output logic valid, // this will be high when the data is valid for read
     output logic MEMenable
@@ -21,7 +22,7 @@ module FetchUnit #(
 
     ////////////////////// HARD WIRING PART //////////////////////////
     // assign valid = addrCounter[$clog2(matSize)]; // valid = MSB of the address counter
-    assign addrIn = {{padding_size{1'b0}} , readAddr, addrCounter[$clog2(matSize) - 1 : 0]}; // this is the address provided for the block ram
+    assign addrIn = readAddr + addrCounter[$clog2(matSize) - 1 : 0]; // this is the address provided for the block ram
 
 
     
@@ -41,14 +42,19 @@ module FetchUnit #(
         else begin 
             if (!valid) begin // halt condition
                 if (delay) begin
-                    dataOut[32*(addrCounter + 1) - 1 -: 32] <= dataIn; // assign data came from BLOCK ram to output register
-                    addrCounter <= addrCounter + 1; // incrementing the counter
+                    if(!ins) begin // if not an instruction (a data)
+                        dataOut[addrCounter] <= dataIn; // assign data came from BLOCK ram to output register
+                        addrCounter <= addrCounter + 1; // incrementing the counter
 
-                    if (&(addrCounter[$clog2(matSize) - 1: 0])) begin 
-                        valid <= 1;
-                        MEMenable <= 0;
+                        if (&(addrCounter[$clog2(matSize) - 1: 0])) begin 
+                            valid <= 1;
+                            MEMenable <= 0;
+                        end
+                    end else begin
+                        dataOut[0] <= dataIn; // the first 32 bit of the register is the insturction
+                        valid <= 1; // high the valid signal
+                        MEMenable <= 0; // resetting the memmory enable signal
                     end
-
                 end else begin 
                     // addrIn <= {{padding_size{1'b0}} , readAddr, addrCounter[$clog2(matSize) - 1 : 0]};
                 end

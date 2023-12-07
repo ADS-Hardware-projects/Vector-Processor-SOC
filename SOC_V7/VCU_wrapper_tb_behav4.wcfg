@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="system_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="system_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="33000000fs"></ZoomStartTime>
+      <ZoomEndTime time="58183000001fs"></ZoomEndTime>
+      <Cursor1Time time="19883000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="268"></NameColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/system_tb/sys/processUnit/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider92">
+      <obj_property name="label">IOs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/memWRTDone" type="logic">
+      <obj_property name="ElementShortName">memWRTDone</obj_property>
+      <obj_property name="ObjectShortName">memWRTDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/BRAMdataIn" type="array">
+      <obj_property name="ElementShortName">BRAMdataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMdataIn[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/BRAMDataOut" type="array">
+      <obj_property name="ElementShortName">BRAMDataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMDataOut[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/BRAMaddrByte" type="array">
+      <obj_property name="ElementShortName">BRAMaddrByte[13:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMaddrByte[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/BRAMWREN" type="array">
+      <obj_property name="ElementShortName">BRAMWREN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAMWREN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/BRAMENMEM" type="logic">
+      <obj_property name="ElementShortName">BRAMENMEM</obj_property>
+      <obj_property name="ObjectShortName">BRAMENMEM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider94">
+      <obj_property name="label">REGISTERS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/PC" type="array">
+      <obj_property name="ElementShortName">PC[11:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/addrCounter" type="array">
+      <obj_property name="ElementShortName">addrCounter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addrCounter[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/INR" type="array">
+      <obj_property name="ElementShortName">INR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/OFFSET" type="array">
+      <obj_property name="ElementShortName">OFFSET[23:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/WROFFSET" type="array">
+      <obj_property name="ElementShortName">WROFFSET[23:0]</obj_property>
+      <obj_property name="ObjectShortName">WROFFSET[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/row" type="array">
+      <obj_property name="ElementShortName">row[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">row[15:0][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_tb/sys/processUnit/insInitFF" type="logic">
+      <obj_property name="ElementShortName">insInitFF</obj_property>
+      <obj_property name="ObjectShortName">insInitFF</obj_property>
+   </wvobject>
+   <wvobject fp_name="group115" type="group">
+      <obj_property name="label">Adder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/system_tb/sys/processUnit/PEadder/ctrl" type="array">
+         <obj_property name="ElementShortName">ctrl[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ctrl[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_tb/sys/processUnit/PEadder/a" type="array">
+         <obj_property name="ElementShortName">a[15:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">a[15:0][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_tb/sys/processUnit/PEadder/b" type="array">
+         <obj_property name="ElementShortName">b[15:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">b[15:0][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_tb/sys/processUnit/PEadder/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_tb/sys/processUnit/PEadder/c" type="array">
+         <obj_property name="ElementShortName">c[15:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">c[15:0][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
