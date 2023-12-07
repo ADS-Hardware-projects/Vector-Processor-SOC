@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Tue Nov 28 21:19:36 2023
+// Date        : Mon Dec  4 16:32:20 2023
 // Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub {D:/Study Materials/Sem
-//               7/ADS/Vector-Processor-SOC/DMA_BLOCK_DESIGN/SOC_DMA/ip/SOC_DMA_axi_smc_0/SOC_DMA_axi_smc_0_stub.v}
+// Command     : write_verilog -force -mode synth_stub -rename_top SOC_DMA_axi_smc_0 -prefix
+//               SOC_DMA_axi_smc_0_ SOC_DMA_axi_smc_0_stub.v
 // Design      : SOC_DMA_axi_smc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1
