@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1701861166">
-  <File Type="ROUTE-PWR" Name="VCU_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="VCU.tcl"/>
   <File Type="BITSTR-BMM" Name="VCU_bd.bmm"/>
-  <File Type="ROUTE-PWR-SUM" Name="VCU_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="VCU_reports.tcl"/>
+  <File Type="PA-TCL" Name="VCU.tcl"/>
   <File Type="OPT-DCP" Name="VCU_opt.dcp"/>
-  <File Type="OPT-DRC" Name="VCU_drc_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="VCU_reports.tcl"/>
   <File Type="OPT-HWDEF" Name="VCU.hwdef"/>
   <File Type="PWROPT-DCP" Name="VCU_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="VCU_placed.dcp"/>
-  <File Type="PLACE-IO" Name="VCU_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="VCU_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="VCU_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="VCU_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="VCU_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="VCU.bgn"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="VCU_postplace_pwropt.dcp"/>
@@ -23,32 +16,17 @@
   <File Type="ROUTE-ERROR-DCP" Name="VCU_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="VCU_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="VCU_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="VCU_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="VCU_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="VCU_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="VCU.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="VCU_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="VCU.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VCU_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VCU_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="VCU.sysdef"/>
-  <File Type="ROUTE-PWR-RPX" Name="VCU_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="VCU_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="VCU_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="VCU_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="VCU_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="VCU_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="VCU_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="VCU_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="VCU_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="VCU_bus_skew_routed.rpx"/>
+  <File Type="RDI-RDI" Name="VCU.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="VCU_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="VCU_postroute_physopt_bb.dcp"/>
   <File Type="BG-BIT" Name="VCU.bit"/>
   <File Type="BITSTR-RBT" Name="VCU.rbt"/>
   <File Type="BITSTR-NKY" Name="VCU.nky"/>
   <File Type="BG-DRC" Name="VCU.drc"/>
-  <File Type="RDI-RDI" Name="VCU.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

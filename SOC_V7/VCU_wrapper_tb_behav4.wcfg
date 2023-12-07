@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3000000000fs"></ZoomStartTime>
-      <ZoomEndTime time="8790000001fs"></ZoomEndTime>
-      <Cursor1Time time="6000000000fs"></Cursor1Time>
+      <ZoomStartTime time="33000000fs"></ZoomStartTime>
+      <ZoomEndTime time="58183000001fs"></ZoomEndTime>
+      <Cursor1Time time="19883000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="268"></NameColumnWidth>
-      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="19" />
    <wvobject fp_name="/system_tb/sys/processUnit/clk" type="logic">
@@ -45,11 +45,15 @@
       <obj_property name="ElementShortName">BRAMDataOut[31:0]</obj_property>
       <obj_property name="ObjectShortName">BRAMDataOut[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/system_tb/sys/processUnit/BRAMaddrByte" type="array">
       <obj_property name="ElementShortName">BRAMaddrByte[13:0]</obj_property>
       <obj_property name="ObjectShortName">BRAMaddrByte[13:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/system_tb/sys/processUnit/BRAMWREN" type="array">
       <obj_property name="ElementShortName">BRAMWREN[3:0]</obj_property>
