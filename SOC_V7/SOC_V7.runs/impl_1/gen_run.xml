@@ -6,9 +6,9 @@
   <File Type="REPORTS-TCL" Name="VCU_reports.tcl"/>
   <File Type="OPT-HWDEF" Name="VCU.hwdef"/>
   <File Type="PWROPT-DCP" Name="VCU_pwropt.dcp"/>
+  <File Type="BG-BGN" Name="VCU.bgn"/>
   <File Type="PLACE-DCP" Name="VCU_placed.dcp"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="VCU_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="VCU.bgn"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="VCU_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="VCU.bin"/>
   <File Type="PHYSOPT-DCP" Name="VCU_physopt.dcp"/>

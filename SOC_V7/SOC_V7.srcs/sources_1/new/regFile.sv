@@ -29,7 +29,7 @@ always_ff @(posedge clk or negedge RESET) begin
     ///////////////////////// RESET CONDITION /////////////////////////
     if (!RESET) begin
         for (int i = 0; i < NoOfElem; i++) begin
-            dataOut[i] <= '0;
+            mem[i] <= 0;
         end
     end // end of resetting
 

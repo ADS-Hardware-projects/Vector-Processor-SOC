@@ -1,44 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1698547849">
-  <File Type="PA-TCL" Name="SystemV6.tcl"/>
-  <File Type="BITSTR-BMM" Name="SystemV6_bd.bmm"/>
-  <File Type="REPORTS-TCL" Name="SystemV6_reports.tcl"/>
-  <File Type="OPT-DCP" Name="SystemV6_opt.dcp"/>
-  <File Type="OPT-DRC" Name="SystemV6_drc_opted.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="SystemV6_incremental_reuse_pre_placed.rpt"/>
-  <File Type="OPT-HWDEF" Name="SystemV6.hwdef"/>
-  <File Type="PWROPT-DCP" Name="SystemV6_pwropt.dcp"/>
-  <File Type="PLACE-DCP" Name="SystemV6_placed.dcp"/>
-  <File Type="BG-BGN" Name="SystemV6.bgn"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="SystemV6_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="SystemV6.bin"/>
-  <File Type="PHYSOPT-DCP" Name="SystemV6_physopt.dcp"/>
-  <File Type="BITSTR-MSK" Name="SystemV6.msk"/>
-  <File Type="ROUTE-ERROR-DCP" Name="SystemV6_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="SystemV6_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="SystemV6_routed_bb.dcp"/>
-  <File Type="BITSTR-LTX" Name="SystemV6.ltx"/>
-  <File Type="BITSTR-MMI" Name="SystemV6.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="SystemV6.sysdef"/>
-  <File Type="ROUTE-TIMING-PB" Name="SystemV6_timing_summary_routed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SystemV6_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SystemV6_postroute_physopt_bb.dcp"/>
-  <File Type="BG-BIT" Name="SystemV6.bit"/>
-  <File Type="BITSTR-RBT" Name="SystemV6.rbt"/>
-  <File Type="BITSTR-NKY" Name="SystemV6.nky"/>
-  <File Type="BG-DRC" Name="SystemV6.drc"/>
-  <File Type="RDI-RDI" Name="SystemV6.vdi"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1702028809">
+  <File Type="BITSTR-BMM" Name="PE_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PE_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="PE_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="PE_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="PE.tcl"/>
+  <File Type="OPT-TIMING" Name="PE_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="PE_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="PE_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="PE_reports.tcl"/>
+  <File Type="OPT-DRC" Name="PE_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="PE.hwdef"/>
+  <File Type="PWROPT-DCP" Name="PE_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="PE_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="PE_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="PE_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PE_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PE_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PE_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PE_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PE_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PE_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PE_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="PE.bgn"/>
+  <File Type="PLACE-TIMING" Name="PE_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PE_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="PE.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PE_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PE_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="PE_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="PE.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="PE_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PE_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PE_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PE_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PE_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PE_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="PE.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="PE_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="PE.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PE_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PE_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="PE.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PE_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="PE_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="PE_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PE_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PE_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PE_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PE_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="PE_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="PE_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PE_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="PE_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="PE_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PE_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PE_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PE_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PE_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PE_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PE_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PE_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="PE.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PE_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="PE.rbt"/>
+  <File Type="BITSTR-NKY" Name="PE.nky"/>
+  <File Type="BG-DRC" Name="PE.drc"/>
+  <File Type="RDI-RDI" Name="PE.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/PE.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../PEConnection/SystemV6.sv">
+    <File Path="$PPRDIR/../SOC_V7/SOC_V7.srcs/sources_1/new/PE.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -47,12 +80,18 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="SystemV6"/>
+      <Option Name="TopModule" Val="PE"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Zedboard-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
