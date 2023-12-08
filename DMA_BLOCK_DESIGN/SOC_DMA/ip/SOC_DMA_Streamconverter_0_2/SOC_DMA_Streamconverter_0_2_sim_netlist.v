@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Fri Dec  8 10:11:31 2023
+// Date        : Fri Dec  8 11:37:26 2023
 // Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {D:/Study Materials/Sem
 //               7/ADS/Vector-Processor-SOC/DMA_BLOCK_DESIGN/SOC_DMA/ip/SOC_DMA_Streamconverter_0_2/SOC_DMA_Streamconverter_0_2_sim_netlist.v}
@@ -60,7 +60,7 @@ module SOC_DMA_Streamconverter_0_2
 
   wire \<const0> ;
   wire \<const1> ;
-  wire [11:2]\^addr ;
+  wire [12:2]\^addr ;
   wire [31:0]din;
   wire [31:0]dout;
   wire m00_axis_aclk;
@@ -96,8 +96,7 @@ module SOC_DMA_Streamconverter_0_2
   assign addr[15] = \<const0> ;
   assign addr[14] = \<const0> ;
   assign addr[13] = \<const0> ;
-  assign addr[12] = \<const0> ;
-  assign addr[11:2] = \^addr [11:2];
+  assign addr[12:2] = \^addr [12:2];
   assign addr[1] = \<const0> ;
   assign addr[0] = \<const0> ;
   assign en = \<const1> ;
@@ -156,7 +155,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0
   output m00_axis_tvalid;
   output [31:0]m00_axis_tdata;
   output m00_axis_tlast;
-  output [9:0]addr;
+  output [10:0]addr;
   input m00_axis_aclk;
   input [31:0]s00_axis_tdata;
   input s00_axis_aclk;
@@ -167,7 +166,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0
   input m00_axis_tready;
   input m00_axis_aresetn;
 
-  wire [9:0]addr;
+  wire [10:0]addr;
   wire [31:0]din;
   wire [31:0]dout;
   wire [7:0]fifo_addr;
@@ -755,7 +754,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
     s00_axis_aresetn,
     s00_axis_tdata);
   output mst_exec_state_reg_0;
-  output [9:0]addr;
+  output [10:0]addr;
   output \we_reg[3]_0 ;
   output [31:0]dout;
   input s00_axis_aclk;
@@ -766,7 +765,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
   input [31:0]s00_axis_tdata;
 
   wire [7:0]Q;
-  wire [9:0]addr;
+  wire [10:0]addr;
   wire \addr_to_bram_reg_n_0_[0] ;
   wire \addr_to_bram_reg_n_0_[1] ;
   wire \addr_to_bram_reg_n_0_[2] ;
@@ -776,12 +775,13 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
   wire \addr_to_bram_reg_n_0_[6] ;
   wire \addr_to_bram_reg_n_0_[7] ;
   wire \addr_to_bram_reg_n_0_[8] ;
+  wire \addr_to_bram_reg_n_0_[9] ;
   wire clear;
   wire [31:0]dout;
   wire fifo_wren;
   wire mst_exec_state_i_1_n_0;
   wire mst_exec_state_reg_0;
-  wire [8:0]p_0_in;
+  wire [9:0]p_0_in;
   wire s00_axis_aclk;
   wire s00_axis_aresetn;
   wire [31:0]s00_axis_tdata;
@@ -790,25 +790,32 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
   wire \we[3]_i_1_n_0 ;
   wire \we[3]_i_2_n_0 ;
   wire \we_reg[3]_0 ;
-  wire \write_pointer[8]_i_2_n_0 ;
-  wire [8:0]write_pointer_reg;
+  wire \write_pointer[9]_i_2_n_0 ;
+  wire [9:0]write_pointer_reg;
   wire writes_done;
   wire writes_done_i_1_n_0;
   wire writes_done_i_2_n_0;
 
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \addr[10]_INST_0 
        (.I0(\we_reg[3]_0 ),
         .I1(\addr_to_bram_reg_n_0_[8] ),
         .O(addr[8]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \addr[11]_INST_0 
+       (.I0(\we_reg[3]_0 ),
+        .I1(\addr_to_bram_reg_n_0_[9] ),
+        .O(addr[9]));
   (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT1 #(
     .INIT(2'h1)) 
-    \addr[11]_INST_0 
+    \addr[12]_INST_0 
        (.I0(\we_reg[3]_0 ),
-        .O(addr[9]));
+        .O(addr[10]));
   (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hB8)) 
@@ -825,7 +832,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .I1(\we_reg[3]_0 ),
         .I2(Q[1]),
         .O(addr[1]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \addr[4]_INST_0 
@@ -833,7 +840,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .I1(\we_reg[3]_0 ),
         .I2(Q[2]),
         .O(addr[2]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \addr[5]_INST_0 
@@ -841,7 +848,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .I1(\we_reg[3]_0 ),
         .I2(Q[3]),
         .O(addr[3]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \addr[6]_INST_0 
@@ -849,7 +856,6 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .I1(\we_reg[3]_0 ),
         .I2(Q[4]),
         .O(addr[4]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \addr[7]_INST_0 
@@ -857,7 +863,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .I1(\we_reg[3]_0 ),
         .I2(Q[5]),
         .O(addr[5]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \addr[8]_INST_0 
@@ -865,7 +871,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .I1(\we_reg[3]_0 ),
         .I2(Q[6]),
         .O(addr[6]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \addr[9]_INST_0 
@@ -926,6 +932,12 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .CE(fifo_wren),
         .D(write_pointer_reg[8]),
         .Q(\addr_to_bram_reg_n_0_[8] ),
+        .R(clear));
+  FDRE \addr_to_bram_reg[9] 
+       (.C(s00_axis_aclk),
+        .CE(fifo_wren),
+        .D(write_pointer_reg[9]),
+        .Q(\addr_to_bram_reg_n_0_[9] ),
         .R(clear));
   LUT1 #(
     .INIT(2'h1)) 
@@ -1154,15 +1166,15 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .I2(mst_exec_state_reg_0),
         .I3(s00_axis_aresetn),
         .O(\we[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT5 #(
-    .INIT(32'hFFFF2000)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFF20000000)) 
     \we[3]_i_2 
-       (.I0(write_pointer_reg[6]),
-        .I1(\write_pointer[8]_i_2_n_0 ),
-        .I2(write_pointer_reg[7]),
+       (.I0(write_pointer_reg[7]),
+        .I1(\write_pointer[9]_i_2_n_0 ),
+        .I2(write_pointer_reg[6]),
         .I3(write_pointer_reg[8]),
-        .I4(s00_axis_tlast),
+        .I4(write_pointer_reg[9]),
+        .I5(s00_axis_tlast),
         .O(\we[3]_i_2_n_0 ));
   FDRE \we_reg[3] 
        (.C(s00_axis_aclk),
@@ -1222,7 +1234,7 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
   LUT2 #(
     .INIT(4'h9)) 
     \write_pointer[6]_i_1 
-       (.I0(\write_pointer[8]_i_2_n_0 ),
+       (.I0(\write_pointer[9]_i_2_n_0 ),
         .I1(write_pointer_reg[6]),
         .O(p_0_in[6]));
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
@@ -1230,28 +1242,38 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
     .INIT(8'hD2)) 
     \write_pointer[7]_i_1 
        (.I0(write_pointer_reg[6]),
-        .I1(\write_pointer[8]_i_2_n_0 ),
+        .I1(\write_pointer[9]_i_2_n_0 ),
         .I2(write_pointer_reg[7]),
         .O(p_0_in[7]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT4 #(
     .INIT(16'hDF20)) 
     \write_pointer[8]_i_1 
        (.I0(write_pointer_reg[7]),
-        .I1(\write_pointer[8]_i_2_n_0 ),
+        .I1(\write_pointer[9]_i_2_n_0 ),
         .I2(write_pointer_reg[6]),
         .I3(write_pointer_reg[8]),
         .O(p_0_in[8]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT5 #(
+    .INIT(32'hF7FF0800)) 
+    \write_pointer[9]_i_1 
+       (.I0(write_pointer_reg[8]),
+        .I1(write_pointer_reg[6]),
+        .I2(\write_pointer[9]_i_2_n_0 ),
+        .I3(write_pointer_reg[7]),
+        .I4(write_pointer_reg[9]),
+        .O(p_0_in[9]));
   LUT6 #(
     .INIT(64'h7FFFFFFFFFFFFFFF)) 
-    \write_pointer[8]_i_2 
+    \write_pointer[9]_i_2 
        (.I0(write_pointer_reg[4]),
         .I1(write_pointer_reg[2]),
         .I2(write_pointer_reg[0]),
         .I3(write_pointer_reg[1]),
         .I4(write_pointer_reg[3]),
         .I5(write_pointer_reg[5]),
-        .O(\write_pointer[8]_i_2_n_0 ));
+        .O(\write_pointer[9]_i_2_n_0 ));
   FDRE \write_pointer_reg[0] 
        (.C(s00_axis_aclk),
         .CE(fifo_wren),
@@ -1306,6 +1328,12 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .D(p_0_in[8]),
         .Q(write_pointer_reg[8]),
         .R(clear));
+  FDRE \write_pointer_reg[9] 
+       (.C(s00_axis_aclk),
+        .CE(fifo_wren),
+        .D(p_0_in[9]),
+        .Q(write_pointer_reg[9]),
+        .R(clear));
   LUT6 #(
     .INIT(64'hFFFFCEEE00000000)) 
     writes_done_i_1
@@ -1316,14 +1344,15 @@ module SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
         .I4(s00_axis_tlast),
         .I5(s00_axis_aresetn),
         .O(writes_done_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT4 #(
-    .INIT(16'h0800)) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT5 #(
+    .INIT(32'h00800000)) 
     writes_done_i_2
-       (.I0(write_pointer_reg[8]),
-        .I1(write_pointer_reg[7]),
-        .I2(\write_pointer[8]_i_2_n_0 ),
-        .I3(write_pointer_reg[6]),
+       (.I0(write_pointer_reg[9]),
+        .I1(write_pointer_reg[8]),
+        .I2(write_pointer_reg[6]),
+        .I3(\write_pointer[9]_i_2_n_0 ),
+        .I4(write_pointer_reg[7]),
         .O(writes_done_i_2_n_0));
   FDRE writes_done_reg
        (.C(s00_axis_aclk),

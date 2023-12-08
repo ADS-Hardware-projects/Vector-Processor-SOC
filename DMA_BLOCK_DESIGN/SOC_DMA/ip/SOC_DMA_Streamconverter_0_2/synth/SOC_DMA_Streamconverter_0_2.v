@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:Streamconverter:1.0
-// IP Revision: 39
+// IP Revision: 42
 
 (* X_CORE_INFO = "Streamconverter_v1_0,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "SOC_DMA_Streamconverter_0_2,Streamconverter_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "SOC_DMA_Streamconverter_0_2,Streamconverter_v1_0,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Streamconverter,x_ipVersion=1.0,x_ipCoreRevision=39,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_START_COUNT=32,C_S00_AXIS_TDATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "SOC_DMA_Streamconverter_0_2,Streamconverter_v1_0,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Streamconverter,x_ipVersion=1.0,x_ipCoreRevision=42,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_START_COUNT=32,C_S00_AXIS_TDATA_WIDTH=32}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module SOC_DMA_Streamconverter_0_2 (
   addr,

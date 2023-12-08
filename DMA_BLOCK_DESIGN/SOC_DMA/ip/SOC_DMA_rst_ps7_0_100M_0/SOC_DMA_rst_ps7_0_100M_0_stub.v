@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Wed Nov 29 12:10:46 2023
+// Date        : Tue Nov 28 21:18:55 2023
 // Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top SOC_DMA_rst_ps7_0_100M_0 -prefix
 //               SOC_DMA_rst_ps7_0_100M_0_ SOC_DMA_rst_ps7_0_100M_0_stub.v

@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Fri Dec  8 10:11:31 2023
+-- Date        : Fri Dec  8 11:37:26 2023
 -- Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim {D:/Study Materials/Sem
 --               7/ADS/Vector-Processor-SOC/DMA_BLOCK_DESIGN/SOC_DMA/ip/SOC_DMA_Streamconverter_0_2/SOC_DMA_Streamconverter_0_2_sim_netlist.vhdl}
@@ -716,7 +716,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS is
   port (
     mst_exec_state_reg_0 : out STD_LOGIC;
-    addr : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    addr : out STD_LOGIC_VECTOR ( 10 downto 0 );
     \we_reg[3]_0\ : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axis_aclk : in STD_LOGIC;
@@ -740,40 +740,41 @@ architecture STRUCTURE of SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_A
   signal \addr_to_bram_reg_n_0_[6]\ : STD_LOGIC;
   signal \addr_to_bram_reg_n_0_[7]\ : STD_LOGIC;
   signal \addr_to_bram_reg_n_0_[8]\ : STD_LOGIC;
+  signal \addr_to_bram_reg_n_0_[9]\ : STD_LOGIC;
   signal clear : STD_LOGIC;
   signal fifo_wren : STD_LOGIC;
   signal mst_exec_state_i_1_n_0 : STD_LOGIC;
   signal \^mst_exec_state_reg_0\ : STD_LOGIC;
-  signal p_0_in : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal p_0_in : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \we[3]_i_1_n_0\ : STD_LOGIC;
   signal \we[3]_i_2_n_0\ : STD_LOGIC;
   signal \^we_reg[3]_0\ : STD_LOGIC;
-  signal \write_pointer[8]_i_2_n_0\ : STD_LOGIC;
-  signal write_pointer_reg : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal \write_pointer[9]_i_2_n_0\ : STD_LOGIC;
+  signal write_pointer_reg : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal writes_done : STD_LOGIC;
   signal writes_done_i_1_n_0 : STD_LOGIC;
   signal writes_done_i_2_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \addr[10]_INST_0\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \addr[11]_INST_0\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \addr[10]_INST_0\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \addr[11]_INST_0\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \addr[12]_INST_0\ : label is "soft_lutpair10";
   attribute SOFT_HLUTNM of \addr[2]_INST_0\ : label is "soft_lutpair10";
   attribute SOFT_HLUTNM of \addr[3]_INST_0\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \addr[4]_INST_0\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \addr[5]_INST_0\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \addr[6]_INST_0\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \addr[7]_INST_0\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \addr[8]_INST_0\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \addr[9]_INST_0\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \addr[4]_INST_0\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \addr[5]_INST_0\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \addr[6]_INST_0\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \addr[8]_INST_0\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \addr[9]_INST_0\ : label is "soft_lutpair14";
   attribute SOFT_HLUTNM of mst_exec_state_i_1 : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \we[3]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \we[3]_i_2\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \write_pointer[1]_i_1\ : label is "soft_lutpair13";
   attribute SOFT_HLUTNM of \write_pointer[2]_i_1\ : label is "soft_lutpair13";
   attribute SOFT_HLUTNM of \write_pointer[3]_i_1\ : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \write_pointer[4]_i_1\ : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \write_pointer[7]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \write_pointer[8]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of writes_done_i_2 : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \write_pointer[8]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \write_pointer[9]_i_1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of writes_done_i_2 : label is "soft_lutpair6";
 begin
   mst_exec_state_reg_0 <= \^mst_exec_state_reg_0\;
   \we_reg[3]_0\ <= \^we_reg[3]_0\;
@@ -786,13 +787,22 @@ begin
       I1 => \addr_to_bram_reg_n_0_[8]\,
       O => addr(8)
     );
-\addr[11]_INST_0\: unisim.vcomponents.LUT1
+\addr[11]_INST_0\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => \^we_reg[3]_0\,
+      I1 => \addr_to_bram_reg_n_0_[9]\,
+      O => addr(9)
+    );
+\addr[12]_INST_0\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => \^we_reg[3]_0\,
-      O => addr(9)
+      O => addr(10)
     );
 \addr[2]_INST_0\: unisim.vcomponents.LUT3
     generic map(
@@ -944,6 +954,14 @@ begin
       CE => fifo_wren,
       D => write_pointer_reg(8),
       Q => \addr_to_bram_reg_n_0_[8]\,
+      R => clear
+    );
+\addr_to_bram_reg[9]\: unisim.vcomponents.FDRE
+     port map (
+      C => s00_axis_aclk,
+      CE => fifo_wren,
+      D => write_pointer_reg(9),
+      Q => \addr_to_bram_reg_n_0_[9]\,
       R => clear
     );
 \data_to_bram[31]_i_1\: unisim.vcomponents.LUT1
@@ -1249,16 +1267,17 @@ mst_exec_state_reg: unisim.vcomponents.FDRE
       I3 => s00_axis_aresetn,
       O => \we[3]_i_1_n_0\
     );
-\we[3]_i_2\: unisim.vcomponents.LUT5
+\we[3]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFF2000"
+      INIT => X"FFFFFFFF20000000"
     )
         port map (
-      I0 => write_pointer_reg(6),
-      I1 => \write_pointer[8]_i_2_n_0\,
-      I2 => write_pointer_reg(7),
+      I0 => write_pointer_reg(7),
+      I1 => \write_pointer[9]_i_2_n_0\,
+      I2 => write_pointer_reg(6),
       I3 => write_pointer_reg(8),
-      I4 => s00_axis_tlast,
+      I4 => write_pointer_reg(9),
+      I5 => s00_axis_tlast,
       O => \we[3]_i_2_n_0\
     );
 \we_reg[3]\: unisim.vcomponents.FDRE
@@ -1337,7 +1356,7 @@ mst_exec_state_reg: unisim.vcomponents.FDRE
       INIT => X"9"
     )
         port map (
-      I0 => \write_pointer[8]_i_2_n_0\,
+      I0 => \write_pointer[9]_i_2_n_0\,
       I1 => write_pointer_reg(6),
       O => p_0_in(6)
     );
@@ -1347,7 +1366,7 @@ mst_exec_state_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => write_pointer_reg(6),
-      I1 => \write_pointer[8]_i_2_n_0\,
+      I1 => \write_pointer[9]_i_2_n_0\,
       I2 => write_pointer_reg(7),
       O => p_0_in(7)
     );
@@ -1357,12 +1376,24 @@ mst_exec_state_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => write_pointer_reg(7),
-      I1 => \write_pointer[8]_i_2_n_0\,
+      I1 => \write_pointer[9]_i_2_n_0\,
       I2 => write_pointer_reg(6),
       I3 => write_pointer_reg(8),
       O => p_0_in(8)
     );
-\write_pointer[8]_i_2\: unisim.vcomponents.LUT6
+\write_pointer[9]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"F7FF0800"
+    )
+        port map (
+      I0 => write_pointer_reg(8),
+      I1 => write_pointer_reg(6),
+      I2 => \write_pointer[9]_i_2_n_0\,
+      I3 => write_pointer_reg(7),
+      I4 => write_pointer_reg(9),
+      O => p_0_in(9)
+    );
+\write_pointer[9]_i_2\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"7FFFFFFFFFFFFFFF"
     )
@@ -1373,7 +1404,7 @@ mst_exec_state_reg: unisim.vcomponents.FDRE
       I3 => write_pointer_reg(1),
       I4 => write_pointer_reg(3),
       I5 => write_pointer_reg(5),
-      O => \write_pointer[8]_i_2_n_0\
+      O => \write_pointer[9]_i_2_n_0\
     );
 \write_pointer_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -1447,6 +1478,14 @@ mst_exec_state_reg: unisim.vcomponents.FDRE
       Q => write_pointer_reg(8),
       R => clear
     );
+\write_pointer_reg[9]\: unisim.vcomponents.FDRE
+     port map (
+      C => s00_axis_aclk,
+      CE => fifo_wren,
+      D => p_0_in(9),
+      Q => write_pointer_reg(9),
+      R => clear
+    );
 writes_done_i_1: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFCEEE00000000"
@@ -1460,15 +1499,16 @@ writes_done_i_1: unisim.vcomponents.LUT6
       I5 => s00_axis_aresetn,
       O => writes_done_i_1_n_0
     );
-writes_done_i_2: unisim.vcomponents.LUT4
+writes_done_i_2: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0800"
+      INIT => X"00800000"
     )
         port map (
-      I0 => write_pointer_reg(8),
-      I1 => write_pointer_reg(7),
-      I2 => \write_pointer[8]_i_2_n_0\,
-      I3 => write_pointer_reg(6),
+      I0 => write_pointer_reg(9),
+      I1 => write_pointer_reg(8),
+      I2 => write_pointer_reg(6),
+      I3 => \write_pointer[9]_i_2_n_0\,
+      I4 => write_pointer_reg(7),
       O => writes_done_i_2_n_0
     );
 writes_done_reg: unisim.vcomponents.FDRE
@@ -1492,7 +1532,7 @@ entity SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0 is
     m00_axis_tvalid : out STD_LOGIC;
     m00_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m00_axis_tlast : out STD_LOGIC;
-    addr : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    addr : out STD_LOGIC_VECTOR ( 10 downto 0 );
     m00_axis_aclk : in STD_LOGIC;
     s00_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axis_aclk : in STD_LOGIC;
@@ -1524,7 +1564,7 @@ Streamconverter_v1_0_M00_AXIS_inst: entity work.SOC_DMA_Streamconverter_0_2_Stre
 Streamconverter_v1_0_S00_AXIS_inst: entity work.SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0_S00_AXIS
      port map (
       Q(7 downto 0) => fifo_addr(7 downto 0),
-      addr(9 downto 0) => addr(9 downto 0),
+      addr(10 downto 0) => addr(10 downto 0),
       dout(31 downto 0) => dout(31 downto 0),
       mst_exec_state_reg_0 => mst_exec_state_reg,
       s00_axis_aclk => s00_axis_aclk,
@@ -1576,7 +1616,7 @@ end SOC_DMA_Streamconverter_0_2;
 architecture STRUCTURE of SOC_DMA_Streamconverter_0_2 is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
-  signal \^addr\ : STD_LOGIC_VECTOR ( 11 downto 2 );
+  signal \^addr\ : STD_LOGIC_VECTOR ( 12 downto 2 );
   signal \^we_1\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of m00_axis_aclk : signal is "xilinx.com:signal:clock:1.0 M00_AXIS_CLK CLK";
@@ -1620,8 +1660,7 @@ begin
   addr(15) <= \<const0>\;
   addr(14) <= \<const0>\;
   addr(13) <= \<const0>\;
-  addr(12) <= \<const0>\;
-  addr(11 downto 2) <= \^addr\(11 downto 2);
+  addr(12 downto 2) <= \^addr\(12 downto 2);
   addr(1) <= \<const0>\;
   addr(0) <= \<const0>\;
   en <= \<const1>\;
@@ -1643,7 +1682,7 @@ VCC: unisim.vcomponents.VCC
     );
 inst: entity work.SOC_DMA_Streamconverter_0_2_Streamconverter_v1_0
      port map (
-      addr(9 downto 0) => \^addr\(11 downto 2),
+      addr(10 downto 0) => \^addr\(12 downto 2),
       din(31 downto 0) => din(31 downto 0),
       dout(31 downto 0) => dout(31 downto 0),
       m00_axis_aclk => m00_axis_aclk,

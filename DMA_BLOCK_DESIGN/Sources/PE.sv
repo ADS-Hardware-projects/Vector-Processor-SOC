@@ -1,71 +1,52 @@
 module PE #(
-    parameter C=16, W_X=32, W_K=32,
-    localparam W_M = W_X + W_K, // Multiplication - data widths gets summed
-               W_Y = W_M + $clog2(C)  // Addition -  Each adder gived one extra bit
-  )(  
-    input  logic clk,enable,
-    input  logic signed [C-1:0][W_K-1:0] k,  //---------vector 1 
-    input  logic signed [C-1:0][W_X-1:0] x,  //---------vector 2
-    output logic signed        [W_X-1:0] y_out, //-------Truncated output
-    output logic  v_valid 
-  );
+  parameter NoOfElem = 16, 
+  parameter wordSize = 32
+  )(
+  input clk,
+  input RESET,
+  input signed [NoOfElem-1 : 0][wordSize-1 : 0] in1,  //---------vector 1 
+  input signed [NoOfElem-1 : 0][wordSize-1 : 0] in2,  //---------vector 2
 
-  // Padding to a power of 2 
-  localparam C_PAD = 2**$clog2(C);
+  output logic signed [wordSize-1 : 0] out, //-------Truncated output
+  output logic  valid
+);
 
+// logic signed [NoOfElem-1 : 0][wordSize-1 : 0] in1;  //---------vector 1 
+// logic signed [NoOfElem-1 : 0][wordSize-1 : 0] in2;  //---------vector 2
+// logic signed [wordSize-1 : 0] out; //-------Truncated output
 
-
- logic signed [W_Y-1:0] total;  // accumilating data without truncation
- logic [$clog2(C):0] PC =0;  // counter to count clock cycles 
- logic signed [W_X-1:0] y;
- 
-
-//Padded input vectors
- wire signed    [C_PAD-1:0][W_X-1:0] x_padded = {'0, x};
- wire signed    [C_PAD-1:0][W_K-1:0] k_padded = {'0, k};    
-  
+/////////////////////// REGISTERS /////////////////////////
+logic [wordSize-1 : 0] total; // the total will be accumulated here
+logic [$clog2(NoOfElem) - 2 : 0]counter;
 
 
-always @(posedge clk or negedge enable)begin
-    
-    if (enable == 0) begin 
-      PC <= 0;
-      v_valid <= 0;
-    end
-    
-    else begin 
-    PC <= PC + 1;
-    
-     if (PC == 16 ) begin
-     v_valid <=1;
-     y_out <= y;
-     
-     end
-     else  v_valid <= 0;  
-     
-    end
-    
-end  
-
-//----- Multiply and Accumulate --------// 
-
-logic signed  [W_M-1:0] multiplied_data;
-
-assign multiplied_data = $signed(x_padded[PC])*$signed(k_padded[PC]);
+//////////////////////// COMBINATIONAL LOGIC ///////////////////////////
+logic [$clog2(NoOfElem) - 1 : 0]counter_4x;
+assign counter_4x = {counter, 2'b0}; // append 2 zeros
 
 
-always_ff @(posedge clk or negedge enable)begin
-  if (enable == 0) begin 
-    total <=0 ;
+
+
+//////////////////////// SEQUENTIAL LOGIC /////////////////////////////
+always_ff @(posedge clk or negedge RESET) begin
+  if(!RESET) begin
+    // Resetting outputs 
+    out <= 0;
+    valid <= 0;
+
+    // Resetting the registers
+    total <= 0;
+    counter <= 0;
+  end else begin
+    if (~counter[$clog2(NoOfElem) - 2]) begin
+      total <= total + (in1[counter_4x] * in2[counter_4x]) + (in1[counter_4x+1] * in2[counter_4x+1]) + (in1[counter_4x+2] * in2[counter_4x+2]) + (in1[counter_4x+3] * in2[counter_4x+3]); // multiply and accumulate
+      counter <= counter + 1; // increment the counter
+    end else begin 
+      out <=  total;
+      valid <= 1;
+    end  
   end
-  else if (v_valid)  total <=total ;
- 
-  else  total <= total + multiplied_data ;
- 
-
 end
 
-    assign y = total[W_X-1:0];  // Truncated output
-    assign PC_out = PC;
-    
+
 endmodule

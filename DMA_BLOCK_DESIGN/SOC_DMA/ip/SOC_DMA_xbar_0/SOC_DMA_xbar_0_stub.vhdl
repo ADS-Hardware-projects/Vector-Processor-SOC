@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Thu Dec  7 09:06:00 2023
+-- Date        : Wed Dec  6 19:28:33 2023
 -- Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top SOC_DMA_xbar_0 -prefix
 --               SOC_DMA_xbar_0_ SOC_DMA_xbar_0_stub.vhdl
