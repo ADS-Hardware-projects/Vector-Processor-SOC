@@ -173,7 +173,7 @@ set_property PACKAGE_PIN Y9 [get_ports {clk}];  # "GCLK"
 # User LEDs - Bank 33
 # ---------------------------------------------------------------------------- 
 set_property PACKAGE_PIN T22 [get_ports {rst}];  # "LD0"
-set_property PACKAGE_PIN T21 [get_ports {en}];  # "LD1"
+set_property PACKAGE_PIN T21 [get_ports {en_cal}];  # "LD1"
 set_property PACKAGE_PIN U22 [get_ports {done}];  # "LD2"
 #set_property PACKAGE_PIN U21 [get_ports {tvalid}];  # "LD3"
 #set_property PACKAGE_PIN V22 [get_ports {s_data_kx[4]}];  # "LD4"

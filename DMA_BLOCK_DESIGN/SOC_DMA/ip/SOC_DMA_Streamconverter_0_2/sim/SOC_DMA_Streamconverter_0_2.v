@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:Streamconverter:1.0
-// IP Revision: 35
+// IP Revision: 39
 
 `timescale 1ns/1ps
 

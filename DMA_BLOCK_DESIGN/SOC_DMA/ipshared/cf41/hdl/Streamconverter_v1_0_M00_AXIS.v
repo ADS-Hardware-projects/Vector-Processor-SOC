@@ -214,7 +214,7 @@
 
 
 	//FIFO read enable generation 
-    assign fifo_addr = read_pointer+512;
+    assign fifo_addr = {24'b0,read_pointer}+512;
 	assign tx_en = M_AXIS_TREADY && axis_tvalid;   
 	                                                     
 	    // Streaming output data is read from FIFO       
