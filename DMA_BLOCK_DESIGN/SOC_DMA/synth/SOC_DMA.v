@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Fri Dec  8 02:58:40 2023
+//Date        : Fri Dec  8 10:10:43 2023
 //Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 //Command     : generate_target SOC_DMA.bd
 //Design      : SOC_DMA
@@ -33,7 +33,7 @@ module SOC_DMA
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     done,
-    en,
+    en_cal,
     rst);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
@@ -57,7 +57,7 @@ module SOC_DMA
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
   output [0:0]done;
-  output [0:0]en;
+  output [0:0]en_cal;
   output [0:0]rst;
 
   wire [31:0]Streamconverter_0_M00_AXIS_TDATA;
@@ -277,7 +277,7 @@ module SOC_DMA
   wire [1:0]xlconcat_0_dout;
 
   assign done[0] = VCU_bd_0_done;
-  assign en[0] = axi_gpio_0_gpio_io_o;
+  assign en_cal[0] = axi_gpio_0_gpio_io_o;
   assign rst[0] = axi_gpio_1_gpio_io_o;
   SOC_DMA_Streamconverter_0_2 Streamconverter_0
        (.addr(Streamconverter_0_addr),

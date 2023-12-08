@@ -168,7 +168,7 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set done [ create_bd_port -dir O -from 0 -to 0 done ]
-  set en [ create_bd_port -dir O -from 0 -to 0 en ]
+  set en_cal [ create_bd_port -dir O -from 0 -to 0 en_cal ]
   set rst [ create_bd_port -dir O -from 0 -to 0 rst ]
 
   # Create instance: Streamconverter_0, and set properties
@@ -660,7 +660,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net VCU_bd_0_done [get_bd_ports done] [get_bd_pins Streamconverter_0/done_cal] [get_bd_pins VCU_bd_0/done] [get_bd_pins axi_gpio_2/gpio_io_i]
   connect_bd_net -net axi_dma_0_mm2s_introut [get_bd_pins axi_dma_0/mm2s_introut] [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net axi_dma_0_s2mm_introut [get_bd_pins axi_dma_0/s2mm_introut] [get_bd_pins xlconcat_0/In1]
-  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_ports en] [get_bd_pins Streamconverter_0/start_cal] [get_bd_pins VCU_bd_0/memWRTDone] [get_bd_pins axi_gpio_0/gpio_io_o]
+  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_ports en_cal] [get_bd_pins Streamconverter_0/start_cal] [get_bd_pins VCU_bd_0/memWRTDone] [get_bd_pins axi_gpio_0/gpio_io_o]
   connect_bd_net -net axi_gpio_1_gpio_io_o [get_bd_ports rst] [get_bd_pins VCU_bd_0/RESET] [get_bd_pins axi_gpio_1/gpio_io_o]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins Streamconverter_0/din] [get_bd_pins blk_mem_gen_0/douta]
   connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins VCU_bd_0/BRAMdataIn] [get_bd_pins blk_mem_gen_0/doutb]

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Fri Dec  8 02:58:40 2023
+//Date        : Fri Dec  8 10:10:43 2023
 //Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 //Command     : generate_target SOC_DMA_wrapper.bd
 //Design      : SOC_DMA_wrapper
@@ -32,7 +32,7 @@ module SOC_DMA_wrapper
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     done,
-    en,
+    en_cal,
     rst);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -56,7 +56,7 @@ module SOC_DMA_wrapper
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   output [0:0]done;
-  output [0:0]en;
+  output [0:0]en_cal;
   output [0:0]rst;
 
   wire [14:0]DDR_addr;
@@ -81,7 +81,7 @@ module SOC_DMA_wrapper
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire [0:0]done;
-  wire [0:0]en;
+  wire [0:0]en_cal;
   wire [0:0]rst;
 
   SOC_DMA SOC_DMA_i
@@ -107,6 +107,6 @@ module SOC_DMA_wrapper
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .done(done),
-        .en(en),
+        .en_cal(en_cal),
         .rst(rst));
 endmodule
