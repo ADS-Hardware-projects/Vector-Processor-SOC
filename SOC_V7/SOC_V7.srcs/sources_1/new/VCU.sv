@@ -99,13 +99,13 @@ module VCU#(
     genvar i;
     generate
     for (i = 0; i < NoOfElem; i = i + 1) begin : PEs
-        PE #(matSize, wordSize, wordSize) ProcElem_inst (
+        PE #(NoOfElem, wordSize) ProcElem_inst (
         .clk(clk),
-        .enable(PEEnable),
-        .k(RFdataOut[i]),
-        .x(row),
-        .y_out(PEOutput[NoOfElem - i - 1]),
-        .v_valid(v_valid[i])
+        .RESET(PEEnable),
+        .in1(RFdataOut[i]),
+        .in2(row),
+        .out(PEOutput[NoOfElem - i - 1]),
+        .valid(v_valid[i])
         );
     end
     endgenerate
@@ -157,7 +157,7 @@ module VCU#(
         .writeEN(MRwriteEN),
         .WRdone(WRdone)
     );
-
+ 
 
 
 
@@ -252,7 +252,7 @@ module VCU#(
                                     insInitFF <= 1;
                                 end else begin
                                     // addrCounter <= addrCounter + 1; // increase the address counter
-                                    RFWE <= 1; // write enable the fetch unit
+                                    RFWE <= 1; // Register file
                                     RFRESET <= 1;
                                     if(RFWE) begin
                                         FURESET <= 0;

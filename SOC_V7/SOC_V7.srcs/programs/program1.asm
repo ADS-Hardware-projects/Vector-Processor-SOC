@@ -20,7 +20,7 @@ _start:
     loadrf 1024; // load B to the register file
     mul 512 512; // (3A+2B)B --> Mem address 512
     loadrf 768; // load BA to the register file
-    addsub 512 512 2; // (3A+2B)B - BA
+    addsub 512 1024 2; // (3A+2B)B - BA
     nop;
     nop;
     term;
