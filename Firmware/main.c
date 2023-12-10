@@ -72,22 +72,22 @@ int main(){
 	// }
 
 
-	// The algorithm to mutiply any given matrix
-	for(size_t k = 0; k < b_sub_mat_arr_cols; k++){
-		for(size_t i = 0; i < a_sub_mat_arr_rows; i++){
-			for(size_t j = 0; j < a_sub_mat_arr_cols; j++){
+	// // The algorithm to mutiply any given matrix
+	// for(size_t k = 0; k < b_sub_mat_arr_cols; k++){
+	// 	for(size_t i = 0; i < a_sub_mat_arr_rows; i++){
+	// 		for(size_t j = 0; j < a_sub_mat_arr_cols; j++){
 
-				//send the matrix ---> a_sub_matrix[i][j];
-				arange_mat(send_mat, a_sub_matrix[i][j], 0);
-				//send the matrix ---> b_sub_matrix[j][k];
-				arange_mat(send_mat, b_sub_matrix[j][k], 1);
+	// 			//send the matrix ---> a_sub_matrix[i][j];
+	// 			arange_mat(send_mat, a_sub_matrix[i][j], 0);
+	// 			//send the matrix ---> b_sub_matrix[j][k];
+	// 			arange_mat(send_mat, b_sub_matrix[j][k], 1);
 
-				// get the resultant matrix and store it 
-			}
-			// add all the stored matrixes together and get the answer
-			// store this answer in the final resultant matrix
-		}
-	}
+	// 			// get the resultant matrix and store it 
+	// 		}
+	// 		// add all the stored matrixes together and get the answer
+	// 		// store this answer in the final resultant matrix
+	// 	}
+	// }
 
 
 
