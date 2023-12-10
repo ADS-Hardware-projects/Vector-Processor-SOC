@@ -81,11 +81,9 @@ output wire BRAMENMEM;
 output wire done;
 
   VCU_bd #(
-    .matSize(16),
     .NoOfElem(16),
     .wordSize(32),
-    .words(16),
-    .memDepth(30)
+    .memDepthC(32)
   ) inst (
     .clk(clk),
     .RESET(RESET),

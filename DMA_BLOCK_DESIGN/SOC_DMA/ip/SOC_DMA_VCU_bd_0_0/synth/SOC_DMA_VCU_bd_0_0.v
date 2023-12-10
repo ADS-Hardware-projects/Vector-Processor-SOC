@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "VCU_bd,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "SOC_DMA_VCU_bd_0_0,VCU_bd,{}" *)
-(* CORE_GENERATION_INFO = "SOC_DMA_VCU_bd_0_0,VCU_bd,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=VCU_bd,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,matSize=16,NoOfElem=16,wordSize=32,words=16,memDepth=30}" *)
+(* CORE_GENERATION_INFO = "SOC_DMA_VCU_bd_0_0,VCU_bd,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=VCU_bd,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,NoOfElem=16,wordSize=32,memDepthC=32}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module SOC_DMA_VCU_bd_0_0 (
@@ -82,11 +82,9 @@ output wire BRAMENMEM;
 output wire done;
 
   VCU_bd #(
-    .matSize(16),
     .NoOfElem(16),
     .wordSize(32),
-    .words(16),
-    .memDepth(30)
+    .memDepthC(32)
   ) inst (
     .clk(clk),
     .RESET(RESET),

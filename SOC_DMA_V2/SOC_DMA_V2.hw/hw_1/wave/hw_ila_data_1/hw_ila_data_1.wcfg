@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="7">
+	</WVObjectSize>
+	<wvobject fp_name="SOC_DMA_V2_i/LITE_IP_CON_0_DMA_MM2S_BUFF_LEN" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">SOC_DMA_V2_i/LITE_IP_CON_0_DMA_MM2S_BUFF_LEN[31:0]</obj_property>
+		<obj_property name="ObjectShortName">LITE_IP_CON_0_DMA_MM2S_BUFF_LEN[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="SOC_DMA_V2_i/LITE_IP_CON_0_DMA_MM2S_START_ADDR" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">SOC_DMA_V2_i/LITE_IP_CON_0_DMA_MM2S_START_ADDR[31:0]</obj_property>
+		<obj_property name="ObjectShortName">LITE_IP_CON_0_DMA_MM2S_START_ADDR[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="SOC_DMA_V2_i/LITE_IP_CON_0_DMA_S2MM_BUFF_LEN" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">SOC_DMA_V2_i/LITE_IP_CON_0_DMA_S2MM_BUFF_LEN[31:0]</obj_property>
+		<obj_property name="ObjectShortName">LITE_IP_CON_0_DMA_S2MM_BUFF_LEN[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="SOC_DMA_V2_i/LITE_IP_CON_0_DMA_S2MM_START_ADDR" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">SOC_DMA_V2_i/LITE_IP_CON_0_DMA_S2MM_START_ADDR[31:0]</obj_property>
+		<obj_property name="ObjectShortName">LITE_IP_CON_0_DMA_S2MM_START_ADDR[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="SOC_DMA_V2_i/S2MMV2_0_addr" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">SOC_DMA_V2_i/S2MMV2_0_addr[31:0]</obj_property>
+		<obj_property name="ObjectShortName">S2MMV2_0_addr[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="SOC_DMA_V2_i/S2MMV2_0_dout" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">SOC_DMA_V2_i/S2MMV2_0_dout[31:0]</obj_property>
+		<obj_property name="ObjectShortName">S2MMV2_0_dout[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="SOC_DMA_V2_i/blk_mem_gen_0_douta" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">SOC_DMA_V2_i/blk_mem_gen_0_douta[31:0]</obj_property>
+		<obj_property name="ObjectShortName">blk_mem_gen_0_douta[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+
