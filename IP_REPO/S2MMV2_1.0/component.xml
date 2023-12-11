@@ -470,7 +470,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>46e3fc6f</spirit:value>
+            <spirit:value>a0f6ca20</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -486,7 +486,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>46e3fc6f</spirit:value>
+            <spirit:value>a0f6ca20</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1216,7 +1216,7 @@
       <spirit:file>
         <spirit:name>hdl/S2MMV2_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_d226545e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_7cd8cf63</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1385,8 +1385,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>S2MMV2_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>10</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-12-10T09:58:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>15</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-12-11T04:22:24Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2a003f5a_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@341f1e39_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
@@ -1543,13 +1543,82 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@40b8b609_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6f358df7_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@56c0d436_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3089a758_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13f8a06f_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48865122_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b2db336_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4378a355_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f121214_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2710a4e5_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@84abccf_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f274d0f_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@743e5447_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3171cec0_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dbb93f0_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fbe0f25_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@167e432b_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fa78302_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55d9029d_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@93ccd89_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3e3094_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34d2103_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45331a37_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7da2f5db_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f99eda1_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f3ca2de_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2493ac52_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bd17e03_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61b84df4_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@740f7ec_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b282e1b_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee4b73e_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cf7066_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a057e10_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@786cd3a4_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f7d4075_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52581279_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d4c03c4_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@339c6dcf_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71925870_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b417e96_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1197d7f0_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2940b154_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@409aa7f_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3406224b_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48c72965_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d7f8d9b_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ebb18d_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a9a7e71_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f62d20c_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4735ac9b_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38215a38_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e9768ec_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ec5d121_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35d5473f_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78d8e38c_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51d92c97_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e4da0e0_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b7468a7_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e8d307_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e871c0e_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@392480f_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21b21031_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26a60de1_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65836b57_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79fa34d7_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61fdd4d0_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b65c784_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30dd6197_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6daba24d_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73d8a8ed_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5571fe4a_ARCHIVE_LOCATION">d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="3bb08c52"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f9202b74"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a2ac810d"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="298feb32"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="85d47e05"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="543ed7d9"/>

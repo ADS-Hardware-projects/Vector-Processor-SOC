@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
 -- Date        : Sat Dec  9 15:24:35 2023
 -- Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {d:/Study Materials/Sem
---               7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_blk_mem_gen_0_0/SOC_DMA_V2_blk_mem_gen_0_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top SOC_DMA_V2_blk_mem_gen_0_0 -prefix
+--               SOC_DMA_V2_blk_mem_gen_0_0_ SOC_DMA_V2_blk_mem_gen_0_0_sim_netlist.vhdl
 -- Design      : SOC_DMA_V2_blk_mem_gen_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -31,8 +31,6 @@ entity SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper is
     wea : in STD_LOGIC_VECTOR ( 1 downto 0 );
     web : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper is
@@ -629,8 +627,6 @@ entity SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_prim_width is
     wea : in STD_LOGIC_VECTOR ( 1 downto 0 );
     web : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_prim_width is
@@ -955,8 +951,6 @@ entity SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
     rstb : in STD_LOGIC;
     enb : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
@@ -1029,8 +1023,6 @@ entity SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_top is
     rstb : in STD_LOGIC;
     enb : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_top;
 
 architecture STRUCTURE of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_top is
@@ -1078,8 +1070,6 @@ entity SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3_synth is
     rstb : in STD_LOGIC;
     enb : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3_synth : entity is "blk_mem_gen_v8_4_3_synth";
 end SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3_synth;
 
 architecture STRUCTURE of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3_synth is
@@ -1324,8 +1314,6 @@ entity SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 is
   attribute C_WRITE_WIDTH_B of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 : entity is 32;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 : entity is "zynq";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 : entity is "blk_mem_gen_v8_4_3";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 : entity is "yes";
 end SOC_DMA_V2_blk_mem_gen_0_0_blk_mem_gen_v8_4_3;

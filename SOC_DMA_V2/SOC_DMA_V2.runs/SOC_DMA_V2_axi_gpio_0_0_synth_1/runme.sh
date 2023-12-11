@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log  -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source 
+EAStep vivado -log SOC_DMA_V2_axi_gpio_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOC_DMA_V2_axi_gpio_0_0.tcl

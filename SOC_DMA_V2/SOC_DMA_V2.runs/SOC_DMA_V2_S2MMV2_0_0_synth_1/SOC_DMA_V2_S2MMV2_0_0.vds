@@ -2,14 +2,15 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Dec 10 15:58:42 2023
-# Process ID: 16348
+# Start of session at: Mon Dec 11 10:01:00 2023
+# Process ID: 2080
 # Current directory: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1
 # Command line: vivado.exe -log SOC_DMA_V2_S2MMV2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOC_DMA_V2_S2MMV2_0_0.tcl
 # Log file: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1/SOC_DMA_V2_S2MMV2_0_0.vds
 # Journal file: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source SOC_DMA_V2_S2MMV2_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 381.777 ; gain = 86.387
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/LITE_IP_CON_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0'.
@@ -20,48 +21,43 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15064 
-WARNING: [Synth 8-2507] parameter declaration becomes local in S2MMV2_v1_0_M00_AXIS with formal parameter declaration list [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:70]
-WARNING: [Synth 8-2507] parameter declaration becomes local in S2MMV2_v1_0_S00_AXIS with formal parameter declaration list [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:61]
+INFO: Helper process launched with PID 1972 
+WARNING: [Synth 8-2507] parameter declaration becomes local in S2MMV2_v1_0_M00_AXIS with formal parameter declaration list [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:70]
+WARNING: [Synth 8-2507] parameter declaration becomes local in S2MMV2_v1_0_S00_AXIS with formal parameter declaration list [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:61]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 865.992 ; gain = 187.492
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 863.711 ; gain = 185.086
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_S2MMV2_0_0' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_S2MMV2_0_0/synth/SOC_DMA_V2_S2MMV2_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_S00_AXI' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_S00_AXI' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
-INFO: [Synth 8-226] default block is never used [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXI.v:243]
-INFO: [Synth 8-226] default block is never used [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXI.v:416]
-INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_S00_AXI' (1#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXI.v:4]
-WARNING: [Synth 8-7023] instance 'S2MMV2_v1_0_S00_AXI_inst' of module 'S2MMV2_v1_0_S00_AXI' has 25 connections declared, but only 21 given [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0.v:102]
-INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_S00_AXIS' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:4]
+INFO: [Synth 8-226] default block is never used [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXI.v:243]
+INFO: [Synth 8-226] default block is never used [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXI.v:416]
+INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_S00_AXI' (1#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_S00_AXIS' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:4]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter IDLE bound to: 2'b00 
 	Parameter WRITE_FIFO bound to: 2'b01 
-WARNING: [Synth 8-3848] Net write_finished in module/entity S2MMV2_v1_0_S00_AXIS does not have driver. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_S00_AXIS' (2#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:4]
-INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_M00_AXIS' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:4]
+WARNING: [Synth 8-3848] Net write_finished in module/entity S2MMV2_v1_0_S00_AXIS does not have driver. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_S00_AXIS' (2#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_M00_AXIS' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:4]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
 	Parameter WAIT_COUNT_BITS bound to: 5 - type: integer 
 	Parameter IDLE bound to: 2'b00 
 	Parameter INIT_COUNTER bound to: 2'b01 
 	Parameter SEND_STREAM bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:117]
-INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_M00_AXIS' (3#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:4]
-WARNING: [Synth 8-3848] Net DMA_MM2S_BUFF_LEN in module/entity S2MMV2_v1_0 does not have driver. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0.v:84]
-WARNING: [Synth 8-3848] Net DMA_MM2S_START_ADDR in module/entity S2MMV2_v1_0 does not have driver. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0.v:85]
-WARNING: [Synth 8-3848] Net DMA_S2MM_BUFF_LEN in module/entity S2MMV2_v1_0 does not have driver. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0.v:86]
-WARNING: [Synth 8-3848] Net DMA_S2MM_START_ADDR in module/entity S2MMV2_v1_0 does not have driver. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0.v:87]
-INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0' (4#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_M00_AXIS' (3#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0' (4#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_S2MMV2_0_0' (5#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_S2MMV2_0_0/synth/SOC_DMA_V2_S2MMV2_0_0.v:57]
 WARNING: [Synth 8-3331] design S2MMV2_v1_0_M00_AXIS has unconnected port done_cal
 WARNING: [Synth 8-3331] design S2MMV2_v1_0_M00_AXIS has unconnected port start_cal
@@ -77,7 +73,7 @@ WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_AR
 WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 905.613 ; gain = 227.113
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 905.535 ; gain = 226.910
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -90,10 +86,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 905.613 ; gain = 227.113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 905.535 ; gain = 226.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 905.613 ; gain = 227.113
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 905.535 ; gain = 226.910
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -101,28 +97,28 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1033.938 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1040.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.295 . Memory (MB): peak = 1036.238 ; gain = 2.301
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.308 . Memory (MB): peak = 1043.992 ; gain = 3.148
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1036.238 ; gain = 357.738
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1043.992 ; gain = 365.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1036.238 ; gain = 357.738
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1043.992 ; gain = 365.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1036.238 ; gain = 357.738
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1043.992 ; gain = 365.367
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'S2MMV2_v1_0_M00_AXIS'
 ---------------------------------------------------------------------------------------------------
@@ -134,7 +130,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in modu
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'S2MMV2_v1_0_M00_AXIS'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1036.238 ; gain = 357.738
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1043.992 ; gain = 365.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -147,8 +143,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 4     
-	   2 Input     16 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 6     
 	   2 Input      5 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 12    
@@ -184,8 +179,7 @@ Detailed RTL Component Info :
 Module S2MMV2_v1_0_S00_AXIS 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
-	   2 Input     16 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
 +---Registers : 
 	               32 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
@@ -195,8 +189,7 @@ Detailed RTL Component Info :
 Module S2MMV2_v1_0_M00_AXIS 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
-	   2 Input     16 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
 	   2 Input      5 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
@@ -227,151 +220,193 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3917] design SOC_DMA_V2_S2MMV2_0_0 has port addr[1] driven by constant 0
-INFO: [Synth 8-3917] design SOC_DMA_V2_S2MMV2_0_0 has port addr[0] driven by constant 0
-INFO: [Synth 8-3917] design SOC_DMA_V2_S2MMV2_0_0 has port m00_axis_tstrb[3] driven by constant 1
-INFO: [Synth 8-3917] design SOC_DMA_V2_S2MMV2_0_0 has port m00_axis_tstrb[2] driven by constant 1
-INFO: [Synth 8-3917] design SOC_DMA_V2_S2MMV2_0_0 has port m00_axis_tstrb[1] driven by constant 1
-INFO: [Synth 8-3917] design SOC_DMA_V2_S2MMV2_0_0 has port m00_axis_tstrb[0] driven by constant 1
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port start_cal
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axis_tstrb[3]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axis_tstrb[2]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axis_tstrb[1]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axis_tstrb[0]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axi_awprot[2]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axi_awprot[1]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axi_awprot[0]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axi_arprot[2]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axi_arprot[1]
-WARNING: [Synth 8-3331] design SOC_DMA_V2_S2MMV2_0_0 has unconnected port s00_axi_arprot[0]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/S2MMV2_v1_0_M00_AXIS_inst/tx_done_reg )
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_M00_AXIS_inst/axis_tvalid_delay_reg' (FDR) to 'inst/S2MMV2_v1_0_M00_AXIS_inst/axis_tlast_delay_reg'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/S2MMV2_v1_0_M00_AXIS_inst/axis_tlast_delay_reg )
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_M00_AXIS has unconnected port done_cal
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_M00_AXIS has unconnected port start_cal
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXIS has unconnected port write_finished
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[2]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/S2MMV2_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/S2MMV2_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_M00_AXIS_inst/axis_tvalid_delay_delay_reg' (FDR) to 'inst/S2MMV2_v1_0_M00_AXIS_inst/axis_tlast_delay_reg'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_M00_AXIS_inst/axis_tlast_delay_delay_reg' (FDR) to 'inst/S2MMV2_v1_0_M00_AXIS_inst/axis_tlast_delay_reg'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[0]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[1]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[1]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[0]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[1]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[3]'
 INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[2]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[3]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[16]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[17]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[18]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[19]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[20]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[21]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[22]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[23]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[24]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[25]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[26]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[27]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[28]' (FDRE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/S2MMV2_v1_0_M00_AXIS_inst/axis_tlast_delay_reg )
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[15]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[14]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[13]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[12]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[11]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[10]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[9]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[8]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[7]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[6]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[5]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[4]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[3]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[2]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[1]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[0]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_S00_AXIS.v:188]
-INFO: [Synth 8-3332] Sequential element (inst/S2MMV2_v1_0_M00_AXIS_inst/FSM_sequential_mst_exec_state_reg[1]) is unused and will be removed from module SOC_DMA_V2_S2MMV2_0_0.
-INFO: [Synth 8-3332] Sequential element (inst/S2MMV2_v1_0_M00_AXIS_inst/FSM_sequential_mst_exec_state_reg[0]) is unused and will be removed from module SOC_DMA_V2_S2MMV2_0_0.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[15]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[14]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[13]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[12]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[11]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[10]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[9]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[8]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[7]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[6]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[5]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[4]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[3]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[2]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[1]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[0]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/1bd9/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/S2MMV2_v1_0_S00_AXIS_inst/addr_to_bram_reg[0] )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[31]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[30]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[29]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[28]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[27]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[26]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[25]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[24]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[23]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[22]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[21]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[20]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[19]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[18]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[17]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[16]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[15]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[14]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[13]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[12]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[11]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[10]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[9]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[8]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[7]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[6]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[5]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[4]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[3]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[2]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[1]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_S00_AXIS_inst/write_pointer_reg[0]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_S00_AXIS.v:166]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[31]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[30]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[29]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[28]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[27]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[26]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[25]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[24]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[23]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[22]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[21]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[20]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[19]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[18]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[17]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[16]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[15]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/S2MMV2_v1_0_M00_AXIS_inst/read_pointer_reg[14]/Q' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/874b/hdl/S2MMV2_v1_0_M00_AXIS.v:228]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1036.238 ; gain = 357.738
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1043.992 ; gain = 365.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -383,13 +418,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1036.238 ; gain = 357.738
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1043.992 ; gain = 365.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1036.238 ; gain = 357.738
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 1043.992 ; gain = 365.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -401,7 +436,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1036.238 ; gain = 357.738
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 1043.992 ; gain = 365.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -425,7 +460,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1047.328 ; gain = 368.828
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1046.621 ; gain = 367.996
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -438,7 +473,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1047.328 ; gain = 368.828
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1046.621 ; gain = 367.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -450,25 +485,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1047.328 ; gain = 368.828
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1046.621 ; gain = 367.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1047.328 ; gain = 368.828
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1046.621 ; gain = 367.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1047.328 ; gain = 368.828
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1046.621 ; gain = 367.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1047.328 ; gain = 368.828
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1046.621 ; gain = 367.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -481,59 +516,60 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |LUT1  |     3|
-|2     |LUT2  |     2|
-|3     |LUT3  |     2|
-|4     |LUT4  |     9|
-|5     |LUT5  |    33|
-|6     |LUT6  |    69|
-|7     |MUXF7 |    32|
-|8     |FDRE  |   366|
-|9     |FDSE  |     1|
-+------+------+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    34|
+|2     |LUT1   |    66|
+|3     |LUT2   |   101|
+|4     |LUT3   |    58|
+|5     |LUT4   |    11|
+|6     |LUT5   |    36|
+|7     |LUT6   |    71|
+|8     |MUXF7  |    32|
+|9     |FDRE   |   408|
+|10    |FDSE   |     1|
++------+-------+------+
 
 Report Instance Areas: 
 +------+------------------------------+---------------------+------+
 |      |Instance                      |Module               |Cells |
 +------+------------------------------+---------------------+------+
-|1     |top                           |                     |   517|
-|2     |  inst                        |S2MMV2_v1_0          |   517|
-|3     |    S2MMV2_v1_0_M00_AXIS_inst |S2MMV2_v1_0_M00_AXIS |    33|
-|4     |    S2MMV2_v1_0_S00_AXIS_inst |S2MMV2_v1_0_S00_AXIS |    40|
-|5     |    S2MMV2_v1_0_S00_AXI_inst  |S2MMV2_v1_0_S00_AXI  |   443|
+|1     |top                           |                     |   818|
+|2     |  inst                        |S2MMV2_v1_0          |   818|
+|3     |    S2MMV2_v1_0_M00_AXIS_inst |S2MMV2_v1_0_M00_AXIS |    94|
+|4     |    S2MMV2_v1_0_S00_AXIS_inst |S2MMV2_v1_0_S00_AXIS |   129|
+|5     |    S2MMV2_v1_0_S00_AXI_inst  |S2MMV2_v1_0_S00_AXI  |   595|
 +------+------------------------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1047.328 ; gain = 368.828
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1046.621 ; gain = 367.996
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 96 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1047.328 ; gain = 238.203
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1047.328 ; gain = 368.828
+Synthesis finished with 0 errors, 192 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:53 . Memory (MB): peak = 1046.621 ; gain = 229.539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:00 . Memory (MB): peak = 1046.621 ; gain = 367.996
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1063.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1063.742 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 33 Warnings, 96 Critical Warnings and 0 Errors encountered.
+38 Infos, 30 Warnings, 164 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 1063.262 ; gain = 651.891
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1063.262 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:15 . Memory (MB): peak = 1063.742 ; gain = 652.109
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1063.742 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1/SOC_DMA_V2_S2MMV2_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP SOC_DMA_V2_S2MMV2_0_0, cache-ID = d1fbb2dd634ee271
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP SOC_DMA_V2_S2MMV2_0_0, cache-ID = 38b5d1450bd4834b
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1063.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1063.742 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1/SOC_DMA_V2_S2MMV2_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SOC_DMA_V2_S2MMV2_0_0_utilization_synth.rpt -pb SOC_DMA_V2_S2MMV2_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 10 15:59:43 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 10:02:29 2023...

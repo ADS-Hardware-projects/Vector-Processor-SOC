@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -39,9 +41,6 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {{D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/hdl/SOC_DMA_V2_wrapper.v}}
 add_files {{D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/SOC_DMA_V2.bd}}
 set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_processing_system7_0_0/SOC_DMA_V2_processing_system7_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_0/SOC_DMA_V2_axi_dma_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_0/SOC_DMA_V2_axi_dma_0_0_clocks.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_0/SOC_DMA_V2_axi_dma_0_0_ooc.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_rst_ps7_0_100M_0/SOC_DMA_V2_rst_ps7_0_100M_0_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_rst_ps7_0_100M_0/SOC_DMA_V2_rst_ps7_0_100M_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_rst_ps7_0_100M_0/SOC_DMA_V2_rst_ps7_0_100M_0_ooc.xdc}}]
@@ -81,6 +80,9 @@ set_property used_in_synthesis false [get_files -all {{d:/Study Materials/Sem 7/
 set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_ila_0_0/ila_v6_2/constraints/ila.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_ila_0_0/SOC_DMA_V2_ila_0_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1_ooc.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_auto_pc_0/SOC_DMA_V2_auto_pc_0_ooc.xdc}}]
 set_property used_in_implementation false [get_files -all {{D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/SOC_DMA_V2_ooc.xdc}}]
 

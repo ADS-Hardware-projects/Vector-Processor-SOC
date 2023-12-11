@@ -32,6 +32,7 @@
     <Object name="SOC_DMA_V2_i/S2MMV2_0_addr[31:0]" gui_info="Trigger Setup=1"/>
     <Object name="SOC_DMA_V2_i/S2MMV2_0_dout[31:0]" gui_info="Trigger Setup=0"/>
     <Object name="SOC_DMA_V2_i/axi_gpio_0_gpio_io_o" gui_info="Trigger Setup=3"/>
+    <Object name="SOC_DMA_V2_i/axi_gpio_0_gpio_io_o1" gui_info="Trigger Setup=3"/>
     <Object name="SOC_DMA_V2_i/blk_mem_gen_0_douta[31:0]" gui_info="Trigger Setup=2"/>
   </ObjectList>
   <probeset name="hw project" active="false">
@@ -366,6 +367,27 @@
       </probeOptions>
       <nets>
         <net name="SOC_DMA_V2_i/axi_gpio_0_gpio_io_o"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="SOC_DMA_V2_i/axi_gpio_0_gpio_io_o1"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">

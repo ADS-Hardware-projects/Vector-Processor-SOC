@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1702204102">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1702269052">
   <File Type="PA-TCL" Name="SOC_DMA_V2_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="SOC_DMA_V2_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SOC_DMA_V2_wrapper_reports.tcl"/>
@@ -101,16 +101,10 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_blk_mem_gen_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_axi_gpio_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_rst_ps7_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_VCU_bd_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_S2MMV2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SOC_DMA_V2_VCU_bd_0_1"/>
 </GenRun>

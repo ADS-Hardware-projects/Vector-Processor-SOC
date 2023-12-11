@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sat Dec  9 15:22:29 2023
+-- Date        : Sun Dec 10 16:09:22 2023
 -- Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top SOC_DMA_V2_axi_gpio_0_0 -prefix
 --               SOC_DMA_V2_axi_gpio_0_0_ SOC_DMA_V2_axi_gpio_1_0_sim_netlist.vhdl
