@@ -39,9 +39,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SOC_DMA_V2_axi_
 # IP: bd/SOC_DMA_V2/ip/SOC_DMA_V2_xlconcat_0_0/SOC_DMA_V2_xlconcat_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SOC_DMA_V2_xlconcat_0_0 || ORIG_REF_NAME==SOC_DMA_V2_xlconcat_0_0} -quiet] -quiet
 
-# IP: bd/SOC_DMA_V2/ip/SOC_DMA_V2_ila_0_0/SOC_DMA_V2_ila_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SOC_DMA_V2_ila_0_0 || ORIG_REF_NAME==SOC_DMA_V2_ila_0_0} -quiet] -quiet
-
 # IP: bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SOC_DMA_V2_axi_dma_0_1 || ORIG_REF_NAME==SOC_DMA_V2_axi_dma_0_1} -quiet] -quiet
 

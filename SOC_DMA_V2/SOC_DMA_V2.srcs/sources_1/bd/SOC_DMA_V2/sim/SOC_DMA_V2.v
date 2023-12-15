@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Mon Dec 11 10:00:22 2023
+//Date        : Fri Dec 15 14:21:24 2023
 //Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 //Command     : generate_target SOC_DMA_V2.bd
 //Design      : SOC_DMA_V2
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "SOC_DMA_V2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=SOC_DMA_V2,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "SOC_DMA_V2.hwdef" *) 
+(* CORE_GENERATION_INFO = "SOC_DMA_V2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=SOC_DMA_V2,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "SOC_DMA_V2.hwdef" *) 
 module SOC_DMA_V2
    (DDR_addr,
     DDR_ba,
@@ -558,12 +558,6 @@ module SOC_DMA_V2
         .rstb(1'b0),
         .wea(S2MMV2_0_we_1),
         .web(VCU_bd_0_BRAMWREN));
-  SOC_DMA_V2_ila_0_0 ila_0
-       (.clk(processing_system7_0_FCLK_CLK0),
-        .probe0(S2MMV2_0_dout),
-        .probe1(S2MMV2_0_addr),
-        .probe2(axi_gpio_0_gpio_io_o1),
-        .probe3(blk_mem_gen_0_douta));
   SOC_DMA_V2_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),
