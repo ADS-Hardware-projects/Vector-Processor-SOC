@@ -13,40 +13,40 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/LITE_IP_CON_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2021/Vivado/2019.1/data/ip'.
-add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 429.926 ; gain = 21.270
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 429.688 ; gain = 21.734
 Command: synth_design -top SOC_DMA_V2_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8252 
+INFO: Helper process launched with PID 15236 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 892.164 ; gain = 177.625
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 892.852 ; gain = 176.500
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_wrapper' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/hdl/SOC_DMA_V2_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:13]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_S2MMV2_0_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_S2MMV2_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_S2MMV2_0_0' (1#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_S2MMV2_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_S2MMV2_0_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_S2MMV2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_S2MMV2_0_0' (1#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_S2MMV2_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'S2MMV2_0' of module 'SOC_DMA_V2_S2MMV2_0_0' has 42 connections declared, but only 41 given [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:301]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_VCU_bd_0_1' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_VCU_bd_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_VCU_bd_0_1' (2#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_VCU_bd_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_dma_0_1' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_dma_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_dma_0_1' (3#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_VCU_bd_0_1' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_VCU_bd_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_VCU_bd_0_1' (2#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_VCU_bd_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_dma_0_1' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_dma_0_1' (3#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_dma_0_1_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'SOC_DMA_V2_axi_dma_0_1' has 64 connections declared, but only 60 given [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:353]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_gpio_0_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_gpio_0_0' (4#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_gpio_1_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_gpio_1_0' (5#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_gpio_2_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_gpio_2_0' (6#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_smc_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_smc_0' (7#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_blk_mem_gen_0_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_blk_mem_gen_0_0' (8#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_gpio_0_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_gpio_0_0' (4#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_gpio_1_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_gpio_1_0' (5#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_gpio_2_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_gpio_2_0' (6#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_axi_smc_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_axi_smc_0' (7#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_blk_mem_gen_0_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_blk_mem_gen_0_0' (8#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_blk_mem_gen_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'blk_mem_gen_0' of module 'SOC_DMA_V2_blk_mem_gen_0_0' has 16 connections declared, but only 14 given [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:546]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_processing_system7_0_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_processing_system7_0_0' (9#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_processing_system7_0_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_processing_system7_0_0' (9#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'SOC_DMA_V2_processing_system7_0_0' has 119 connections declared, but only 105 given [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:561]
 INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_ps7_0_axi_periph_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:819]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_PCXIX0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:1760]
@@ -60,16 +60,16 @@ INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1VX7OB2' (13#1) 
 INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5Z38M5' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:2295]
 INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5Z38M5' (14#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:2295]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_FUMAIT' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:2427]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_auto_pc_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_auto_pc_0' (15#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_auto_pc_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_auto_pc_0' (15#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_FUMAIT' (16#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:2427]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_xbar_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_xbar_0' (17#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_xbar_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_xbar_0' (17#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (15) of module 'SOC_DMA_V2_xbar_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:1721]
 WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (15) of module 'SOC_DMA_V2_xbar_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:1725]
 INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_ps7_0_axi_periph_0' (18#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:819]
-INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_rst_ps7_0_100M_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_rst_ps7_0_100M_0' (19#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-12656-DESKTOP-V221TGG/realtime/SOC_DMA_V2_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_rst_ps7_0_100M_0' [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_rst_ps7_0_100M_0' (19#1) [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/.Xil/Vivado-3012-DESKTOP-V221TGG/realtime/SOC_DMA_V2_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'SOC_DMA_V2_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/synth/SOC_DMA_V2.v:806]
 INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_xlconcat_0_0' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_xlconcat_0_0/synth/SOC_DMA_V2_xlconcat_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -176,7 +176,7 @@ WARNING: [Synth 8-3331] design SOC_DMA_V2_ps7_0_axi_periph_0 has unconnected por
 WARNING: [Synth 8-3331] design SOC_DMA_V2_ps7_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design SOC_DMA_V2_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 964.871 ; gain = 250.332
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 964.445 ; gain = 248.094
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -189,10 +189,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 964.871 ; gain = 250.332
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 964.445 ; gain = 248.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 964.871 ; gain = 250.332
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 964.445 ; gain = 248.094
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -216,38 +216,40 @@ Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/S
 Finished Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_gpio_1_0/SOC_DMA_V2_axi_gpio_1_0/SOC_DMA_V2_axi_gpio_1_0_in_context.xdc] for cell 'SOC_DMA_V2_i/axi_gpio_1'
 Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_gpio_2_0/SOC_DMA_V2_axi_gpio_2_0/SOC_DMA_V2_axi_gpio_2_0_in_context.xdc] for cell 'SOC_DMA_V2_i/axi_gpio_2'
 Finished Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_gpio_2_0/SOC_DMA_V2_axi_gpio_2_0/SOC_DMA_V2_axi_gpio_2_0_in_context.xdc] for cell 'SOC_DMA_V2_i/axi_gpio_2'
-Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_0_in_context.xdc] for cell 'SOC_DMA_V2_i/axi_dma_0'
-Finished Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_0_in_context.xdc] for cell 'SOC_DMA_V2_i/axi_dma_0'
+Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1_in_context.xdc] for cell 'SOC_DMA_V2_i/axi_dma_0'
+Finished Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1_in_context.xdc] for cell 'SOC_DMA_V2_i/axi_dma_0'
 Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_VCU_bd_0_1/SOC_DMA_V2_VCU_bd_0_1/SOC_DMA_V2_VCU_bd_0_1_in_context.xdc] for cell 'SOC_DMA_V2_i/VCU_bd_0'
 Finished Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_VCU_bd_0_1/SOC_DMA_V2_VCU_bd_0_1/SOC_DMA_V2_VCU_bd_0_1_in_context.xdc] for cell 'SOC_DMA_V2_i/VCU_bd_0'
 Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_auto_pc_0/SOC_DMA_V2_auto_pc_0/SOC_DMA_V2_auto_pc_0_in_context.xdc] for cell 'SOC_DMA_V2_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_auto_pc_0/SOC_DMA_V2_auto_pc_0/SOC_DMA_V2_auto_pc_0_in_context.xdc] for cell 'SOC_DMA_V2_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc]
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:362]
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:367]
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:370]
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:375]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:361]
+WARNING: [Vivado 12-508] No pins matched '*LDC/G*'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:374]
+WARNING: [Vivado 12-508] No pins matched '*LDC/CLR*'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:376]
 Finished Parsing XDC File [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/SOC_DMA_V2_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SOC_DMA_V2_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/SOC_DMA_V2_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1048.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1048.012 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1048.883 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1048.012 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'SOC_DMA_V2_i/axi_smc' at clock pin 'aclk' is different from the actual clock period '17.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'SOC_DMA_V2_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '17.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1048.883 ; gain = 334.344
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1051.141 ; gain = 334.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1048.883 ; gain = 334.344
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1051.141 ; gain = 334.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -528,10 +530,10 @@ Applied set_property DONT_TOUCH = true for SOC_DMA_V2_i/axi_dma_0. (constraint f
 Applied set_property DONT_TOUCH = true for SOC_DMA_V2_i/VCU_bd_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for SOC_DMA_V2_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1048.883 ; gain = 334.344
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1051.141 ; gain = 334.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1048.883 ; gain = 334.344
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1051.141 ; gain = 334.789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -579,7 +581,7 @@ WARNING: [Synth 8-3331] design SOC_DMA_V2_ps7_0_axi_periph_0 has unconnected por
 WARNING: [Synth 8-3331] design SOC_DMA_V2_ps7_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design SOC_DMA_V2_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1048.883 ; gain = 334.344
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1051.141 ; gain = 334.789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -593,13 +595,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'SOC_DMA_V2_i/processing_system7_0/FCLK_CLK0' to pin 'SOC_DMA_V2_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1048.883 ; gain = 334.344
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1053.453 ; gain = 337.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1048.883 ; gain = 334.344
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1053.750 ; gain = 337.398
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -611,7 +613,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.445 ; gain = 344.906
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1064.305 ; gain = 347.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -635,7 +637,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1074.094 ; gain = 359.555
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1079.082 ; gain = 362.730
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -648,7 +650,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1074.094 ; gain = 359.555
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1079.082 ; gain = 362.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -660,25 +662,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1074.094 ; gain = 359.555
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1079.082 ; gain = 362.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1074.094 ; gain = 359.555
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1079.082 ; gain = 362.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1074.094 ; gain = 359.555
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1079.082 ; gain = 362.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1074.094 ; gain = 359.555
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1079.082 ; gain = 362.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -732,25 +734,25 @@ Report Instance Areas:
 |5     |    xlconcat_0       |SOC_DMA_V2_xlconcat_0_0       |     0|
 +------+---------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1074.094 ; gain = 359.555
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1079.082 ; gain = 362.730
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 1074.094 ; gain = 275.543
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1074.094 ; gain = 359.555
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:29 . Memory (MB): peak = 1079.082 ; gain = 276.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1079.082 ; gain = 362.730
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1099.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1095.258 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-62 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+62 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1099.754 ; gain = 669.828
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1099.754 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1095.258 ; gain = 665.570
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1095.258 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/SOC_DMA_V2_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SOC_DMA_V2_wrapper_utilization_synth.rpt -pb SOC_DMA_V2_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 15 14:23:39 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 16 14:20:35 2023...

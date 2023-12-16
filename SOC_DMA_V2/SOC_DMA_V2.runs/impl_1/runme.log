@@ -15,7 +15,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Study Materials/Sem 7/ADS/
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2021/Vivado/2019.1/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/impl_1/{D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.cache/ip} 
-add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 451.680 ; gain = 42.953
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 451.836 ; gain = 41.727
 Command: link_design -top SOC_DMA_V2_wrapper -part xc7z020clg484-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
@@ -64,15 +64,8 @@ WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/
 WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1.xdc:61]
 Finished Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1.xdc] for cell 'SOC_DMA_V2_i/axi_dma_0/U0'
 Parsing XDC File [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc]
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:367]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:367]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:370]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:370]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:375]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:375]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc:373]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1619.160 ; gain = 625.809
 Finished Parsing XDC File [D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc]
 Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1_clocks.xdc] for cell 'SOC_DMA_V2_i/axi_dma_0/U0'
 Finished Parsing XDC File [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_axi_dma_0_1/SOC_DMA_V2_axi_dma_0_1_clocks.xdc] for cell 'SOC_DMA_V2_i/axi_dma_0/U0'
@@ -127,16 +120,16 @@ Finished Sourcing Tcl File [D:/Vivado2021/Vivado/2019.1/data/ip/xpm/xpm_memory/t
 Sourcing Tcl File [D:/Vivado2021/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'SOC_DMA_V2_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 Finished Sourcing Tcl File [D:/Vivado2021/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'SOC_DMA_V2_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1010.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1619.160 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 193 instances were transformed.
   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 186 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
 
-23 Infos, 7 Warnings, 3 Critical Warnings and 0 Errors encountered.
+24 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1010.004 ; gain = 558.324
+link_design: Time (s): cpu = 00:00:30 ; elapsed = 00:01:00 . Memory (MB): peak = 1619.160 ; gain = 1167.324
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -147,57 +140,57 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1035.332 ; gain = 25.328
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1619.160 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 182dad34f
+Ending Cache Timing Information Task | Checksum: bd286d60
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1630.926 ; gain = 595.594
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1640.688 ; gain = 21.527
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 14 inverter(s) to 93 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 15cfa82af
+Phase 1 Retarget | Checksum: 12d203704
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1782.723 ; gain = 0.242
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1781.121 ; gain = 0.246
 INFO: [Opt 31-389] Phase Retarget created 79 cells and removed 215 cells
 INFO: [Opt 31-1021] In phase Retarget, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 1bd856083
+Phase 2 Constant propagation | Checksum: 1f61d7537
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1782.723 ; gain = 0.242
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1781.121 ; gain = 0.246
 INFO: [Opt 31-389] Phase Constant propagation created 31 cells and removed 246 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 40 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1edd4c69b
+Phase 3 Sweep | Checksum: 17eb5f023
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1782.723 ; gain = 0.242
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1781.121 ; gain = 0.246
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1559 cells
 INFO: [Opt 31-1021] In phase Sweep, 50 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1edd4c69b
+Phase 4 BUFG optimization | Checksum: 17eb5f023
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1782.723 ; gain = 0.242
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1781.121 ; gain = 0.246
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1edd4c69b
+Phase 5 Shift Register Optimization | Checksum: 17eb5f023
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1782.723 ; gain = 0.242
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1781.121 ; gain = 0.246
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1a9c0ab08
+Phase 6 Post Processing Netlist | Checksum: 1cee58a2a
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1782.723 ; gain = 0.242
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1781.121 ; gain = 0.246
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 2 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -219,17 +212,17 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1782.723 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 919642a0
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 1781.121 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 137b82c68
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1782.723 ; gain = 0.242
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1781.121 ; gain = 0.246
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=86.184 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=4.427 | TNS=0.000 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -239,43 +232,43 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 4 newly gated: 0 Total Ports: 8
-Ending PowerOpt Patch Enables Task | Checksum: 15c489c9e
+Ending PowerOpt Patch Enables Task | Checksum: 156e890a8
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.264 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 15c489c9e
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.289 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 156e890a8
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2070.934 ; gain = 288.211
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2070.422 ; gain = 289.301
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 15c489c9e
+Ending Final Cleanup Task | Checksum: 156e890a8
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: e4a85715
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 18ccd41ca
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-50 Infos, 7 Warnings, 3 Critical Warnings and 0 Errors encountered.
+51 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2070.934 ; gain = 1060.930
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2070.934 ; gain = 0.000
+opt_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 2070.422 ; gain = 451.262
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/impl_1/SOC_DMA_V2_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2070.934 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file SOC_DMA_V2_wrapper_drc_opted.rpt -pb SOC_DMA_V2_wrapper_drc_opted.pb -rpx SOC_DMA_V2_wrapper_drc_opted.rpx
 Command: report_drc -file SOC_DMA_V2_wrapper_drc_opted.rpt -pb SOC_DMA_V2_wrapper_drc_opted.pb -rpx SOC_DMA_V2_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/impl_1/SOC_DMA_V2_wrapper_drc_opted.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2070.934 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2070.422 ; gain = 0.000
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -287,17 +280,17 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/FUins_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/PC_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/PC_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/fu/addrCounter_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/fu/addrCounter_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/fu/addrCounter_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -314,37 +307,37 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2070.422 ; gain = 0.000
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 97da75fc
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17d93c508
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1c441a3fc
+Phase 1.3 Build Placer Netlist Model | Checksum: 1b18baf1c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1c441a3fc
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1b18baf1c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1c441a3fc
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1b18baf1c
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 14f1baf65
+Phase 2.1 Floorplanning | Checksum: 20f92484e
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 2.2 Global Placement Core
 
@@ -357,7 +350,7 @@ INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization wa
 INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -375,55 +368,55 @@ Summary of Physical Synthesis Optimizations
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2.1 Physical Synthesis In Placer | Checksum: 190f1835d
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 224f75d93
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:01:24 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Phase 2.2 Global Placement Core | Checksum: ae8abda3
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:34 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 175b833ef
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:01:25 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Phase 2 Global Placement | Checksum: ae8abda3
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 175b833ef
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:01:26 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: d03ff5f6
+Phase 3.1 Commit Multi Column Macros | Checksum: 1433c2933
 
-Time (s): cpu = 00:01:11 ; elapsed = 00:01:35 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:45 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: a9ff9fdc
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2290a8776
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:01:55 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:01:33 ; elapsed = 00:02:06 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 101d541b5
+Phase 3.3 Area Swap Optimization | Checksum: 1d2dfd7da
 
-Time (s): cpu = 00:01:24 ; elapsed = 00:01:55 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 14c56e97b
+Phase 3.4 Pipeline Register Optimization | Checksum: 1fdd1af32
 
-Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 1d34b7734
+Phase 3.5 Small Shape Detail Placement | Checksum: 16b7b6718
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:02:24 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:01:49 ; elapsed = 00:02:46 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 15efeb9b1
+Phase 3.6 Re-assign LUT pins | Checksum: 17ee8f3a6
 
-Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:01:52 ; elapsed = 00:02:51 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 109d258a3
+Phase 3.7 Pipeline Register Optimization | Checksum: b8a785f4
 
-Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 109d258a3
+Time (s): cpu = 00:01:53 ; elapsed = 00:02:51 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: b8a785f4
 
-Time (s): cpu = 00:01:44 ; elapsed = 00:02:31 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:01:53 ; elapsed = 00:02:52 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -431,63 +424,63 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 11be7dad8
+Post Placement Optimization Initialization | Checksum: 145646c80
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Place 46-33] Processed net SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/mem[0][15][31]_i_2_n_0, BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-33] Processed net SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/done_i_2_n_0, BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-33] Processed net SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/PEs[0].ProcElem_inst/PEEnable_reg, BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-56] BUFG insertion identified 3 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 3, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 11be7dad8
+Phase 4.1.1.1 BUFG Insertion | Checksum: 145646c80
 
-Time (s): cpu = 00:01:57 ; elapsed = 00:02:50 . Memory (MB): peak = 2070.934 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=81.611. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 167df0b54
+Time (s): cpu = 00:02:07 ; elapsed = 00:03:11 . Memory (MB): peak = 2070.422 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.018. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 14aebcbdf
 
-Time (s): cpu = 00:01:57 ; elapsed = 00:02:51 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 167df0b54
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 14aebcbdf
 
-Time (s): cpu = 00:01:57 ; elapsed = 00:02:51 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 167df0b54
+Phase 4.2 Post Placement Cleanup | Checksum: 14aebcbdf
 
-Time (s): cpu = 00:01:58 ; elapsed = 00:02:52 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:13 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 167df0b54
+Phase 4.3 Placer Reporting | Checksum: 14aebcbdf
 
-Time (s): cpu = 00:01:58 ; elapsed = 00:02:52 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:02:09 ; elapsed = 00:03:13 . Memory (MB): peak = 2070.422 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Phase 4.4 Final Placement Cleanup | Checksum: 1fd89e8e4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1e096a96f
 
-Time (s): cpu = 00:01:58 ; elapsed = 00:02:53 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1fd89e8e4
+Time (s): cpu = 00:02:09 ; elapsed = 00:03:14 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e096a96f
 
-Time (s): cpu = 00:01:58 ; elapsed = 00:02:53 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Ending Placer Task | Checksum: 150a254c3
+Time (s): cpu = 00:02:09 ; elapsed = 00:03:14 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Ending Placer Task | Checksum: 116c8d108
 
-Time (s): cpu = 00:01:58 ; elapsed = 00:02:53 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Time (s): cpu = 00:02:09 ; elapsed = 00:03:14 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-80 Infos, 28 Warnings, 3 Critical Warnings and 0 Errors encountered.
+81 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:57 . Memory (MB): peak = 2070.934 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2070.934 ; gain = 0.000
+place_design: Time (s): cpu = 00:02:13 ; elapsed = 00:03:18 . Memory (MB): peak = 2070.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2070.934 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/impl_1/SOC_DMA_V2_wrapper_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2070.934 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_io -file SOC_DMA_V2_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 2070.934 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 2070.422 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file SOC_DMA_V2_wrapper_utilization_placed.rpt -pb SOC_DMA_V2_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file SOC_DMA_V2_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.934 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.422 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -499,131 +492,145 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 86bab38e ConstDB: 0 ShapeSum: c9e7a135 RouteDB: 0
+Checksum: PlaceDB: 4ce12fd3 ConstDB: 0 ShapeSum: c9e7a135 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 14eca8065
+Phase 1 Build RT Design | Checksum: 39672ef1
 
-Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2109.703 ; gain = 38.770
-Post Restoration Checksum: NetGraph: e9baab99 NumContArr: 650fd4cc Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2135.398 ; gain = 63.652
+Post Restoration Checksum: NetGraph: 2249c147 NumContArr: 171d6daa Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 14eca8065
+Phase 2.1 Create Timer | Checksum: 39672ef1
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 2138.398 ; gain = 67.465
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2165.195 ; gain = 93.449
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 14eca8065
+Phase 2.2 Fix Topology Constraints | Checksum: 39672ef1
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 2147.750 ; gain = 76.816
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2174.820 ; gain = 103.074
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 14eca8065
+Phase 2.3 Pre Route Cleanup | Checksum: 39672ef1
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 2147.750 ; gain = 76.816
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2174.820 ; gain = 103.074
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 171e70581
+Phase 2.4 Update Timing | Checksum: 27e3784a8
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 2188.820 ; gain = 117.887
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=81.602 | TNS=0.000  | WHS=-0.355 | THS=-370.965|
+Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 2215.797 ; gain = 144.051
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.010  | TNS=0.000  | WHS=-0.347 | THS=-388.276|
 
-Phase 2 Router Initialization | Checksum: 1eb5f7223
+Phase 2 Router Initialization | Checksum: 251b9473b
 
-Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:17 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.256964 %
-  Global Horizontal Routing Utilization  = 0.145368 %
+  Global Vertical Routing Utilization    = 0.339339 %
+  Global Horizontal Routing Utilization  = 0.130494 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 36657
+  Number of Failed Nets               = 36661
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 36122
+  Number of Unrouted Nets             = 36126
   Number of Partially Routed Nets     = 535
-  Number of Node Overlaps             = 49
+  Number of Node Overlaps             = 27
 
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1744bb1e8
+Phase 3 Initial Routing | Checksum: a871138e
 
-Time (s): cpu = 00:01:25 ; elapsed = 00:01:34 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:36 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 5348
- Number of Nodes with overlaps = 412
- Number of Nodes with overlaps = 69
- Number of Nodes with overlaps = 22
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 11325
+ Number of Nodes with overlaps = 3374
+ Number of Nodes with overlaps = 1311
+ Number of Nodes with overlaps = 559
+ Number of Nodes with overlaps = 245
+ Number of Nodes with overlaps = 109
+ Number of Nodes with overlaps = 51
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=56.795 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.549  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 1cb698318
+Phase 4.1 Global Iteration 0 | Checksum: f98e12fb
 
-Time (s): cpu = 00:02:22 ; elapsed = 00:02:48 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:37 ; elapsed = 00:05:57 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=56.795 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.549  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 14baa9d45
+Phase 4.2 Global Iteration 1 | Checksum: 138d806bf
 
-Time (s): cpu = 00:02:23 ; elapsed = 00:02:50 . Memory (MB): peak = 2398.836 ; gain = 327.902
-Phase 4 Rip-up And Reroute | Checksum: 14baa9d45
+Time (s): cpu = 00:05:48 ; elapsed = 00:06:16 . Memory (MB): peak = 2399.973 ; gain = 328.227
+Phase 4 Rip-up And Reroute | Checksum: 138d806bf
 
-Time (s): cpu = 00:02:23 ; elapsed = 00:02:50 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:48 ; elapsed = 00:06:16 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 14baa9d45
+Phase 5.1.1 Update Timing | Checksum: 1403a3af5
 
-Time (s): cpu = 00:02:26 ; elapsed = 00:02:52 . Memory (MB): peak = 2398.836 ; gain = 327.902
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=56.910 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:05:51 ; elapsed = 00:06:19 . Memory (MB): peak = 2399.973 ; gain = 328.227
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.664  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 14baa9d45
+Phase 5.1 Delay CleanUp | Checksum: 1403a3af5
 
-Time (s): cpu = 00:02:26 ; elapsed = 00:02:52 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:51 ; elapsed = 00:06:19 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 14baa9d45
+Phase 5.2 Clock Skew Optimization | Checksum: 1403a3af5
 
-Time (s): cpu = 00:02:26 ; elapsed = 00:02:53 . Memory (MB): peak = 2398.836 ; gain = 327.902
-Phase 5 Delay and Skew Optimization | Checksum: 14baa9d45
+Time (s): cpu = 00:05:51 ; elapsed = 00:06:19 . Memory (MB): peak = 2399.973 ; gain = 328.227
+Phase 5 Delay and Skew Optimization | Checksum: 1403a3af5
 
-Time (s): cpu = 00:02:26 ; elapsed = 00:02:53 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:51 ; elapsed = 00:06:19 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 20511910e
+Phase 6.1.1 Update Timing | Checksum: 1f539d0bd
 
-Time (s): cpu = 00:02:29 ; elapsed = 00:02:56 . Memory (MB): peak = 2398.836 ; gain = 327.902
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=56.910 | TNS=0.000  | WHS=0.017  | THS=0.000  |
+Time (s): cpu = 00:05:53 ; elapsed = 00:06:22 . Memory (MB): peak = 2399.973 ; gain = 328.227
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.664  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 14a86f367
+Phase 6.1 Hold Fix Iter | Checksum: 1e83424dc
 
-Time (s): cpu = 00:02:29 ; elapsed = 00:02:56 . Memory (MB): peak = 2398.836 ; gain = 327.902
-Phase 6 Post Hold Fix | Checksum: 14a86f367
+Time (s): cpu = 00:05:54 ; elapsed = 00:06:22 . Memory (MB): peak = 2399.973 ; gain = 328.227
+Phase 6 Post Hold Fix | Checksum: 1e83424dc
 
-Time (s): cpu = 00:02:29 ; elapsed = 00:02:56 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:54 ; elapsed = 00:06:23 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 13.4014 %
-  Global Horizontal Routing Utilization  = 18.3589 %
+  Global Vertical Routing Utilization    = 15.3478 %
+  Global Horizontal Routing Utilization  = 21.1157 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -633,61 +640,61 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 1600baeed
+Phase 7 Route finalize | Checksum: 1dddd58a6
 
-Time (s): cpu = 00:02:30 ; elapsed = 00:02:57 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:54 ; elapsed = 00:06:23 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1600baeed
+Phase 8 Verifying routed nets | Checksum: 1dddd58a6
 
-Time (s): cpu = 00:02:30 ; elapsed = 00:02:57 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:54 ; elapsed = 00:06:23 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: f8539dad
+Phase 9 Depositing Routes | Checksum: 156cbf847
 
-Time (s): cpu = 00:02:34 ; elapsed = 00:03:04 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:58 ; elapsed = 00:06:30 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=56.910 | TNS=0.000  | WHS=0.017  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.664  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: f8539dad
+Phase 10 Post Router Timing | Checksum: 156cbf847
 
-Time (s): cpu = 00:02:34 ; elapsed = 00:03:04 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:58 ; elapsed = 00:06:31 . Memory (MB): peak = 2399.973 ; gain = 328.227
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:02:34 ; elapsed = 00:03:04 . Memory (MB): peak = 2398.836 ; gain = 327.902
+Time (s): cpu = 00:05:58 ; elapsed = 00:06:31 . Memory (MB): peak = 2399.973 ; gain = 328.227
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-99 Infos, 28 Warnings, 3 Critical Warnings and 0 Errors encountered.
+100 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:02:40 ; elapsed = 00:03:09 . Memory (MB): peak = 2398.836 ; gain = 327.902
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2398.836 ; gain = 0.000
+route_design: Time (s): cpu = 00:06:05 ; elapsed = 00:06:36 . Memory (MB): peak = 2399.973 ; gain = 329.551
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2399.973 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 2398.836 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2399.973 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/impl_1/SOC_DMA_V2_wrapper_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2398.836 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 2399.973 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file SOC_DMA_V2_wrapper_drc_routed.rpt -pb SOC_DMA_V2_wrapper_drc_routed.pb -rpx SOC_DMA_V2_wrapper_drc_routed.rpx
 Command: report_drc -file SOC_DMA_V2_wrapper_drc_routed.rpt -pb SOC_DMA_V2_wrapper_drc_routed.pb -rpx SOC_DMA_V2_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/impl_1/SOC_DMA_V2_wrapper_drc_routed.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 2398.836 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 2399.973 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_methodology -file SOC_DMA_V2_wrapper_methodology_drc_routed.rpt -pb SOC_DMA_V2_wrapper_methodology_drc_routed.pb -rpx SOC_DMA_V2_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file SOC_DMA_V2_wrapper_methodology_drc_routed.rpt -pb SOC_DMA_V2_wrapper_methodology_drc_routed.pb -rpx SOC_DMA_V2_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/impl_1/SOC_DMA_V2_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2468.688 ; gain = 69.852
+report_methodology: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2478.141 ; gain = 78.168
 INFO: [runtcl-4] Executing : report_power -file SOC_DMA_V2_wrapper_power_routed.rpt -pb SOC_DMA_V2_wrapper_power_summary_routed.pb -rpx SOC_DMA_V2_wrapper_power_routed.rpx
 Command: report_power -file SOC_DMA_V2_wrapper_power_routed.rpt -pb SOC_DMA_V2_wrapper_power_summary_routed.pb -rpx SOC_DMA_V2_wrapper_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -696,9 +703,9 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-111 Infos, 29 Warnings, 3 Critical Warnings and 0 Errors encountered.
+112 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2468.688 ; gain = 0.000
+report_power: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2478.141 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_route_status -file SOC_DMA_V2_wrapper_route_status.rpt -pb SOC_DMA_V2_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file SOC_DMA_V2_wrapper_timing_summary_routed.rpt -pb SOC_DMA_V2_wrapper_timing_summary_routed.pb -rpx SOC_DMA_V2_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
@@ -1012,17 +1019,17 @@ WARNING: [DRC PDRC-153] Gated clock check: Net SOC_DMA_V2_i/VCU_bd_0/inst/inst_1
 INFO: [Common 17-14] Message 'DRC PDRC-153' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/FUins_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/OFFSET_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/PC_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/PC_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/fu/addrCounter_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/fu/addrCounter_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ADDRBWRADDR[14] (net: SOC_DMA_V2_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/fu/addrCounter_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -1047,7 +1054,7 @@ INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK 
 Access is denied.
 Access is denied.
 INFO: [Common 17-83] Releasing license: Implementation
-150 Infos, 326 Warnings, 3 Critical Warnings and 0 Errors encountered.
+151 Infos, 323 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2774.090 ; gain = 305.402
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 15 14:34:58 2023...
+write_bitstream: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 2769.910 ; gain = 291.770
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 16 14:35:37 2023...

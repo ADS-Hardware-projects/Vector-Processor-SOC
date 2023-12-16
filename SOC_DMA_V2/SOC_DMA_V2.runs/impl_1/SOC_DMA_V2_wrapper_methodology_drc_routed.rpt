@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Dec 15 14:33:45 2023
+| Date         : Sat Dec 16 14:34:19 2023
 | Host         : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 | Command      : report_methodology -file SOC_DMA_V2_wrapper_methodology_drc_routed.rpt -pb SOC_DMA_V2_wrapper_methodology_drc_routed.pb -rpx SOC_DMA_V2_wrapper_methodology_drc_routed.rpx
 | Design       : SOC_DMA_V2_wrapper
@@ -24,13 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
              Max violations: <unlimited>
              Violations found: 1584
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert  | 1056       |
-| TIMING-18 | Warning  | Missing input or output delay | 3          |
-| TIMING-20 | Warning  | Non-clocked latch             | 525        |
-+-----------+----------+-------------------------------+------------+
++-----------+----------+------------------------------------------+------------+
+| Rule      | Severity | Description                              | Violations |
++-----------+----------+------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert             | 1056       |
+| TIMING-20 | Warning  | Non-clocked latch                        | 525        |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 3          |
++-----------+----------+------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -5314,21 +5314,6 @@ LUT drives async reset alert
 LUT cell SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/mem[10][0][31]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][0]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][10]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][11]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][12]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][13]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][14]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][15]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][16]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][17]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][18]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][19]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][1]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][20]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][21]/CLR, SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/rf/dataOut_reg[0][0][22]/CLR (the first 15 of 16384 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-TIMING-18#1 Warning
-Missing input or output delay  
-An output delay is missing on done relative to clock(s) clk_fpga_0
-Related violations: <none>
-
-TIMING-18#2 Warning
-Missing input or output delay  
-An output delay is missing on en_cal[0] relative to clock(s) clk_fpga_0
-Related violations: <none>
-
-TIMING-18#3 Warning
-Missing input or output delay  
-An output delay is missing on rst[0] relative to clock(s) clk_fpga_0
-Related violations: <none>
-
 TIMING-20#1 Warning
 Non-clocked latch  
 The latch SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/memoryWriteBuff/dataBuffer_reg[0][0]_LDC cannot be properly analyzed as its control pin SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/memoryWriteBuff/dataBuffer_reg[0][0]_LDC/G is not reached by a timing clock
@@ -7952,6 +7937,27 @@ Related violations: <none>
 TIMING-20#525 Warning
 Non-clocked latch  
 The latch SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/memoryWriteBuff/writeAddrBRAM_reg[9]_LDC cannot be properly analyzed as its control pin SOC_DMA_V2_i/VCU_bd_0/inst/inst_1/memoryWriteBuff/writeAddrBRAM_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 3.000 ns has been defined on port 'done' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks *] 3.000 [get_ports -filter { NAME =~  "*" && DIRECTION == "OUT" }]
+D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc (Line: 373)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 3.000 ns has been defined on port 'en_cal[0]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks *] 3.000 [get_ports -filter { NAME =~  "*" && DIRECTION == "OUT" }]
+D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc (Line: 373)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 3.000 ns has been defined on port 'rst[0]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks *] 3.000 [get_ports -filter { NAME =~  "*" && DIRECTION == "OUT" }]
+D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/Zedboard-Master.xdc (Line: 373)
 Related violations: <none>
 
 

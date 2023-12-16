@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:S2MMV2:1.0
-// IP Revision: 32
+// IP Revision: 37
 
 `timescale 1ns/1ps
 

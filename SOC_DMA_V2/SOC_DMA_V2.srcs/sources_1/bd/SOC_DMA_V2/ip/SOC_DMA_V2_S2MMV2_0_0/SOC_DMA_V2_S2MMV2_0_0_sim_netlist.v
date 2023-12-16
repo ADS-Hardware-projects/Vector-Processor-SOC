@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Fri Dec 15 14:22:31 2023
+// Date        : Fri Dec 15 18:42:41 2023
 // Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {D:/Study Materials/Sem
 //               7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_S2MMV2_0_0/SOC_DMA_V2_S2MMV2_0_0_sim_netlist.v}
@@ -716,6 +716,7 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
   wire [1:0]mst_exec_state;
   wire [31:0]out;
   wire [4:0]p_0_in;
+  wire read_pointer;
   wire read_pointer1;
   wire read_pointer1_carry__0_i_1_n_0;
   wire read_pointer1_carry__0_i_2_n_0;
@@ -840,7 +841,6 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
   wire \stream_data_out[31]_i_1_n_0 ;
   wire tx_done_i_1_n_0;
   wire tx_done_reg_n_0;
-  wire tx_en;
   wire [3:2]NLW_axis_tlast0_carry__6_CO_UNCONNECTED;
   wire [3:3]NLW_axis_tlast0_carry__6_O_UNCONNECTED;
   wire [3:0]NLW_axis_tlast_carry_O_UNCONNECTED;
@@ -1747,19 +1747,20 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .I3(out[1]),
         .O(read_pointer1_carry_i_8_n_0));
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'hB)) 
     \read_pointer[0]_i_1 
-       (.I0(m00_axis_aresetn),
-        .I1(read_pointer1),
+       (.I0(axis_tlast),
+        .I1(m00_axis_aresetn),
         .O(\read_pointer[0]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h0080)) 
+  LUT5 #(
+    .INIT(32'h20000000)) 
     \read_pointer[0]_i_2 
-       (.I0(m00_axis_tready),
-        .I1(axis_tvalid0),
+       (.I0(read_pointer1),
+        .I1(mst_exec_state[0]),
         .I2(mst_exec_state[1]),
-        .I3(mst_exec_state[0]),
-        .O(tx_en));
+        .I3(axis_tvalid0),
+        .I4(m00_axis_tready),
+        .O(read_pointer));
   LUT1 #(
     .INIT(2'h1)) 
     \read_pointer[0]_i_4 
@@ -1767,7 +1768,7 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .O(\read_pointer[0]_i_4_n_0 ));
   FDRE \read_pointer_reg[0] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[0]_i_3_n_7 ),
         .Q(out[0]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -1780,19 +1781,19 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .S({out[3:1],\read_pointer[0]_i_4_n_0 }));
   FDRE \read_pointer_reg[10] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[8]_i_1_n_5 ),
         .Q(out[10]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[11] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[8]_i_1_n_4 ),
         .Q(out[11]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[12] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[12]_i_1_n_7 ),
         .Q(out[12]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -1805,25 +1806,25 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .S(out[15:12]));
   FDRE \read_pointer_reg[13] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[12]_i_1_n_6 ),
         .Q(out[13]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[14] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[12]_i_1_n_5 ),
         .Q(out[14]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[15] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[12]_i_1_n_4 ),
         .Q(out[15]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[16] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[16]_i_1_n_7 ),
         .Q(out[16]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -1836,31 +1837,31 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .S(out[19:16]));
   FDRE \read_pointer_reg[17] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[16]_i_1_n_6 ),
         .Q(out[17]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[18] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[16]_i_1_n_5 ),
         .Q(out[18]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[19] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[16]_i_1_n_4 ),
         .Q(out[19]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[1] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[0]_i_3_n_6 ),
         .Q(out[1]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[20] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[20]_i_1_n_7 ),
         .Q(out[20]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -1873,25 +1874,25 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .S(out[23:20]));
   FDRE \read_pointer_reg[21] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[20]_i_1_n_6 ),
         .Q(out[21]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[22] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[20]_i_1_n_5 ),
         .Q(out[22]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[23] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[20]_i_1_n_4 ),
         .Q(out[23]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[24] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[24]_i_1_n_7 ),
         .Q(out[24]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -1904,25 +1905,25 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .S(out[27:24]));
   FDRE \read_pointer_reg[25] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[24]_i_1_n_6 ),
         .Q(out[25]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[26] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[24]_i_1_n_5 ),
         .Q(out[26]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[27] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[24]_i_1_n_4 ),
         .Q(out[27]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[28] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[28]_i_1_n_7 ),
         .Q(out[28]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -1935,37 +1936,37 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .S(out[31:28]));
   FDRE \read_pointer_reg[29] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[28]_i_1_n_6 ),
         .Q(out[29]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[2] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[0]_i_3_n_5 ),
         .Q(out[2]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[30] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[28]_i_1_n_5 ),
         .Q(out[30]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[31] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[28]_i_1_n_4 ),
         .Q(out[31]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[3] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[0]_i_3_n_4 ),
         .Q(out[3]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[4] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[4]_i_1_n_7 ),
         .Q(out[4]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -1978,25 +1979,25 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .S(out[7:4]));
   FDRE \read_pointer_reg[5] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[4]_i_1_n_6 ),
         .Q(out[5]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[6] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[4]_i_1_n_5 ),
         .Q(out[6]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[7] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[4]_i_1_n_4 ),
         .Q(out[7]),
         .R(\read_pointer[0]_i_1_n_0 ));
   FDRE \read_pointer_reg[8] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[8]_i_1_n_7 ),
         .Q(out[8]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -2009,7 +2010,7 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .S(out[11:8]));
   FDRE \read_pointer_reg[9] 
        (.C(m00_axis_aclk),
-        .CE(tx_en),
+        .CE(read_pointer),
         .D(\read_pointer_reg[8]_i_1_n_6 ),
         .Q(out[9]),
         .R(\read_pointer[0]_i_1_n_0 ));
@@ -2214,14 +2215,13 @@ module SOC_DMA_V2_S2MMV2_0_0_S2MMV2_v1_0_M00_AXIS
         .D(din[9]),
         .Q(m00_axis_tdata[9]),
         .R(1'b0));
-  LUT5 #(
-    .INIT(32'hFFFF7000)) 
+  LUT4 #(
+    .INIT(16'hFF40)) 
     tx_done_i_1
-       (.I0(tx_en),
-        .I1(read_pointer1),
-        .I2(m00_axis_aresetn),
-        .I3(tx_done_reg_n_0),
-        .I4(axis_tlast),
+       (.I0(read_pointer),
+        .I1(m00_axis_aresetn),
+        .I2(tx_done_reg_n_0),
+        .I3(axis_tlast),
         .O(tx_done_i_1_n_0));
   FDRE tx_done_reg
        (.C(m00_axis_aclk),

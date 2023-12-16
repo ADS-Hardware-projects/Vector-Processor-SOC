@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Dec 15 14:22:34 2023
-# Process ID: 12656
+# Start of session at: Sat Dec 16 14:19:39 2023
+# Process ID: 3012
 # Current directory: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1
 # Command line: vivado.exe -log SOC_DMA_V2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOC_DMA_V2_wrapper.tcl
 # Log file: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/synth_1/SOC_DMA_V2_wrapper.vds

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Fri Dec 15 14:21:24 2023
+//Date        : Sat Dec 16 09:46:14 2023
 //Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
 //Command     : generate_target SOC_DMA_V2.bd
 //Design      : SOC_DMA_V2

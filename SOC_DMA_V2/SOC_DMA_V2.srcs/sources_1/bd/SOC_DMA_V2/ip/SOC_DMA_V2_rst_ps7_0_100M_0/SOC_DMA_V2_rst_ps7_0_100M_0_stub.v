@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Dec  9 15:23:26 2023
+// Date        : Sat Dec 16 09:48:00 2023
 // Host        : DESKTOP-V221TGG running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top SOC_DMA_V2_rst_ps7_0_100M_0 -prefix
-//               SOC_DMA_V2_rst_ps7_0_100M_0_ SOC_DMA_V2_rst_ps7_0_100M_0_stub.v
+// Command     : write_verilog -force -mode synth_stub {D:/Study Materials/Sem
+//               7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_rst_ps7_0_100M_0/SOC_DMA_V2_rst_ps7_0_100M_0_stub.v}
 // Design      : SOC_DMA_V2_rst_ps7_0_100M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

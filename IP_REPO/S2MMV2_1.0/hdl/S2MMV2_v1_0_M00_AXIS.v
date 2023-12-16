@@ -215,15 +215,16 @@
 	          end                                                                    
 	      end   
 	      
-	   else
-	   begin
-	       read_pointer <= 0;
-	   end                                                                     
+//	   else
+//	   begin
+//	       read_pointer <= 0;
+//	   end                                                                     
 	   if (read_pointer == NUMBER_OF_OUTPUT_WORDS-1)                             
 	      begin                                                                      
 	        // tx_done is asserted when NUMBER_OF_OUTPUT_WORDS numbers of streaming data
 	        // has been out.                                                         
-	        tx_done <= 1'b1;  
+	        tx_done <= 1'b1; 
+	        read_pointer <= 0; 
 	                                                           
 	      end                                                                  
 	end                                                                              

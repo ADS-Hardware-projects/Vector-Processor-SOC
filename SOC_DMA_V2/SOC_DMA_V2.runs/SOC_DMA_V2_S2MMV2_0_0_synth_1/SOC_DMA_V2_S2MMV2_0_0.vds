@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Dec 15 14:21:47 2023
-# Process ID: 14912
+# Start of session at: Fri Dec 15 18:41:56 2023
+# Process ID: 5048
 # Current directory: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1
 # Command line: vivado.exe -log SOC_DMA_V2_S2MMV2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOC_DMA_V2_S2MMV2_0_0.tcl
 # Log file: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1/SOC_DMA_V2_S2MMV2_0_0.vds
@@ -20,45 +20,45 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19632 
-WARNING: [Synth 8-2507] parameter declaration becomes local in S2MMV2_v1_0_M00_AXIS with formal parameter declaration list [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_M00_AXIS.v:70]
-WARNING: [Synth 8-2507] parameter declaration becomes local in S2MMV2_v1_0_S00_AXIS with formal parameter declaration list [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXIS.v:61]
+INFO: Helper process launched with PID 19044 
+WARNING: [Synth 8-2507] parameter declaration becomes local in S2MMV2_v1_0_M00_AXIS with formal parameter declaration list [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_M00_AXIS.v:70]
+WARNING: [Synth 8-2507] parameter declaration becomes local in S2MMV2_v1_0_S00_AXIS with formal parameter declaration list [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXIS.v:61]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 866.051 ; gain = 186.371
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 865.715 ; gain = 186.199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'SOC_DMA_V2_S2MMV2_0_0' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_S2MMV2_0_0/synth/SOC_DMA_V2_S2MMV2_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_S00_AXI' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_S00_AXI' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
-INFO: [Synth 8-226] default block is never used [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXI.v:243]
-INFO: [Synth 8-226] default block is never used [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXI.v:416]
-INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_S00_AXI' (1#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_S00_AXIS' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXIS.v:4]
+INFO: [Synth 8-226] default block is never used [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXI.v:243]
+INFO: [Synth 8-226] default block is never used [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXI.v:416]
+INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_S00_AXI' (1#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_S00_AXIS' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXIS.v:4]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter IDLE bound to: 2'b00 
 	Parameter WRITE_FIFO bound to: 2'b01 
-WARNING: [Synth 8-6014] Unused sequential element mst_exec_state_reg was removed.  [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXIS.v:84]
-WARNING: [Synth 8-6014] Unused sequential element writes_done_reg was removed.  [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXIS.v:129]
-WARNING: [Synth 8-3848] Net write_finished in module/entity S2MMV2_v1_0_S00_AXIS does not have driver. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXIS.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_S00_AXIS' (2#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_S00_AXIS.v:4]
-INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_M00_AXIS' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_M00_AXIS.v:4]
+WARNING: [Synth 8-6014] Unused sequential element mst_exec_state_reg was removed.  [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXIS.v:84]
+WARNING: [Synth 8-6014] Unused sequential element writes_done_reg was removed.  [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXIS.v:129]
+WARNING: [Synth 8-3848] Net write_finished in module/entity S2MMV2_v1_0_S00_AXIS does not have driver. [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXIS.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_S00_AXIS' (2#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_S00_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S2MMV2_v1_0_M00_AXIS' [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_M00_AXIS.v:4]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
 	Parameter WAIT_COUNT_BITS bound to: 5 - type: integer 
 	Parameter IDLE bound to: 2'b00 
 	Parameter INIT_COUNTER bound to: 2'b01 
 	Parameter SEND_STREAM bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_M00_AXIS.v:117]
-INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_M00_AXIS' (3#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0_M00_AXIS.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0' (4#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/9a7e/hdl/S2MMV2_v1_0.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_M00_AXIS.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0_M00_AXIS' (3#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0_M00_AXIS.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'S2MMV2_v1_0' (4#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ipshared/0d61/hdl/S2MMV2_v1_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'SOC_DMA_V2_S2MMV2_0_0' (5#1) [d:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.srcs/sources_1/bd/SOC_DMA_V2/ip/SOC_DMA_V2_S2MMV2_0_0/synth/SOC_DMA_V2_S2MMV2_0_0.v:57]
 WARNING: [Synth 8-3331] design S2MMV2_v1_0_M00_AXIS has unconnected port done_cal
 WARNING: [Synth 8-3331] design S2MMV2_v1_0_M00_AXIS has unconnected port start_cal
@@ -74,7 +74,7 @@ WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_AR
 WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design S2MMV2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 906.230 ; gain = 226.551
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 906.391 ; gain = 226.875
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -87,10 +87,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 906.230 ; gain = 226.551
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 906.391 ; gain = 226.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 906.230 ; gain = 226.551
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 906.391 ; gain = 226.875
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -98,28 +98,28 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.996 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1033.680 ; gain = 1.102
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 1035.086 ; gain = 2.090
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.680 ; gain = 354.000
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1035.086 ; gain = 355.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.680 ; gain = 354.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1035.086 ; gain = 355.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.680 ; gain = 354.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1035.086 ; gain = 355.570
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'S2MMV2_v1_0_M00_AXIS'
 ---------------------------------------------------------------------------------------------------
@@ -131,7 +131,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in modu
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'S2MMV2_v1_0_M00_AXIS'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.680 ; gain = 354.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1035.086 ; gain = 355.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -241,7 +241,7 @@ INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[1]' (FDSE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[3]'
 INFO: [Synth 8-3886] merging instance 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[2]' (FDSE) to 'inst/S2MMV2_v1_0_S00_AXIS_inst/we_reg[3]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1033.680 ; gain = 354.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1035.086 ; gain = 355.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -253,13 +253,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1033.680 ; gain = 354.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1035.086 ; gain = 355.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1033.680 ; gain = 354.000
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1035.086 ; gain = 355.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -271,7 +271,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1033.711 ; gain = 354.031
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1039.008 ; gain = 359.492
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -295,7 +295,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.512 ; gain = 368.832
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1053.801 ; gain = 374.285
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -308,7 +308,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.512 ; gain = 368.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1053.801 ; gain = 374.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -320,25 +320,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.512 ; gain = 368.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1053.801 ; gain = 374.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.512 ; gain = 368.832
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1053.801 ; gain = 374.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.512 ; gain = 368.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1053.801 ; gain = 374.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.512 ; gain = 368.832
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1053.801 ; gain = 374.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -377,34 +377,34 @@ Report Instance Areas:
 |5     |    S2MMV2_v1_0_S00_AXI_inst  |S2MMV2_v1_0_S00_AXI  |   537|
 +------+------------------------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.512 ; gain = 368.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1053.801 ; gain = 374.285
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1048.512 ; gain = 241.383
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1048.512 ; gain = 368.832
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.801 ; gain = 245.590
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1053.801 ; gain = 374.285
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1062.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1071.527 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 37 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1062.262 ; gain = 650.414
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1062.262 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1071.527 ; gain = 658.289
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1071.527 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1/SOC_DMA_V2_S2MMV2_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP SOC_DMA_V2_S2MMV2_0_0, cache-ID = 97ccd06d734d0c18
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP SOC_DMA_V2_S2MMV2_0_0, cache-ID = 8f26ad40b15c08d0
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1062.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1071.527 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_S2MMV2_0_0_synth_1/SOC_DMA_V2_S2MMV2_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SOC_DMA_V2_S2MMV2_0_0_utilization_synth.rpt -pb SOC_DMA_V2_S2MMV2_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 15 14:22:32 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 15 18:42:41 2023...
