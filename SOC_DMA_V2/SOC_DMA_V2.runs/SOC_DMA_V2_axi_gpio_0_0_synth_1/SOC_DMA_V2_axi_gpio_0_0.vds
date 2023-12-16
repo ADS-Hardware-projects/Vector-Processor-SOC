@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 11 10:02:35 2023
+# Process ID: 1268
+# Current directory: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_axi_gpio_0_0_synth_1
+# Command line: vivado.exe -log SOC_DMA_V2_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOC_DMA_V2_axi_gpio_0_0.tcl
+# Log file: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_axi_gpio_0_0_synth_1/SOC_DMA_V2_axi_gpio_0_0.vds
+# Journal file: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_axi_gpio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source SOC_DMA_V2_axi_gpio_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/LITE_IP_CON_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/ip_repo/S2MMV2_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2021/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP SOC_DMA_V2_axi_gpio_0_0, cache-ID = 396ba2df81e3d8a6.
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 10:02:45 2023...

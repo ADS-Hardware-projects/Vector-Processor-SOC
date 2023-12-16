@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 11 10:01:00 2023
+# Process ID: 16348
+# Current directory: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_axi_smc_0_synth_1
+# Command line: vivado.exe -log SOC_DMA_V2_axi_smc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOC_DMA_V2_axi_smc_0.tcl
+# Log file: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_axi_smc_0_synth_1/SOC_DMA_V2_axi_smc_0.vds
+# Journal file: D:/Study Materials/Sem 7/ADS/Vector-Processor-SOC/SOC_DMA_V2/SOC_DMA_V2.runs/SOC_DMA_V2_axi_smc_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source SOC_DMA_V2_axi_smc_0.tcl -notrace

@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER LITE_IP_CON
+	OPTION supported_peripherals = (LITE_IP_CON);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = LITE_IP_CON;
+END DRIVER
