@@ -6,14 +6,13 @@
 
 <h2>Project Screenshots:</h2>
 
-![Overall High Level Architecture]((https://github.com/ADS-Hardware-projects/Vector-Processor-SOC/blob/main/Images/PS.jpg))
-
+![Overall High Level Architecture](https://github.com/ADS-Hardware-projects/Vector-Processor-SOC/blob/main/Images/PS.jpg)
 
 ![Processor Architecture](https://github.com/ADS-Hardware-projects/Vector-Processor-SOC/blob/main/Images/PL.jpg)
 
-![Fetch Unit and Memory Controller Architecture](https://github.com/ADS-Hardware-projects/Vector-Processor-SOC/blob/main/Images/FU.jpg,https://github.com/ADS-Hardware-projects/Vector-Processor-SOC/blob/main/Images/MR.jpg)
+![Fetch Unit Architecture](https://github.com/ADS-Hardware-projects/Vector-Processor-SOC/blob/main/Images/FU.jpg)
 
-
+![Memory Controller Architecture](https://github.com/ADS-Hardware-projects/Vector-Processor-SOC/blob/main/Images/MR.jpg)
   
   
 <h2>🧐 Features</h2>
