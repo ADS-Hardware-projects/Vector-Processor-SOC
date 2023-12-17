@@ -22,3 +22,5 @@ Here're some of the project's best features:
 *   Matrix Multiplicatio
 *   Matrix Addition
 *   Matrix Substraction
+*   DDR3 RAM access
+*   Direct Memory Access Usage
