@@ -6,11 +6,9 @@
 
 <h2>Project Screenshots:</h2>
 
-(https://drive.google.com/file/d/1_ajXdahCdBWg5nY06lQtv89Nu9vg92yW/view?usp=drive_link)
+![Overall High Level Architecture](https://drive.google.com/file/d/1_ajXdahCdBWg5nY06lQtv89Nu9vg92yW/view?usp=drive_link)
 
-<img src="https://drive.google.com/file/d/1cQ1aPC_ev7TE8CiMNLW2dnGBLWhnMP8r/view?usp=drive_link" alt="project-screenshot" width="600" height="600/">
 
-<img src="https://drive.google.com/file/d/180CEjolICR5PPQO-CSCdx7c4SSgfJDrZ/view?usp=drive_link" alt="project-screenshot" width="600" height="600/">
 
   
   
